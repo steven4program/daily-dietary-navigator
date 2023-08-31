@@ -1,0 +1,29 @@
+.bg-index{ 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    h1{
+        margin-bottom: 269px;
+    }
+}
+.bg-index::after{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    background-image:url(/daily-dietary-navigator/assets/img/bg_web_5.png);
+    width: 100%;
+    height: 100px;
+}
+.navbar{
+    border-radius: 80px;
+    background: #FFF;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    margin-bottom: 192px;
+    margin-top: 72px;
+}

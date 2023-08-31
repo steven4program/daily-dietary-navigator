@@ -299,25 +299,40 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       #F8CA0E !default;
-$secondary:     $gray-600 !default;
+$secondary:     #009F10 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$white:         white  !default;
+$primary-100:   #FEF9DC !default;
+$primary-200:   #FFE784 !default;
+$primary-400:   #EFC101 !default;
+$secondary-200: #009F10 !default;
+$light-yellow:  #FFE784 !default;
+$green:         #EEF7DE !default;
+
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary":       $primary,
+  "secondary":     $secondary,
+  "success":       $success,
+  "info":          $info,
+  "warning":       $warning,
+  "danger":        $danger,
+  "light":         $light,
+  "dark":          $dark,
+  "primary-100":   $primary-100,
+  "primary-200":   $primary-200,
+  "primary-400":   $primary-400,
+  "secondary-200": $secondary-200,
+  "light-yellow":  $light-yellow,
+  "green":         $green,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1057,11 +1072,11 @@ $zindex-toast:                      1090 !default;
 
 // scss-docs-start nav-variables
 $nav-link-padding-y:                .5rem !default;
-$nav-link-padding-x:                1rem !default;
+$nav-link-padding-x:                2.5rem !default;
 $nav-link-font-size:                null !default;
-$nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-font-weight:              700 !default;
+$nav-link-color:                    #222 !default;
+$nav-link-hover-color:              #009F10 !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
@@ -1082,8 +1097,8 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y:                  $spacer * .5 !default;
-$navbar-padding-x:                  null !default;
+$navbar-padding-y:                  $spacer * 1.25 !default;
+$navbar-padding-x:                  40px !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
 
