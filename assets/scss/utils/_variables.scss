@@ -311,7 +311,7 @@ $primary-100:   #FEF9DC !default;
 $primary-200:   #FFE784 !default;
 $primary-400:   #EFC101 !default;
 $secondary-200: #009F10 !default;
-$light-yellow:  #FFE784 !default;
+$light-yellow:  #FFF7D8 !default;
 $green:         #EEF7DE !default;
 
 
@@ -332,7 +332,7 @@ $theme-colors: (
   "primary-400":   $primary-400,
   "secondary-200": $secondary-200,
   "light-yellow":  $light-yellow,
-  "green":         $green,
+  "green":         #EEF7DE,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -394,6 +394,9 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 2.5,//40
+  7: $spacer * 4,//64
+  
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -422,7 +425,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -507,10 +510,10 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
+$border-radius:               .25rem !default;//預設 =rounded-2
+$border-radius-sm:            1.875rem !default;//30px =rounded-1
+$border-radius-lg:            3.75rem !default;//60px=rounded-3
+$border-radius-xl:            6.25rem !default;//100px
 $border-radius-2xl:           2rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
@@ -1252,7 +1255,7 @@ $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius:                $border-radius !default;
+$card-border-radius:                $border-radius-sm !default;
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
@@ -1621,8 +1624,8 @@ $btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default
 // scss-docs-start offcanvas-variables
 $offcanvas-padding-y:               $modal-inner-padding !default;
 $offcanvas-padding-x:               $modal-inner-padding !default;
-$offcanvas-horizontal-width:        400px !default;
-$offcanvas-vertical-height:         30vh !default;
+$offcanvas-horizontal-width:        100% !default;
+$offcanvas-vertical-height:         100%; //30vh !default;
 $offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;
 $offcanvas-border-width:            $modal-content-border-width !default;

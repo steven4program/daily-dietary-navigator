@@ -1,18 +1,24 @@
 .bg-index{ 
+    background:url(/daily-dietary-navigator/assets/img/img_banner_mobile.png);
     background-size:cover;
-    background-position: center;
+    background-position:center center;
     background-repeat: no-repeat;
     height: 100%;
+    @media (min-width:992px) {
+        background:url(/daily-dietary-navigator/assets/img/img_banner_web.png);
+    }
     h1{
         margin-bottom: 269px;
     }
 }
+//白色波浪
 .bg-index::after{
     content: "";
     position:absolute;
     bottom: 0;
     left: 0;
     background-image:url(/daily-dietary-navigator/assets/img/bg_web_5.png);
+    background-repeat: no-repeat;
     width: 100%;
     height: 100px;
 }
@@ -22,8 +28,143 @@
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
-}
-.navbar{
     margin-bottom: 192px;
-    margin-top: 72px;
+    margin-top: 72px; 
+}
+.hover-color-secondary:hover{
+    color: pink;
+}
+//navbar mobile 樣式 
+.navbar-mobile {
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgb(107, 90, 90);
+    background-image: url(../assets/img/bg_menu.png);
+    background-position:center 0% ;
+    opacity: 0.9;
+    li{
+        border-color: #FFFFFF;
+        
+    }
+
+}
+.offcanvas-link {
+    font-weight: bold;
+    color: #D9D9D9;
+    width: 350px;
+    padding: 20px;
+    &:hover{
+        color: #FFF;
+        background: transparent;
+    }
+}
+
+
+
+
+
+//index section
+
+
+
+
+//bg-wave
+.bg-wave{
+    z-index: -2;
+}
+
+//黃色波浪
+.bg-wave::before {
+    background-image:url(/daily-dietary-navigator/assets/img/bg_mobile_2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: top;
+    background-size: contain;
+    content:"";
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom:auto ;
+    z-index: -1;
+   @media (min-width:992px) {
+    background-image:url(/assets/img/bg_web_2.png)
+   }
+    
+}
+.bg-wave::after {
+    background-image:url(/daily-dietary-navigator/assets/img/bg_mobile_3.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: bottom;
+    background-size: contain;
+    content:"";
+    width: 100%;
+    height: 100%;
+    top:auto;
+    bottom: 0;
+    left: 0px;
+    z-index: -1;
+    @media (min-width:992px) {
+        background-image:url(/assets/img/bg_web_3.png)
+    }
+}
+.h-card{
+    
+    height: 211px;
+    @media (min-width:992px){
+        height: 264px;
+    }
+}
+//component
+.badge-meal {
+    position: absolute;
+    top:0;
+    left:50%;
+    width: 138px;
+    height: 40px;
+    background-color:#343434;
+    opacity: 60%;
+    color: #FFF;
+    border-radius: 0px 0px 30px 30px;
+    padding: 8px 48px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    @media (min-width:992px) {
+        width: 168px;
+        opacity: 80%;
+    }
+    
+    
+}
+.btn-third {
+    background-color: #FFF;
+    color: #222;
+    width: 239px;
+    border: 8px solid #F7EAB8;
+    padding: 16px 70px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    @media (min-width:992px) {
+        padding: 16px 100px;
+        color: #696969;
+        width: 342px;
+        font-size: 24px;
+    }
+}
+.btn-mb {
+    padding: 16px 40px;
+    font-size: 20px;
+}
+
+.plus-circle{
+    width: 60px;
+    height: 60px;
+   
+}
+
+.people-icon-size{
+    width: 100px;
+    height: 100px;
 }

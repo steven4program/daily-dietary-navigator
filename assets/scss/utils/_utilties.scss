@@ -1,0 +1,41 @@
+.px-40 {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.px-md-64 {
+    @media (min-width:992px) {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+   
+}
+.py-md-80 {
+@media (min-width:992px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+    
+}
+.py-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.py-md-40{
+    @media (min-width:992px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+.me-lg-40 {
+    @media (min-width:992px) {
+        margin-right: 40px;
+    }
+}
+.fs-md-h1 {
+    @media (min-width:992px) {
+        font-size: 40px;
+    }
+}
+.color-text{
+    color: #696969;
+}
