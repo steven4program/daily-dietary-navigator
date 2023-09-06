@@ -309,6 +309,7 @@ $dark:          $gray-900 !default;
 $white:         white  !default;
 $primary-100:   #FEF9DC !default;
 $primary-200:   #FFE784 !default;
+$primary-300:   #F8CA0E;//*custom
 $primary-400:   #EFC101 !default;
 $secondary-200: #009F10 !default;
 $light-yellow:  #FFF7D8 !default;
@@ -329,6 +330,7 @@ $theme-colors: (
   "dark":          $dark,
   "primary-100":   $primary-100,
   "primary-200":   $primary-200,
+  "primary-300":   $primary-300,
   "primary-400":   $primary-400,
   "secondary-200": $secondary-200,
   "light-yellow":  $light-yellow,
