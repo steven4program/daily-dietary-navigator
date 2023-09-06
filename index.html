@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Nutrition Navigator</title>
+  <script type="module" crossorigin src="/daily-dietary-navigator/assets/index-a01627ce.js"></script>
+  <link rel="stylesheet" href="/daily-dietary-navigator/assets/index-9737f8dd.css">
+</head>
+
+<body>
+  <div class="bg-index d-flex flex-column align-items-center justify-content-center position-relative">
+ 
+    
+    <div class="container mx-auto ">
+         <!--mobile nav position-absolute-->
+        <nav class="navbar d-lg-none d-flex flex-nowrap">
+            <a href="#" class="navbar-brand">
+                <img src="/daily-dietary-navigator/assets/Horizontal_container-1-16a00598.png" alt="" class="img-fluid">
+            </a>
+            <a href="#mobileNavbar" class="navbar-toggler border-0" data-bs-toggle="offcanvas" >
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7daxDcAgDETRC8oAjAjKXBGMyAaJRBlMlcIg/Ve6uuZOlgAA+OMwryU+8pDbkCdoccsHPCf3LADdbAeLPOQ2lHPW4iQfQ8Btd7AKQGfv4B2TPFytfk92i4N8htpYDx5WAAB8vVGvDCG5B51GAAAAAElFTkSuQmCC" alt="menu-button" class="rounded">
+            </a>
+
+        </nav>
+        <!--web nav -->
+        <div class="d-none d-lg-block">
+            <nav class="navbar navbar-expand-lg  justify-content-between">
+            <a href="#" class="navbar-brand">
+                <img src="/daily-dietary-navigator/assets/Horizontal_container-d480b9ed.png" alt="Horizontal_container" class="">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav  list-unstyled d-flex flex-row ">
+                <li class="nav-item">
+                    <a class="nav-link hover-color-secondary" aria-current="page" href="#">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-color-secondary" aria-current="page" href="#">飲食紅綠燈</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-color-secondary" aria-current="page" href="#">餐點搭配</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-color-secondary" aria-current="page" href="#">營養計算機</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-color-secondary" aria-current="page" href="#">Q&A</a>
+                </li>
+            </ul>
+            </div>
+            </nav> 
+        </div>
+                <h1 class="display-2 text-white fw-bold text-center">
+                每日營養導航
+                <br>
+                您的健康飲食夥伴
+                </h1>
+        
+    </div>
+    
+    
+</div>
+
+<!--手機版漢堡選單 -->
+<div class="d-none navbar-collapse w-100 h-100 bg-opacity-50 position-absolute" id="mobileNavba" style="background-image: url(/daily-dietary-navigator/assets/bg_menu-04b20c07.png);">
+    <!--d-lg-none-->
+    <ul class="container list-unstyled d-flex flex-column justify-content-center align-items-center ">
+        <li class="nav-item bg-transparent border-bottom ">
+            <a class="nav-link p-3 text-white text-center" aria-current="page" href="#">首頁</a>
+        </li>
+        <li class="nav-item  bg-transparent  border-bottom">
+            <a class="nav-link text-white text-center " aria-current="page" href="#">飲食紅綠燈</a>
+        </li>
+        <li class="nav-item  bg-transparent border-bottom">
+            <a class="nav-link text-white text-center " aria-current="page" href="#">餐點搭配</a>
+        </li>
+        <li class="nav-item bg-transparent border-bottom">
+            <a class="nav-link text-white text-center " aria-current="page" href="#">營養計算機</a>
+        </li>
+        <li class="nav-item bg-transparent border-bottom">
+            <a class="nav-link text-white text-center " aria-current="page" href="#">Q&A</a>
+        </li>
+    </ul>
+
+</div>
+
+<!--offcanvs-->
+
+
+<div class="offcanvas offcanvas-top  navbar-mobile"  id="mobileNavbar" tabindex="-1" aria-labelledby="offcanvasTopLabel" >
+  
+  <div class="offcanvas-body d-flex flex-column ">
+    <button type="button" class="btn-close p-2 border rounded-4 mb-5" data-bs-dismiss="offcanvas" aria-label="Close">    
+    </button>
+    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+        <li class="p-4 border-bottom ">
+            <a class="text-center text-white fw-bold" aria-current="page" href="#">首頁</a>
+        </li>
+        <li class="p-4 border-bottom">
+            <a class="text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
+        </li>
+        <li class="p-4 border-bottom">
+            <a class="text-center text-white fw-bold " aria-current="page" href="#">餐點搭配</a>
+        </li>
+        <li class="p-4 border-bottom ">
+            <a class="text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
+        </li>
+        <li class="p-4 border-bottom">
+            <a class="text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<!--六大類食物 開始  -->
+<div class="container">
+  <div class="col-md-7 mx-auto d-flex align-items-center text-center mb-4 mb-md-6">
+    <img class=" me-32" src="/daily-dietary-navigator/assets/img_title_1-c9228843.png" alt="curious-girl-face">
+    <h1 class="">六大類食物，你吃對了嗎?</h1>
+  </div>
+  <div class="row align-items-center">
+    <div class="6-dietary-intro col-md-6">
+      <h4 class="text-start mb-4"><span class=" border-bottom border-4 border-primary">豆魚蛋肉類</span></h4>
+      <p class="fs-6 mb-3 lh-base">為富含蛋白質的食物，主要提供飲食中蛋白質的來源。包含:黃豆與豆製品、魚類與海鮮、蛋類、禽類、畜肉等。</p>
+      <p class="fs-6 mb-3 lh-base">為避免同時吃入不利健康的脂肪，尤其是飽和脂肪，選擇這類食物時,其優先順序為豆類、魚類與海鮮、蛋類、禽肉、畜肉。</p>
+      <p class="fs-5 mb-4 lh-base">此外，應避免油炸和過度加工的食品，才不會攝取過多的油脂和鈉。</p>
+    </div>
+    <div class="6-dietary-catagories col-md-6 px-4 px-md-3 py-12 py-md-4 row">
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="/daily-dietary-navigator/assets/img_chicken-bdea216c.png" alt="">
+        <h5 class="mt-3">豆魚蛋肉類</h5>
+      </a>
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="/daily-dietary-navigator/assets/img_vegetable-ea70b2e4.png" alt="">
+        <h5 class="mt-3">蔬菜類</h5>
+      </a>
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="/daily-dietary-navigator/assets/img_rice-38c07b15.png" alt="">
+        <h5 class="mt-3">全榖雜糧類</h5>
+      </a>
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="/daily-dietary-navigator/assets/img_fruit-d5b1dbe2.png" alt="">
+        <h5 class="mt-3">水果類</h5>
+      </a>
+      <a class="col-6 col-md-4 text-center">
+        <img src="/daily-dietary-navigator/assets/img_nuts-8651aac5.png" alt="">
+        <h5 class="mt-3">堅果種子類</h5>
+      </a>
+      <a class="col-6 col-md-4 text-center">
+        <img src="/daily-dietary-navigator/assets/img_milk-56bc7932.png" alt="">
+        <h5 class="mt-3">乳品類</h5>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="bg-primary-300">
+<div class="bg-light-yellow">
+  <div class=""><img src="" alt="thinking-girl-face"></div>
+  <h4 class="text-center">看看哪個更健康?</h4>
+  <div class="">
+    <img src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt="滷雞腿">
+    <h5>滷雞腿</h5>
+  </div>
+  <div class="">
+    <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="炸雞腿">
+    <h5>炸雞腿</h5>
+  </div>
+  <a class="answer  btn" data-toggle="modal" data-target="#nutri-detail"><h5>看答案</h5><i>v</i></a>
+  <button class="btn btn-outline btn-secondary rounded" href="6-catagories.html">點我看更多</button>
+</div>
+</div>
+</div>
+
+
+<!-- Button trigger modal -->
+<a type="button" class="d-block btn btn-primary mt-1 ms-3" data-bs-toggle="modal" data-bs-target="#openMe">
+  看答案
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="openMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="mb-24">
+        <img src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt="滷雞腿">
+        <h5 >滷雞腿</h5>
+      </div>
+      <div class="signal mb-24">
+        <h5>燈號</h5>
+        <img src="data:image/png;base64,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" alt="">
+      </div>
+      <div class="feature mb-24">
+        <h5>特點</h5>
+        <span class="tag green-light">原始食物</span><span class="tag red-light">優質蛋白質</span>
+      </div>
+      <div class="nutrition-label">
+        <h5>營養標示</h5>
+        <tbody>
+          <tr>
+            <th scope="row">熱量(Kcal)</th>
+            <td>186kcal</td>
+          </tr>
+          <tr>
+            <th scope="row">碳水化合物</th>
+            <td>0g</td>
+          </tr>
+          <tr>
+            <th scope="row">脂肪</th>
+            <td>11.8g</td>
+          </tr>
+          <tr>
+            <th scope="row">飽和脂肪</th>
+            <td>2.9g</td>
+          </tr>
+          <tr>
+            <th scope="row">蛋白質</th>
+            <td>22.7g</td>
+          </tr>
+      </div>
+      <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#openCollapsed" aria-expanded="false" aria-controls="collapseExample">
+        <span class="open">點我打開</span>
+        <span class="close">點我關閉</span>
+      </button>
+       <div class="collapse" id="openCollapsed">
+         <div class="card card-body mt-3">
+            我被打開
+         </div>
+       </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+</div>
+<!--六大類食物 結束  -->
+
+<!--餐點搭配 開始-->
+<div class="bg-wave  bg-light-yellow mt-5 position-relative">
+ 
+  <div class="container">
+    <div class="border rounded-1 bg-white d-flex flex-column justify-content-around py-40 py-lg-6 px-4 px-lg-7">
+      <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start  text-center mt-lg-6 mb-lg-6">
+        <img src="/daily-dietary-navigator/assets/img_title_3-017a68d3.png" alt="img_title_3" class="people-icon-size  me-lg-6 ms-lg-0 mx-auto  mb-3">
+        <div class="ms-lg-5">
+        <h2 class="display-5 fs-md-h1 fw-bold">說了這麼多，還是無法<span class="display-5 fs-md-h1 text-primary fw-bold">決定</span>吃什麼嗎?</h2>
+        <h2 class="display-5 fs-md-h1 fw-bold">沒關係我們幫你<span class="display-5 fs-md-h1 text-primary fw-bold">選擇</span>!</h2>
+      </div>
+      </div>
+      <div class="mb-5">
+        <div class=" d-flex flex-column flex-lg-row justify-content-between flex-wrap flex-lg-nowrap">
+          <div class="col-12 col-lg-6">
+            <div class="border-radius bg-light-yellow rounded-pill d-flex flex-column flex-lg-row px-4 py-4 align-items-center me-md-5 mb-3">
+            <a class="btn btn-primary rounded-4 px-6 py-3 py-lg-4 fs-4  me-lg-4 mb-2 text-white fw-bold">你們幫我搭！</a>
+            <small class="color-text mt-1 fs-sm fw-bold">根據您的需求，<br> 無須動腦就搭出一日健康菜單</small>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class=" border-radius bg-green rounded-pill d-flex flex-column flex-lg-row px-4 py-4 align-items-center">
+              <a class="btn btn-secondary rounded-4 px-6 py-3 py-lg-4 fs-4  me-lg-4 mb-2 text-white fw-bold">點我來搭配！</a>
+              <small class="color-text mt-1 fs-sm fw-bold">提供您常見的日常外食選擇，
+              <br>  輕鬆計算出自選飲食的熱量及營養素</small>
+            </div>
+           </div>
+
+        </div>
+      </div>
+      <div class="d-flex flex-column  bg-light-yellow rounded-1 p-4 justify-content-between align-items-center">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+          
+            <div class="card ">
+              <div class="position-relative">
+                <span class="badge-meal translate-middle-x">早餐</span>
+              <img src="/daily-dietary-navigator/assets/bg_QA_web-e3048534.png" class="card-img-top h-75  " alt="早餐">
+              </div>
+              
+              <div class="card-body h-25">
+                <h5 class="fw-bold card-title  text-center ">烤雞三明治+無糖豆漿</h5>                
+              </div>
+            </div>
+         
+          <div class="py-4">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOhSURBVHgB7ZrdcdNAEMd3JY+xHxJMB04FSRgIkydMB1BB3EGSCnAqADowFYQOCE8eAkOcClA68CQPFkp0y66whyT4PizJQgL9ZvSQ3NnW/3b3bu/2AGpqampqygvCCqGzTie8jl/6iJtKURcQt/jfndkzJ+CegYc4jonOIb4+ae+GAayI3AWLyOhG7RNRj7++BynglxoroHerEJ+b4N9C4QDuWjATCDRU8fVRXsJzEfzjy/rrvIXeBxEGD55eHkFGMgmejjpdz1fHBLAFxRBQHL3IYm0PUhJ9XdtDX50VKFbgAW6eyW9DSlIJFhdWCoewQhfWwQPckd+Wd4AULO3Ss3gdQAlIE9dLCRZXmlm2NHge9ZtPrt679ncWLBOUxCz8BTc2wQImKo62XScy5xhmsR8hg1gOgyOeYTcWPtwGKZGY5ons2LW/k4XziNsHjaiLj8OLRW0z7/kOGZBBaz+7HNj6WS0sL1OWScqEh7Av2Z61n7WDr1JN/0Ujrh1G6sDWzyg4sS5AHyqCi5XNFvbjHlQIFysbBSPiPlQMRHpuatcKFnfmISsyT84J7JncWm/hirnzbeSURdemFUyAFbTuL9Dw7g1dgwe06ZKXJFmSioa2frizOOkQ2ruTYDpqbYANr9nnDYN1mVQKuro2raLw9CFnPqT94BxTBpU3S2RkQWvncuEAGmZpu9iygoacP/WJR5mh/02wCZPgCfyDGARjlQUHugbtsoSoxkTYBQtR3OxPR2A9YrGdSPCy1AULXkPt8TLoAAW6Fq3gmPDCJcBlr4x+c2Dt9w0yHwC4iRXwXNei1YQxjaGiEOjfXSs4bPkfoKpwEU7XpBX8aHvCkxadQPUYm+YLY5jypPUJKgZJmdWAUXDY9N5C1dZjgzsLRsHi1jwzGkesTEgt2bb8WVeeKllZCue2PlbBVbFychDvUG5xri2Fp+tSV0p9CiKVPnUTLczIvEZzL+Nhv3b/+8d7gCNlLaYxE1pFMU2OYSimQygZvAwdLnMFYqn9cHv3apil0pc3SdzuXA2X+UyqSy3Tz+sDl8O0VeJaLbxP6ls809FaH318A8XH9CRx4yUtOyfztaVZobwLBZDc0IujV1muLeVyMa0AF09ygTQufJ/crh4mtShPifDUd6gWkAhtcbaHye4tO7lfLk2EQ9zj+JbKY8pEhU5kp5an0DkrvT58SzwLT0o3/PedeJ8kD/EJBeIFr/PjFh885C2ypqampqYq/AQeoapI0mv8wQAAAABJRU5ErkJggg==" alt="" class=" plus-circle">
+          </div>
+          
+          
+            <div class="card">
+              <div class="position-relative">
+                <span class="badge-meal translate-middle-x">午餐</span>
+              <img src="/daily-dietary-navigator/assets/bg_QA_web-e3048534.png" class="card-img-top h-75  " alt="午餐">
+              </div>
+              <div class="card-body h-25">
+                <h5 class="fw-bold card-title text-center">烤雞三明治+無糖豆漿</h5>                
+              </div>
+            </div>
+         
+          <div class="py-4">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOhSURBVHgB7ZrdcdNAEMd3JY+xHxJMB04FSRgIkydMB1BB3EGSCnAqADowFYQOCE8eAkOcClA68CQPFkp0y66whyT4PizJQgL9ZvSQ3NnW/3b3bu/2AGpqampqygvCCqGzTie8jl/6iJtKURcQt/jfndkzJ+CegYc4jonOIb4+ae+GAayI3AWLyOhG7RNRj7++BynglxoroHerEJ+b4N9C4QDuWjATCDRU8fVRXsJzEfzjy/rrvIXeBxEGD55eHkFGMgmejjpdz1fHBLAFxRBQHL3IYm0PUhJ9XdtDX50VKFbgAW6eyW9DSlIJFhdWCoewQhfWwQPckd+Wd4AULO3Ss3gdQAlIE9dLCRZXmlm2NHge9ZtPrt679ncWLBOUxCz8BTc2wQImKo62XScy5xhmsR8hg1gOgyOeYTcWPtwGKZGY5ons2LW/k4XziNsHjaiLj8OLRW0z7/kOGZBBaz+7HNj6WS0sL1OWScqEh7Av2Z61n7WDr1JN/0Ujrh1G6sDWzyg4sS5AHyqCi5XNFvbjHlQIFysbBSPiPlQMRHpuatcKFnfmISsyT84J7JncWm/hirnzbeSURdemFUyAFbTuL9Dw7g1dgwe06ZKXJFmSioa2frizOOkQ2ruTYDpqbYANr9nnDYN1mVQKuro2raLw9CFnPqT94BxTBpU3S2RkQWvncuEAGmZpu9iygoacP/WJR5mh/02wCZPgCfyDGARjlQUHugbtsoSoxkTYBQtR3OxPR2A9YrGdSPCy1AULXkPt8TLoAAW6Fq3gmPDCJcBlr4x+c2Dt9w0yHwC4iRXwXNei1YQxjaGiEOjfXSs4bPkfoKpwEU7XpBX8aHvCkxadQPUYm+YLY5jypPUJKgZJmdWAUXDY9N5C1dZjgzsLRsHi1jwzGkesTEgt2bb8WVeeKllZCue2PlbBVbFychDvUG5xri2Fp+tSV0p9CiKVPnUTLczIvEZzL+Nhv3b/+8d7gCNlLaYxE1pFMU2OYSimQygZvAwdLnMFYqn9cHv3apil0pc3SdzuXA2X+UyqSy3Tz+sDl8O0VeJaLbxP6ls809FaH318A8XH9CRx4yUtOyfztaVZobwLBZDc0IujV1muLeVyMa0AF09ygTQufJ/crh4mtShPifDUd6gWkAhtcbaHye4tO7lfLk2EQ9zj+JbKY8pEhU5kp5an0DkrvT58SzwLT0o3/PedeJ8kD/EJBeIFr/PjFh885C2ypqampqYq/AQeoapI0mv8wQAAAABJRU5ErkJggg==" alt="" class=" plus-circle">
+          </div>
+          
+            <div class="card">
+              <div class="position-relative">
+                <span class="badge-meal translate-middle-x">晚餐</span>
+              <img src="/daily-dietary-navigator/assets/bg_QA_web-e3048534.png" class="card-img-top h-75  " alt="晚餐">
+              </div>
+              <div class="card-body  h-25">
+                <h5 class="fw-bold card-title text-center">烤雞三明治+無糖豆漿</h5>                
+              </div>
+            </div>
+          
+       
+
+
+
+
+        </div>
+      
+        
+        <a href="#" class="btn-third rounded-pill mt-4 ">幫我計算</a>
+        
+
+      </div>
+      
+
+
+    </div>
+    
+  </div>
+  
+</div>
+
+
+<!--餐點搭配 結束-->
+
+  <footer class="d-flex flex-column align-items-center py-4 mt-6">
+  <div class="container mx-auto">
+    <div class="footer-content d-flex flex-column flex-md-row border-bottom pb-6">
+      <div class="footer-logo align-self-center me-md-6 mb-6">
+        <a href="#">
+          <img src="/daily-dietary-navigator/assets/Horizontal_container-d480b9ed.png" class="img-fluid" alt="logo">
+        </a>
+      </div>
+      <div class="footer-intro me-md-6">
+        <h5 class="pb-3 border-bottom text-center text-md-left">每日營養導航:您的健康飲食夥伴</h5>
+        <p class="mt-4 color-text">您的健康飲食夥伴，我們致力於提供科學的營養和健康資訊,包括個人營養計算、飲食選擇建議等。讓我們陪伴您走向更健康的生活之路，並將這份健康與快樂分享給親友。</p>
+      </div>
+      <div class="footer-contact">
+        <h5 class="pb-3 border-bottom text-center text-md-left">聯絡我們</h5>
+        <div
+             class="contact-icons mt-4 d-flex flex-row justify-content-md-between justify-content-around align-items-center">
+          <a class="d-flex justify-content-center align-items-center" href="#"><img
+                 src="/daily-dietary-navigator/assets/ig-icon-f1565903.svg"></img></a>
+          <a class="d-flex justify-content-center align-items-center" href="#"><img
+                 src="/daily-dietary-navigator/assets/fb-icon-c4fe0d03.svg"></img></a>
+          <a class="d-flex justify-content-center align-items-center" href="#"><img
+                 src="/daily-dietary-navigator/assets/line-icon-473d788c.svg"></img></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center pt-6">
+      <p>Copyright ©2023 每日營養導航 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+      
+</body>
+
+</html>
