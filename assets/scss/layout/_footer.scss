@@ -1,0 +1,40 @@
+footer {
+  margin-bottom: 100px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+}
+
+.footer-logo {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    max-width: 416px;
+  }
+}
+
+.footer-intro {
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    max-width: 496px;
+  }
+}
+
+.footer-contact {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    max-width: 304px;
+  }
+
+  a {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 1px solid #E3E0D8;
+  }
+}

@@ -10,14 +10,178 @@
 
 <body>
   <%- include('./layout/header'); -%>
+<!--六大類食物 開始  -->
+<div class="container">
+  <div class="col-md-7 mx-auto d-flex align-items-center text-center mb-4 mb-md-6">
+    <img class=" me-32" src="../assets/img/img_title_1.png" alt="curious-girl-face">
+    <h1 class="">六大類食物，你吃對了嗎?</h1>
+  </div>
+  <div class="row align-items-center">
+    <div class="6-dietary-intro col-md-6">
+      <h4 class="text-start mb-4"><span class=" border-bottom border-4 border-primary">豆魚蛋肉類</span></h4>
+      <p class="fs-6 mb-3 lh-base">為富含蛋白質的食物，主要提供飲食中蛋白質的來源。包含:黃豆與豆製品、魚類與海鮮、蛋類、禽類、畜肉等。</p>
+      <p class="fs-6 mb-3 lh-base">為避免同時吃入不利健康的脂肪，尤其是飽和脂肪，選擇這類食物時,其優先順序為豆類、魚類與海鮮、蛋類、禽肉、畜肉。</p>
+      <p class="fs-5 mb-4 lh-base">此外，應避免油炸和過度加工的食品，才不會攝取過多的油脂和鈉。</p>
+    </div>
+    <div class="6-dietary-catagories col-md-6 px-4 px-md-3 py-12 py-md-4 row">
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="../assets/img/img_chicken.png" alt="">
+        <h5 class="mt-3">豆魚蛋肉類</h5>
+      </a>
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="../assets/img/img_vegetable.png" alt="">
+        <h5 class="mt-3">蔬菜類</h5>
+      </a>
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="../assets/img/img_rice.png" alt="">
+        <h5 class="mt-3">全榖雜糧類</h5>
+      </a>
+      <a class="col-6 col-md-4 mb-4 text-center">
+        <img src="../assets/img/img_fruit.png" alt="">
+        <h5 class="mt-3">水果類</h5>
+      </a>
+      <a class="col-6 col-md-4 text-center">
+        <img src="../assets/img/img_nuts.png" alt="">
+        <h5 class="mt-3">堅果種子類</h5>
+      </a>
+      <a class="col-6 col-md-4 text-center">
+        <img src="../assets/img/img_milk.png" alt="">
+        <h5 class="mt-3">乳品類</h5>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="bg-primary-300">
+<div class="bg-light-yellow">
+  <div class=""><img src="" alt="thinking-girl-face"></div>
+  <h4 class="text-center">看看哪個更健康?</h4>
+  <div class="">
+    <img src="../assets/img/Switch.png" alt="滷雞腿">
+    <h5>滷雞腿</h5>
+  </div>
+  <div class="">
+    <img src="../assets/img/Switch-1.png" alt="炸雞腿">
+    <h5>炸雞腿</h5>
+  </div>
+  <a class="answer  btn" data-toggle="modal" data-target="#nutri-detail"><h5>看答案</h5><i>v</i></a>
+  <button class="btn btn-outline btn-secondary rounded" href="6-catagories.html">點我看更多</button>
+</div>
+</div>
+</div>
 
 
+<!-- Button trigger modal -->
+<a type="button" class="d-block btn btn-primary mt-1 ms-3" data-bs-toggle="modal" data-bs-target="#openMe">
+  看答案
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="openMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="mb-24">
+        <img src="../assets/img/Switch.png" alt="滷雞腿">
+        <h5 >滷雞腿</h5>
+      </div>
+      <div class="signal mb-24">
+        <h5>燈號</h5>
+        <img src="../assets/img/img_traffic_green_mobile.png" alt="">
+      </div>
+      <div class="feature mb-24">
+        <h5>特點</h5>
+        <span class="tag green-light">原始食物</span><span class="tag red-light">優質蛋白質</span>
+      </div>
+      <div class="nutrition-label">
+        <h5>營養標示</h5>
+        <tbody>
+          <tr>
+            <th scope="row">熱量(Kcal)</th>
+            <td>186kcal</td>
+          </tr>
+          <tr>
+            <th scope="row">碳水化合物</th>
+            <td>0g</td>
+          </tr>
+          <tr>
+            <th scope="row">脂肪</th>
+            <td>11.8g</td>
+          </tr>
+          <tr>
+            <th scope="row">飽和脂肪</th>
+            <td>2.9g</td>
+          </tr>
+          <tr>
+            <th scope="row">蛋白質</th>
+            <td>22.7g</td>
+          </tr>
+      </div>
+      <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#openCollapsed" aria-expanded="false" aria-controls="collapseExample">
+        <span class="open">點我打開</span>
+        <span class="close">點我關閉</span>
+      </button>
+       <div class="collapse" id="openCollapsed">
+         <div class="card card-body mt-3">
+            我被打開
+         </div>
+       </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+</div>
+<!--六大類食物 結束  -->
 
 <!--餐點搭配 開始-->
 
 <%- include('./layout/combo-meal');-%>
 
 <!--餐點搭配 結束-->
+
+<!-- Q&A -->
+<section>
+  <div class="background pt-9 pb-83" style="background-image:url('../assets/img/bg_QA_web.png')">
+    <div class="container">
+      <div class="flex-lg-row">
+        <div class="card col-12 col-lg-8 rounded-lg py-8 px-7">
+          <div class="fs-2 fw-bold mb-10 underline-yellow">Q&A.常見對健康飲食疑問</div>
+          <div class="card rounded-top-0 rounded-bottom rounded-sm px-4 py-4">
+            <h3 class="mb-0">Q：三大營養素有何重要性</h3>
+          </div>
+          <div class="card rounded-bottom-0 rounded-top rounded-sm px-4 py-4"> 
+            <p class="mb-3">營養是我們身體正常運作所需的重要元素。三大營養素，包括蛋白質、碳水化合物和脂肪，
+              在日常飲食中扮演關鍵角色。這些營養素提供身體所需的能量和營養，對大眾的健康至關重要
+              。讓我們一同了解這些重要營養素的作用，實踐健康生活!
+            </p>
+            <p class="mb-3">
+              蛋白質: 蛋白質是身體建造和修復組織的基本單位,包括肌肉、骨骼、皮膚等。此外,蛋白質也是酵素、
+              激素等重要生物分子的組成部分。保持足夠的蛋白質攝取，有助於維持身體功能正常運作,並支持免疫系統的強健。
+            </p>
+            <a href="#" id="read-more" class="text-secondary text-decoration-none text-end">...觀看全文</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-8 d-flex justify-content-center">
+          <a class="btn btn-secondary w-30 rounded-pill vertical-center-50 text-white py-4 px-120 fs-6" href="#">更多</a>
+        </div>
+        <div class="col-lg-4"></div>
+        
+      </div>
+
+      
+    </div>
+
+    <div class="background send-back w-100 h-100" style="background-image:url('../assets/images/bg_web_5.png')"></div>
+  </div>
+</section>
+<!-- Q&A end -->
 
   <%- include('./layout/footer'); -%>
 

@@ -16,6 +16,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+$gray-1000: #D8D5D5 !default;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -309,6 +310,7 @@ $dark:          $gray-900 !default;
 $white:         white  !default;
 $primary-100:   #FEF9DC !default;
 $primary-200:   #FFE784 !default;
+$primary-300:   #F8CA0E;//*custom
 $primary-400:   #EFC101 !default;
 $secondary-200: #009F10 !default;
 $light-yellow:  #FFF7D8 !default;
@@ -329,6 +331,7 @@ $theme-colors: (
   "dark":          $dark,
   "primary-100":   $primary-100,
   "primary-200":   $primary-200,
+  "primary-300":   $primary-300,
   "primary-400":   $primary-400,
   "secondary-200": $secondary-200,
   "light-yellow":  $light-yellow,
@@ -396,7 +399,9 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 2.5,//40
   7: $spacer * 4,//64
-  
+  8: $spacer * 5,//80
+  9: $spacer * 7.5,//120
+  10: $spacer * 2,//32
 ) !default;
 // scss-docs-end spacer-variables-maps
 
