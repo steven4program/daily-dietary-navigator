@@ -24,12 +24,12 @@
     background-image:url(/assets/img/bg_web_1.png)
    }
   }
-.title-green-bg{
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-}
+// .title-green-bg{
+//     border-bottom-left-radius: 60px;
+//     border-bottom-right-radius: 60px;
+// }
 .answer{
-    width: 138px;
+    width: 138px !important;
     height: 138px;
     border-radius: 50% !important;
 }
@@ -40,4 +40,12 @@
     & th {
         text-align: center;
     } 
+}
+.rounded-bottom-3{
+    border-bottom-right-radius:60px !important;
+    border-bottom-left-radius:60px !important;
+}
+.rounded-top-3{
+    border-top-right-radius:60px !important;
+    border-top-left-radius:60px !important;
 }
