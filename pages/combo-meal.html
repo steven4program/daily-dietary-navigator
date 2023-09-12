@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+    <title>餐點搭配</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+<div class="container">
+    <div class="d-flex flex-column ">
+      <h1 class="fs-1 mb-5 fw-bold text-center">您可以選擇...</h1>
+      <div class="d-flex justify-content-around mb-5">
+          <div class="d-flex ">
+              <!--用摺疊選單-->
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item ">
+              <a href="#mealChoose" class="btn btn-primary-400 rounded-4 px-6 py-3 fs-4 mb-2 text-white fw-bold" data-bs-toggle="collapse" >
+                自選搭配
+              </a>
+             
+              </div>
+
+            </div>
+          </div>       
+          <div class=" d-flex">
+              <div class="dropdown ">
+                  <a class="btn btn-primary-400 rounded-4 px-6 py-3  fs-4   mb-2 text-white fw-bold  dropdown-toggle" href="#randomlyMatch" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    隨機搭配
+                  </a>
+                
+                  <ul class="dropdown-menu" id="randomlyMatch" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">全日外食</a></li>
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">全日備餐</a></li>
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">外食+備餐</a></li>
+                  </ul>
+                </div>
+          </div>
+          <div class=" d-flex ">
+              <div class="dropdown">
+                  <a class="btn btn-primary-400 rounded-4 px-6 py-3  fs-4   mb-2 text-white fw-bold  dropdown-toggle" href="#randomlyMatch" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    精選搭配
+                  </a>
+                
+                  <ul class="dropdown-menu" id="randomlyMatch" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">1500cal</a></li>
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">1700cal</a></li>
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">1900cal</a></li>
+                  </ul>
+                </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="collapse accordion-collapse" id="mealChoose" >
+          <div class="card text-center card-flush"  id="menuList">
+            <div class="card-header bg-secondary  ">
+              <ul class="nav nav-pills card-header-tabs justify-content-around text-white fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link fs-3 text-white hover-tab" data-bs-toggle="collapse" aria-current="true" href="#convenienceStore">超商菜單</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-3 text-white hover-tab" data-bs-toggle="collapse" aria-current="true" href="#takeOutMenu">外食菜單</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-3 text-white hover-tab" data-bs-toggle="collapse" aria-current="true" href="#homeMadeMenu" tabindex="-1" aria-disabled="true">備餐菜單</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="collapse show" id="convenienceStore" data-bs-parent="#menuList">
+              <div class="card-body" >
+                <div class="row">
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                    <label class="btn btn-outline-primary p-3 card-check rounded-1" for="btn-check">
+                      <div class="card">
+                        <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                        <div class="card-footer fs-4 fw-bold py-3">烤雞三明治</div>
+                      </div>
+                    </label>
+                    
+                  </div>
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                    <label class="btn btn-outline-primary p-3 card-check rounded-1" for="btn-check2">
+                      <div class="card">
+                        <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                        <div class="card-footer fs-4 fw-bold py-3">烤雞三明治</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                    <label class="btn btn-outline-primary p-3 card-check rounded-1" for="btn-check3">
+                      <div class="card">
+                        <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                        <div class="card-footer fs-4 fw-bold py-3">烤雞三明治</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!--轉換頁面按鈕-->
+                <div class="row mt-5">
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="w-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
+                    <a href="#" class="w-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold ">決定好了!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" id="takeOutMenu" data-bs-parent="#menuList">
+              <div class="card-body" >
+                <div class="row">
+                  <div class="col">
+                    <div class="card">
+                      <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                      <div class="card-footer  fs-4 fw-bold py-3">三明治</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                      <div class="card-footer  fs-4 fw-bold py-3">烤雞三明治</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                      <div class="card-footer  fs-4 fw-bold py-3">烤雞三明治</div>
+                    </div>
+                  </div>
+                </div>
+                 <!--轉換頁面按鈕-->
+                 <div class="row mt-5">
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="w-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
+                    <a href="#" class="w-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold ">決定好了!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" id="homeMadeMenu" data-bs-parent="#menuList">
+              <div class="card-body" >
+                <div class="row">
+                  <div class="col">
+                    <div class="card">
+                      <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                      <div class="card-footer  fs-4 fw-bold py-3">三明治</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                      <div class="card-footer  fs-4 fw-bold py-3">烤雞三明治</div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+                      <div class="card-footer  fs-4 fw-bold py-3">烤雞三明治</div>
+                    </div>
+                  </div>
+                </div>
+                 <!--轉換頁面按鈕-->
+                 <div class="row mt-5">
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="w-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
+                    <a href="#" class="w-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold ">決定好了!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+
+    </div>
+</div>
+
+
+
+<%- include('./layout/footer'); -%>
+
+<script type="module" src="../main.js"></script>
+</body>
+</html>
+
+
