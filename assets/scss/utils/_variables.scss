@@ -313,9 +313,14 @@ $primary-200:   #FFE784 !default;
 $primary-300:   #F8CA0E;//*custom
 $primary-400:   #EFC101 !default;
 $secondary-100: #05C819 !default;
+$secondary-200: #009F10;//*custom
 $light-yellow:  #FFF7D8 !default;
 $green:         #EEF7DE !default;
 $gray:          #696969 !default;
+$badge-bg-green:#C1F9C8 !default;
+$badge-bg-red:  #FFE4E4 !default;
+$badge-text-green:#009F10 !default;
+$badge-text-red:  #F63318 !default;
 
 
 // scss-docs-end theme-color-variables
@@ -335,8 +340,12 @@ $theme-colors: (
   "primary-300":   $primary-300,
   "primary-400":   $primary-400,
   "secondary-100": $secondary-100,
+  "secondary-200": $secondary-200,
   "light-yellow":  $light-yellow,
-  "green":         #EEF7DE,
+  "badge-bg-green":$badge-bg-green,
+  "badge-bg-red":  $badge-bg-red,
+  "badge-text-green": $badge-text-green,
+  "badge-text-red": $badge-text-red
 ) !default;
 // scss-docs-end theme-colors-map
 
