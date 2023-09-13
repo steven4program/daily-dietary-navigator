@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>Daily Nutrition Navigator</title>
 </head>
 
@@ -391,15 +392,17 @@
 
     <!-- Q&A -->
     <section>
-      <div class="background pt-9 pb-83" style="background-image:url('../assets/img/bg_QA_web.png')">
+      <div class="QA background pt-9 pb-83" style="background-image:url('../assets/img/bg_QA_web.png')">
         <div class="container">
           <div class="flex-lg-row">
             <div class="card col-12 col-lg-8 rounded-lg py-8 px-7">
-              <div class="fs-2 fw-bold mb-10 underline-yellow">Q&A.常見對健康飲食疑問</div>
-              <div class="card rounded-top-0 rounded-bottom rounded-sm px-4 py-4">
-                <h3 class="mb-0">Q：三大營養素有何重要性</h3>
+              <div class="fs-2 fw-bold mb-10">Q&A.常見對健康飲食疑問
+                <div class="w-120 border border-4 border-primary rounded mt-1"></div>
               </div>
-              <div class="card rounded-bottom-0 rounded-top rounded-sm px-4 py-4">
+              <div class="card rounded-top-0 rounded-bottom rounded-sm px-4 py-4">
+                <h3 class="mb-0 fw-bold">Q：三大營養素有何重要性</h3>
+              </div>
+              <div class="card rounded-bottom-0 rounded-top rounded-sm px-4 py-4"> 
                 <p class="mb-3">營養是我們身體正常運作所需的重要元素。三大營養素，包括蛋白質、碳水化合物和脂肪，
                   在日常飲食中扮演關鍵角色。這些營養素提供身體所需的能量和營養，對大眾的健康至關重要
                   。讓我們一同了解這些重要營養素的作用，實踐健康生活!
@@ -408,23 +411,27 @@
                   蛋白質: 蛋白質是身體建造和修復組織的基本單位,包括肌肉、骨骼、皮膚等。此外,蛋白質也是酵素、
                   激素等重要生物分子的組成部分。保持足夠的蛋白質攝取，有助於維持身體功能正常運作,並支持免疫系統的強健。
                 </p>
-                <a href="#" id="read-more" class="text-secondary text-decoration-none text-end">...觀看全文</a>
+                <div class="hidden">
+                  <p class="mb-3">
+                    碳水化合物: 碳水化合物是身體主要的能量來源,供應腦部、肌肉和器官所需的能量。選擇複雜碳水化合物
+                    (如全穀類、蔬菜、水果)有助於提供持久的能量,並穩定血糖水平。碳水化合物的適當攝取有助於提升日常活動力量和耐力。
+                  </p>
+                  <p class="mb-3">
+                    脂肪: 脂肪是能量密集的營養素,同時也是脂溶性維生素(如維生素A、D、E、K)的載體。脂肪還有助於保護內臟器官,
+                    調節體溫和提供細胞結構。選擇健康脂肪來自食用植物油、堅果、魚類等,有助於維護心血管和神經系統健康。
+                  </p>
+                </div>
+                <a id="read-more" class="btn text-secondary text-decoration-none text-end">...觀看全文</a>
               </div>
             </div>
 
             <div class="col-12 col-lg-8 d-flex justify-content-center">
-              <a class="btn btn-secondary w-30 rounded-pill vertical-center-50 text-white py-4 px-120 fs-6"
-                href="#">更多</a>
+              <a class="btn btn-secondary w-30 rounded-pill vertical-center-50 text-white py-4 px-120 fs-6" href="Q&A.html">更多</a>
             </div>
             <div class="col-lg-4"></div>
-
           </div>
-
-
         </div>
-
-        <div class="background send-bac" style="background-image:url('../assets/images/bg_web_5.png')">
-        </div>
+        <!-- <div class="background w-100 h-100 send-back" style="background-image:url('../assets/images/bg_web_5.png')"></div> -->
       </div>
     </section>
     <!-- Q&A end -->
@@ -432,6 +439,16 @@
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
+      <script>
+        //Q&A 觀看全文
+        $(document).ready(function () {
+          $("#read-more").click(function (e) {
+              e.preventDefault(); 
+              $(".hidden").slideDown(); //顯示
+              $(this).hide(); 
+          });
+        });
+      </script>
 </body>
 
 </html>
