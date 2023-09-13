@@ -178,12 +178,15 @@
             <div class="card h-100">
               <div class="position-relative">
                 <span class="badge-meal translate-middle-x">早餐</span>
-                <img src="../assets/img/breakfast.jpg" class="card-img-top w-100" alt="早餐">
+                <img id="showFirst" src="../assets/img/breakfast.jpg" class="option-first card-img-top w-100" alt="早餐">
+                <img id="showOne" src="../assets/img/breakfast.jpg" class="option-list card-img-top w-100" alt="早餐">
+                <img id="showTwo" src="../assets/img/lunch.jpg" class="option-list card-img-top w-100" alt="早餐">
               </div>
               
-              <select class="form-select fs-5 fw-bold border-0 card-footer py-3 bg-white ">
-                <option value="" class="menu-list ">烤雞三明治+無糖豆漿</option>  
-                <option value="" class="menu-list ">燻雞蛋餅+無糖豆漿<option>              
+              <select class="form-select fs-5 fw-bold border-0 card-footer py-3 bg-white" id="myselection">
+                <option selected value="First" class="menu-list text-gray">早餐選單</option>
+                <option value="One" class="menu-list ">烤雞三明治+無糖豆漿</option>  
+                <option value="Two" class="menu-list ">燻雞蛋餅+無糖豆漿<option>              
               </select>
             </div>
          
@@ -265,7 +268,7 @@
       
     </div>
 
-    <div class="background send-bac" style="background-image:url('../assets/images/bg_web_5.png')"></div>
+    <div class="background send-back w-100 h-100" style="background-image:url('../assets/images/bg_web_5.png')"></div>
   </div>
 </section>
 <!-- Q&A end -->
@@ -273,6 +276,7 @@
   <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </body>
 
 </html>
