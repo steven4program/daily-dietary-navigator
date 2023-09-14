@@ -315,7 +315,7 @@ $primary-400:   #EFC101 !default;
 $secondary-100: #05C819 !default;
 $secondary-200: #009F10;//*custom
 $light-yellow:  #FFF7D8 !default;
-$green:         #EEF7DE !default;
+$light-green:   #EEF7DE !default;
 $gray:          #696969 !default;
 $badge-bg-green:#C1F9C8 !default;
 $badge-bg-red:  #FFE4E4 !default;
@@ -341,6 +341,7 @@ $theme-colors: (
   "primary-400":   $primary-400,
   "secondary-100": $secondary-100,
   "secondary-200": $secondary-200,
+  "light-green":   $light-green,
   "light-yellow":  $light-yellow,
   "badge-bg-green":$badge-bg-green,
   "badge-bg-red":  $badge-bg-red,
