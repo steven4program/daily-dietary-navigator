@@ -71,5 +71,13 @@
 
 .swiper {
     width: 100%;
-    height: 100vh;
+    height: auto;
   }
+.bg-test{
+    height: 100px;
+    background-image: url(../../img/bg_web_1.png);
+    background-repeat: no-repeat;
+}
+.line-width-80{
+    width: 80px;
+}

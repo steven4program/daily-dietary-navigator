@@ -16,6 +16,7 @@
 
 <body>
   <%- include('./layout/header'); -%>
+
     <!--六大類食物 開始  -->
     <div class="container">
       <div class="col-md-7 mx-auto d-flex align-items-center text-center mb-4 mb-md-6">
@@ -24,7 +25,8 @@
       </div>
       <div class="row align-items-center">
         <div class="6-dietary-intro col-md-6">
-          <h4 class="text-start mb-4"><span class=" border-bottom border-4 border-primary">豆魚蛋肉類</span></h4>
+          <h4 class="text-start"><span class="">豆魚蛋肉類</span></h4>
+          <div class="line-width-80 border border-4 border-primary rounded mt-1 mb-4"></div>
           <p class="fs-6 mb-3 lh-base">為富含蛋白質的食物，主要提供飲食中蛋白質的來源。包含:黃豆與豆製品、魚類與海鮮、蛋類、禽類、畜肉等。</p>
           <p class="fs-6 mb-3 lh-base">為避免同時吃入不利健康的脂肪，尤其是飽和脂肪，選擇這類食物時,其優先順序為豆類、魚類與海鮮、蛋類、禽肉、畜肉。</p>
           <p class="fs-5 mb-4 lh-base">此外，應避免油炸和過度加工的食品，才不會攝取過多的油脂和鈉。</p>
@@ -108,196 +110,241 @@
             </div>
           </div> -->
 
-
-
-          <!-- <a class="col-6 col-md-4 mb-4 text-center">
-            <img src="../assets/img/img_vegetable.png" alt="">
-            <h5 class="mt-3 color-text">蔬菜類</h5>
-          </a>
-          <a class="col-6 col-md-4 mb-4 text-center">
-            <img src="../assets/img/img_rice.png" alt="">
-            <h5 class="mt-3 color-text">全榖雜糧類</h5>
-          </a>
-          <a class="col-6 col-md-4 mb-4 text-center">
-            <img src="../assets/img/img_fruit.png" alt="">
-            <h5 class="mt-3 color-text">水果類</h5>
-          </a>
-          <a class="col-6 col-md-4 text-center">
-            <img src="../assets/img/img_nuts.png" alt="">
-            <h5 class="mt-3 color-text">堅果種子類</h5>
-          </a>
-          <a class="col-6 col-md-4 text-center">
-            <img src="../assets/img/img_milk.png" alt="">
-            <h5 class="mt-3 color-text">乳品類</h5>
-          </a> -->
         </div>
       </div>
     </div>
-    <!-- <div class="bg" style="background-image: url(../assets/img/bg_web_1.png);"></div>
-    <div class="bg d-none" style="background-image: url(../assets/img/bg_mobile_1.png);"></div> -->
-    <div class="bg-primary-300 bg-wave-6cata">
 
+    <div class="bg-test" style="background-image: url(../assets/img/bg_web_1.png);">
+
+    </div>
+
+    <div class="bg-primary-300 bg-wave-6cata position-relative pb-8 pt-3 ">
       <div class="container bg-light-yellow py-7 px-8 rounded-3">
         <div class="d-md-none text-center"><img src="../assets/img/img_title_2.png" alt="thinking-girl-face"></div>
         <h4 class="text-center">看看哪個更健康?</h4>
+        <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-10 mx-auto"></div>
         <div class="row align-items-center justify-content-between g-0">
-          
           <!--   Slides   -->
-
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="row accordion" id="accordionExample">
-                    <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
-                      <div class="card rounded-3 border-0 bg-transparent">
-                        <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
-                        <div
-                          class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">滷雞腿</a>
-                        </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
+                <div class="row accordion" id="accordionExample">
+                  <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                    
+                      <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">滷雞腿</a>
                       </div>
+                  </div>
 
-                      <div class="col-md-2 mx-auto text-center">
-                        <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
-                            alt="thinking-girl-face"></div>
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
-                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                          aria-controls="collapseOne">
-                          <h5>看答案</h5>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
+                  <div class="col-md-2 mx-auto text-center">
+                    <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                        alt="thinking-girl-face"></div>
+                    <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      <h5>看答案</h5>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </a>
 
-                        <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
-                          href="6-catagories.html">點我看更多</button>
+                    <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button>
+                  </div>
+                  <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                    
+                    <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                    <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                      <a class="stretched-link" href="">滷雞腿</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="swiper-slide">
+                <div class="row accordion" id="accordionExample">
+                  <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img class="img-fluid card-img-top bg-white rounded-top-3" src="../assets/img/Switch.png" alt=""
+                        class="">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">滷雞腿</a>
                       </div>
-                      <div class="card rounded-3 border-0">
-                        <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
-                        <div
-                          class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">炸雞腿</a>
-                        </div>
+                    </div>
+
+                    <div class="col-md-2 mx-auto text-center">
+                      <div class="d-none d-md-block text-center"><img class="img-fluid"
+                          src="../assets/img/img_title_2.png" alt="thinking-girl-face"></div>
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h5>看答案</h5>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
+
+                      <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button>
+                    </div>
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img src="../assets/img/Switch-1.png" alt="" class="img_fluid card-img-top bg-white">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">炸雞腿</a>
                       </div>
                     </div>
                   </div>
                 </div>
-
-
-
-                <div class="swiper-slide">
-                  <div class="row accordion" id="accordionExample">
-                    <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
-                      <div class="card rounded-3 border-0 bg-transparent">
-                        <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
-                        <div
-                          class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">滷雞腿</a>
-                        </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row accordion" id="accordionExample">
+                  <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img class="img-fluid card-img-top bg-white rounded-top-3" src="../assets/img/Switch.png" alt=""
+                        class="">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">滷雞腿</a>
                       </div>
+                    </div>
 
-                      <div class="col-md-2 mx-auto text-center">
-                        <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
-                            alt="thinking-girl-face"></div>
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
-                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                          aria-controls="collapseOne">
-                          <h5>看答案</h5>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
+                    <div class="col-md-2 mx-auto text-center">
+                      <div class="d-none d-md-block text-center"><img class="img-fluid"
+                          src="../assets/img/img_title_2.png" alt="thinking-girl-face"></div>
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h5>看答案</h5>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
 
-                        <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
-                          href="6-catagories.html">點我看更多</button>
+                      <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button>
+                    </div>
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img src="../assets/img/Switch-1.png" alt="" class="img_fluid card-img-top bg-white">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">炸雞腿</a>
                       </div>
-                      <div class="card rounded-3 border-0">
-                        <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
-                        <div
-                          class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">炸雞腿</a>
-                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row accordion" id="accordionExample">
+                  <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img class="img-fluid card-img-top bg-white rounded-top-3" src="../assets/img/Switch.png" alt=""
+                        class="">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">滷雞腿</a>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 mx-auto text-center">
+                      <div class="d-none d-md-block text-center"><img class="img-fluid"
+                          src="../assets/img/img_title_2.png" alt="thinking-girl-face"></div>
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h5>看答案</h5>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
+
+                      <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button>
+                    </div>
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img src="../assets/img/Switch-1.png" alt="" class="img_fluid card-img-top bg-white">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">炸雞腿</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body mt-3">
-              <div class="d-md-flex justify-content-between">
-                <div class="">
-                  <div class=" signal mb-4">
-                    <h5 class="mb-2">燈號</h5>
-                    <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png" alt="">
-                    <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png" alt="">
-                  </div>
-                  <div class=" feature ">
-                    <h5 class="mb-2">特點</h5>
-                    <span
-                      class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3">原型食物</span><span
-                      class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3">優質蛋白質</span>
-                  </div>
+
+        </div>
+        <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body mt-3">
+            <div class="d-md-flex justify-content-between">
+              <div class="">
+                <div class=" signal mb-4">
+                  <h5 class="mb-2">燈號</h5>
+                  <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png" alt="">
+                  <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png" alt="">
                 </div>
-                <div>
-                  <div class="text-end signal mb-4">
-                    <h5 class="mb-2">燈號</h5>
-                    <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png" alt="">
-                    <img class="d-block d-md-none" src="../assets/img/img_traffic_red_mobile.png" alt="">
-                  </div>
-                  <div class="text-end feature ">
-                    <h5 class="mb-2">特點</h5>
-                    <span
-                      class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3">油炸</span><span
-                      class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3">高油</span>
-                  </div>
+                <div class=" feature ">
+                  <h5 class="mb-2">特點</h5>
+                  <span
+                    class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3">原型食物</span><span
+                    class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3">優質蛋白質</span>
                 </div>
               </div>
-              <table class="table mt-10">
-                <thead class="border-light-yellow">
-                  <tr>
-                    <th class="h5" scope="col">營養標示</th>
-                    <th scope="col"></th>
-                    <th class="h5 text-end" scope="col">營養標示</th>
-                  </tr>
-                </thead>
-                <tbody class="nutrition-label">
-                  <tr>
-
-                    <td>186kcal</td>
-                    <th scope="row">熱量(Kcal)</th>
-                    <td>288kcal</td>
-
-                  </tr>
-                  <tr>
-                    <td>0g</td>
-                    <th scope="row">碳水化合物</th>
-                    <td>12.1g</td>
-                  </tr>
-                  <tr>
-                    <td>11.8g</td>
-                    <th scope="row">脂肪</th>
-                    <td>18.7g</td>
-                  </tr>
-                  <tr>
-                    <td>2.9 g</td>
-                    <th scope="row">飽和脂肪</th>
-                    <td>4.3 g</td>
-                  </tr>
-                  <tr>
-                    <td>22.7g</td>
-                    <th scope="row">蛋白質</th>
-                    <td>17.7 g</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div>
+                <div class="text-end signal mb-4">
+                  <h5 class="mb-2">燈號</h5>
+                  <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png" alt="">
+                  <img class="d-block d-md-none" src="../assets/img/img_traffic_red_mobile.png" alt="">
+                </div>
+                <div class="text-end feature ">
+                  <h5 class="mb-2">特點</h5>
+                  <span
+                    class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3">油炸</span><span
+                    class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3">高油</span>
+                </div>
+              </div>
             </div>
+            <table class="table mt-10">
+              <thead class="border-light-yellow">
+                <tr>
+                  <th class="h5" scope="col">營養標示</th>
+                  <th scope="col"></th>
+                  <th class="h5 text-end" scope="col">營養標示</th>
+                </tr>
+              </thead>
+              <tbody class="nutrition-label">
+                <tr>
+
+                  <td>186kcal</td>
+                  <th scope="row">熱量(Kcal)</th>
+                  <td>288kcal</td>
+
+                </tr>
+                <tr>
+                  <td>0g</td>
+                  <th scope="row">碳水化合物</th>
+                  <td>12.1g</td>
+                </tr>
+                <tr>
+                  <td>11.8g</td>
+                  <th scope="row">脂肪</th>
+                  <td>18.7g</td>
+                </tr>
+                <tr>
+                  <td>2.9 g</td>
+                  <th scope="row">飽和脂肪</th>
+                  <td>4.3 g</td>
+                </tr>
+                <tr>
+                  <td>22.7g</td>
+                  <th scope="row">蛋白質</th>
+                  <td>17.7 g</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
+    </div>
     </div>
     </div>
     </div>
@@ -307,7 +354,7 @@
 
 
     <!-- Button trigger modal -->
-    <a type="button" class="d-block btn btn-primary mt-1 ms-3" data-bs-toggle="modal" data-bs-target="#openMe">
+    <a type="button" class="d-block btn btn-primary mt-1 ms-3 d-none" data-bs-toggle="modal" data-bs-target="#openMe">
       看答案
     </a>
 
@@ -380,7 +427,7 @@
     <!--餐點搭配 開始-->
 
 
-    <div class="bg-wave bg-light-yellow mt-5 position-relative">
+    <div class="bg-wave bg-light-yellow position-relative">
 
       <div class="container">
         <div class="border rounded-1 bg-white d-flex flex-column justify-content-around py-40 py-lg-6 px-4 px-lg-7">
@@ -424,7 +471,8 @@
               <div class="card h-100">
                 <div class="position-relative">
                   <span class="badge-meal translate-middle-x">早餐</span>
-                  <img id="showFirst" src="../assets/img/breakfast.jpg" class="option-first card-img-top w-100" alt="早餐">
+                  <img id="showFirst" src="../assets/img/breakfast.jpg" class="option-first card-img-top w-100"
+                    alt="早餐">
                   <img id="showOne" src="../assets/img/breakfast.jpg" class="option-list card-img-top w-100" alt="早餐">
                   <img id="showTwo" src="../assets/img/lunch.jpg" class="option-list card-img-top w-100" alt="早餐">
                 </div>
@@ -494,7 +542,7 @@
               <div class="card rounded-top-0 rounded-bottom rounded-sm px-4 py-4">
                 <h3 class="mb-0 fw-bold">Q：三大營養素有何重要性</h3>
               </div>
-              <div class="card rounded-bottom-0 rounded-top rounded-sm px-4 py-4"> 
+              <div class="card rounded-bottom-0 rounded-top rounded-sm px-4 py-4">
                 <p class="mb-3">營養是我們身體正常運作所需的重要元素。三大營養素，包括蛋白質、碳水化合物和脂肪，
                   在日常飲食中扮演關鍵角色。這些營養素提供身體所需的能量和營養，對大眾的健康至關重要
                   。讓我們一同了解這些重要營養素的作用，實踐健康生活!
@@ -518,7 +566,8 @@
             </div>
 
             <div class="col-12 col-lg-8 d-flex justify-content-center">
-              <a class="btn btn-secondary w-30 rounded-pill vertical-center-50 text-white py-4 px-120 fs-6" href="Q&A.html">更多</a>
+              <a class="btn btn-secondary w-30 rounded-pill vertical-center-50 text-white py-4 px-120 fs-6"
+                href="Q&A.html">更多</a>
             </div>
             <div class="col-lg-4"></div>
           </div>
@@ -529,37 +578,70 @@
     <!-- Q&A end -->
 
     <%- include('./layout/footer'); -%>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script type="module" src="../main.js"></script>
       <script>
         //Q&A 觀看全文
         $(document).ready(function () {
           $("#read-more").click(function (e) {
-              e.preventDefault(); 
-              $(".hidden").slideDown(); //顯示
-              $(this).hide(); 
+            e.preventDefault();
+            $(".hidden").slideDown(); //顯示
+            $(this).hide();
           });
         });
       </script>
       <script>
-const swiper = new Swiper('.swiper', {
-   autoplay: {
-     delay: 5000,
-   },
-    breakpoints: {
-      768: {
-        autoplay: {
-          enabled: true,
-        }
-      }
-    },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
       </script>
+      <script>
+// const swiper = new Swiper('.swiper', {
+//    autoplay: {
+//      delay: 5000,
+//    },
+//     breakpoints: {
+//       768: {
+//         autoplay: {
+//           enabled: false,
+//         }
+//       }
+//     },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+      </script>
+      <!-- <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });</script> -->
+
 </body>
 
 </html>

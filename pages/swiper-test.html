@@ -1,102 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* background: #fff; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .accordion {
+            z-index: -1;
+        }
+    </style>
 </head>
-<style>
-    .swiper {
-  width: 100%;
-  height: 100vh;
-}
-</style>
+
 <body>
-    <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
+
+    <div class="bg-wave-6cata"></div>
+
+
+    <div class="col-md-2 mx-auto text-center child">
+        <div class=" d-none d-md-block text-center"><img class="img-fluid" src="../assets/img/img_title_2.png"
+                alt="thinking-girl-face">
+        </div>
+        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            <h5>看答案</h5>
+            <span class="material-symbols-outlined">
+                expand_more
+            </span>
+        </a>
+
+        <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5" href="6-catagories.html">點我看更多</button>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide ">
+                <div class="container position-relative">
+                    <div class="row accordion justify-content-between" id="accordionExample">
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide ">
+                <div class="container position-relative">
+                    <div class="row accordion justify-content-between" id="accordionExample">
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide ">
+                <div class="container position-relative">
+                    <div class="row accordion justify-content-between" id="accordionExample">
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide ">
+                <div class="container position-relative">
+                    <div class="row accordion justify-content-between" id="accordionExample">
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 accordion-item bg-transparent border-0 card rounded-3">
+                            <img class="card-img-top img-fluid bg-white rounded-top-3" src="../assets/img/Switch.png"
+                                alt="">
+                            <div
+                                class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                <a class="stretched-link" href="">滷雞腿</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+<!-- test 2 -->
+<div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
       <div class="swiper-slide">
         <div class="row accordion" id="accordionExample">
-            <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
-              <div class="card rounded-3 border-0 bg-transparent">
-                <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
-                <div
-                  class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                  <a class="stretched-link" href="">滷雞腿</a>
-                </div>
+          <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
+            <div class="card rounded-3 border-0 bg-transparent">
+              <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+              <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                <a class="stretched-link" href="">滷雞腿</a>
               </div>
+            </div>
 
-              <div class="col-md-2 mx-auto text-center">
-                <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
-                    alt="thinking-girl-face"></div>
-                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  <h5>看答案</h5>
-                  <span class="material-symbols-outlined">
-                    expand_more
-                  </span>
-                </a>
+            <div class="col-md-2 mx-auto text-center">
+              <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                  alt="thinking-girl-face"></div>
+              <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <h5>看答案</h5>
+                <span class="material-symbols-outlined">
+                  expand_more
+                </span>
+              </a>
 
-                <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
-                  href="6-catagories.html">點我看更多</button>
-              </div>
-              <div class="card rounded-3 border-0">
-                <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
-                <div
-                  class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                  <a class="stretched-link" href="">炸雞腿</a>
-                </div>
+              <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                href="6-catagories.html">點我看更多</button>
+            </div>
+            <div class="card rounded-3 border-0">
+              <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+              <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                <a class="stretched-link" href="">炸雞腿</a>
               </div>
             </div>
           </div>
-
+        </div>
       </div>
-      ...
+      <div class="swiper-slide">
+        <div class="row accordion" id="accordionExample">
+          <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
+            <div class="card rounded-3 border-0 bg-transparent">
+              <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+              <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                <a class="stretched-link" href="">滷雞腿</a>
+              </div>
+            </div>
+
+            <div class="col-md-2 mx-auto text-center">
+              <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                  alt="thinking-girl-face"></div>
+              <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <h5>看答案</h5>
+                <span class="material-symbols-outlined">
+                  expand_more
+                </span>
+              </a>
+
+              <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                href="6-catagories.html">點我看更多</button>
+            </div>
+            <div class="card rounded-3 border-0">
+              <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+              <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                <a class="stretched-link" href="">炸雞腿</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="row accordion" id="accordionExample">
+          <div class="col-md-10 d-md-flex mx-auto accordion-item bg-transparent border-0">
+            <div class="card rounded-3 border-0 bg-transparent">
+              <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+              <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                <a class="stretched-link" href="">滷雞腿</a>
+              </div>
+            </div>
+
+            <div class="col-md-2 mx-auto text-center">
+              <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                  alt="thinking-girl-face"></div>
+              <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <h5>看答案</h5>
+                <span class="material-symbols-outlined">
+                  expand_more
+                </span>
+              </a>
+
+              <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                href="6-catagories.html">點我看更多</button>
+            </div>
+            <div class="card rounded-3 border-0">
+              <img src="../assets/img/Switch-1.png" alt="" class="card-img-top">
+              <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                <a class="stretched-link" href="">炸雞腿</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+    <div class="swiper-button-prev"></div>
   </div>
-    
+
 </body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script type="module" src="../main.js"></script>
-<script>const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
 </html>
