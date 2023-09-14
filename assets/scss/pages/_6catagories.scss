@@ -1,3 +1,7 @@
+// *,*::before,*::after{
+//     outline:1px solid red;
+// }
+
 //google icon
 .material-symbols-outlined {
   font-variation-settings:
@@ -49,3 +53,23 @@
     border-top-right-radius:60px !important;
     border-top-left-radius:60px !important;
 }
+.hover-opacity{
+    opacity:0;
+    transition:0.25s;
+    &:hover{
+    opacity:1;
+
+}
+}
+.cata-text-hover{
+    color: #696969;
+    transition:0.25s;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+  }
