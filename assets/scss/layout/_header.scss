@@ -1,11 +1,11 @@
 .bg-index{ 
-    background:url(/daily-dietary-navigator/assets/img/img_banner_mobile.png);
+    background:url(../../assets/img/img_banner_mobile.png);
     background-size:cover;
     background-position:center center;
     background-repeat: no-repeat;
     height: 100%;
     @media (min-width:992px) {
-        background:url(/daily-dietary-navigator/assets/img/img_banner_web.png);
+        background:url(../../assets/img/img_banner_web.png);
     }
     h1{
         margin-bottom: 269px;
