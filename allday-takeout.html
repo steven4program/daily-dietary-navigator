@@ -9,8 +9,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
  
   <title>全日外食-熱量計算結果</title>
-  <script type="module" crossorigin src="/daily-dietary-navigator/assets/main-617f5d51.js"></script>
-  <link rel="stylesheet" href="/daily-dietary-navigator/assets/main-db090d7f.css">
+  <script type="module" crossorigin src="/daily-dietary-navigator/assets/main-2f9e7971.js"></script>
+  <link rel="stylesheet" href="/daily-dietary-navigator/assets/main-84df39a4.css">
 </head>
   <body>
     <!DOCTYPE html>
@@ -35,9 +35,9 @@
 
     <div class="container mx-auto ">
          <!--mobile nav position-absolute-->
-        <nav class="navbar d-lg-none d-flex flex-nowrap">
-            <a href="index.html" class="navbar-brand">
-                <img src="/daily-dietary-navigator/assets/Horizontal_container-1-16a00598.png" alt="" class="img-fluid">
+        <nav class="navbar d-lg-none d-flex flex-nowrap"  data-aos="fade-up">
+            <a href="index.html" class="navbar-brand" data-aos="fade-up">
+                <img src="/daily-dietary-navigator/assets/Horizontal_container-1-16a00598.png" alt="" class="img-fluid" >
             </a>
             <button class="d-lg-none  bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7daxDcAgDETRC8oAjAjKXBGMyAaJRBlMlcIg/Ve6uuZOlgAA+OMwryU+8pDbkCdoccsHPCf3LADdbAeLPOQ2lHPW4iQfQ8Btd7AKQGfv4B2TPFytfk92i4N8htpYDx5WAAB8vVGvDCG5B51GAAAAAElFTkSuQmCC" alt="">
@@ -52,7 +52,7 @@
                 <img src="/daily-dietary-navigator/assets/Horizontal_container-d480b9ed.png" alt="Horizontal_container" class="">
             </a>
             <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav  list-unstyled d-flex flex-row ">
+                <ul class="navbar-nav  list-unstyled d-flex flex-row " data-aos="fade-up">
                 <li class="nav-item">
                     <a class="nav-link hover-color-secondary" aria-current="page" href="index.html">首頁</a>
                 </li>
@@ -75,7 +75,7 @@
 
     </div>
     <div class="container mx-auto ">
-            <h1 class="display-2 text-white fw-bold text-center">
+            <h1 class="display-2 text-white fw-bold text-center" data-aos="fade-up">
             每日營養導航
             <br>
             您的健康飲食夥伴
@@ -88,7 +88,7 @@
          <div class=" d-none align-items-center  position-absolute hamburger-list " id="navbarToggle">
 
             <div class="container">
-                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center " data-aos="fade-up">
                 <li class="w-100 text-center p-4 border-bottom ">
                     <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="index.html">首頁</a>
                 </li>
@@ -148,6 +148,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
 </body>
 
 </html>
@@ -163,17 +168,17 @@
         <h1 class="fw-bold text-center mb-5">您的一日菜單...</h1>
         <div class="row d-flex justify-content-center">
             <div class="col-10 d-flex justify-content-center mb-3">
-                <div class="card card-kcal p-3 border-primary border-3 rounded-4 mb-3" >
+                <div class="card card-kcal bg-light-yellow p-3 border-0 border-4 rounded-3 mb-3" data-aos="flip-down">
                     <div class="row g-0">
                       <div class="col-md-5">
-                        <img src="/daily-dietary-navigator/assets/convenienceStore-1-5ca88875.png" alt="..." class="card-img rounded-4 ">
+                        <img src="/daily-dietary-navigator/assets/convenienceStore-1-5ca88875.png" alt="..." class="card-img rounded-3 ">
                         
                       </div>
                       <div class="col-md-7 d-flex  align-items-center">
-                        <div class="card-body  d-flex flex-column justify-content-center  align-items-center">
-                         <h2 class="card-title fw-bold">711紐奧良鮮蔬烤雞三明治+無糖5.1豆漿</h2>
-                         <p class="fs-2 fw-bolder mb-3">431 kcal</p> 
-                         <p class="card-text">P31/F21/C29</p>
+                        <div class="card-body  bg-white rounded-2 ms-3 d-flex flex-column justify-content-center  align-items-center">
+                         <h2 class="h3 card-title fw-bold">紐奧良鮮蔬烤雞三明治+無糖5.1豆漿</h2>
+                         <p class="display-4 fw-bold  mb-3">431 kcal</p> 
+                         <p class="card-text fw-bold fs-4 text-gray">P31/F21/C29</p>
                         </div>
                       </div>
                     </div>
@@ -183,17 +188,17 @@
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOhSURBVHgB7ZrdcdNAEMd3JY+xHxJMB04FSRgIkydMB1BB3EGSCnAqADowFYQOCE8eAkOcClA68CQPFkp0y66whyT4PizJQgL9ZvSQ3NnW/3b3bu/2AGpqampqygvCCqGzTie8jl/6iJtKURcQt/jfndkzJ+CegYc4jonOIb4+ae+GAayI3AWLyOhG7RNRj7++BynglxoroHerEJ+b4N9C4QDuWjATCDRU8fVRXsJzEfzjy/rrvIXeBxEGD55eHkFGMgmejjpdz1fHBLAFxRBQHL3IYm0PUhJ9XdtDX50VKFbgAW6eyW9DSlIJFhdWCoewQhfWwQPckd+Wd4AULO3Ss3gdQAlIE9dLCRZXmlm2NHge9ZtPrt679ncWLBOUxCz8BTc2wQImKo62XScy5xhmsR8hg1gOgyOeYTcWPtwGKZGY5ons2LW/k4XziNsHjaiLj8OLRW0z7/kOGZBBaz+7HNj6WS0sL1OWScqEh7Av2Z61n7WDr1JN/0Ujrh1G6sDWzyg4sS5AHyqCi5XNFvbjHlQIFysbBSPiPlQMRHpuatcKFnfmISsyT84J7JncWm/hirnzbeSURdemFUyAFbTuL9Dw7g1dgwe06ZKXJFmSioa2frizOOkQ2ruTYDpqbYANr9nnDYN1mVQKuro2raLw9CFnPqT94BxTBpU3S2RkQWvncuEAGmZpu9iygoacP/WJR5mh/02wCZPgCfyDGARjlQUHugbtsoSoxkTYBQtR3OxPR2A9YrGdSPCy1AULXkPt8TLoAAW6Fq3gmPDCJcBlr4x+c2Dt9w0yHwC4iRXwXNei1YQxjaGiEOjfXSs4bPkfoKpwEU7XpBX8aHvCkxadQPUYm+YLY5jypPUJKgZJmdWAUXDY9N5C1dZjgzsLRsHi1jwzGkesTEgt2bb8WVeeKllZCue2PlbBVbFychDvUG5xri2Fp+tSV0p9CiKVPnUTLczIvEZzL+Nhv3b/+8d7gCNlLaYxE1pFMU2OYSimQygZvAwdLnMFYqn9cHv3apil0pc3SdzuXA2X+UyqSy3Tz+sDl8O0VeJaLbxP6ls809FaH318A8XH9CRx4yUtOyfztaVZobwLBZDc0IujV1muLeVyMa0AF09ygTQufJ/crh4mtShPifDUd6gWkAhtcbaHye4tO7lfLk2EQ9zj+JbKY8pEhU5kp5an0DkrvT58SzwLT0o3/PedeJ8kD/EJBeIFr/PjFh885C2ypqampqYq/AQeoapI0mv8wQAAAABJRU5ErkJggg==" alt="" class=" plus-circle">
           </div>
             <div class="col-10 d-flex justify-content-center mb-3">
-              <div class="card card-kcal p-3 border-primary border-3 rounded-4 mb-3" >
+              <div class="card card-kcal bg-light-yellow  p-3 border-0 border-4 rounded-3 mb-3" data-aos="flip-down">
                   <div class="row g-0">
                     <div class="col-md-5">
-                      <img src="/daily-dietary-navigator/assets/convenienceStore-5-f0c14b7e.jpg" alt="..." class="card-img img-fluid rounded-4 ">
+                      <img src="/daily-dietary-navigator/assets/convenienceStore-5-f0c14b7e.jpg" alt="..." class="card-img img-fluid rounded-3 ">
                       
                     </div>
                     <div class="col-md-7 d-flex  align-items-center">
-                      <div class="card-body  d-flex flex-column justify-content-center  align-items-center">
-                       <h2 class="card-title fw-bold">全家烤蛋白餐盒</h2>
-                       <p class="fs-2 fw-bolder mb-3">513 kcal</p> 
-                       <p class="card-text">P34/F10/C73</p>
+                      <div class="card-body  bg-white rounded-2 ms-3 d-flex flex-column justify-content-center  align-items-center">
+                       <h2 class="h3 card-title fw-bold">全家烤蛋白餐盒</h2>
+                       <p class="display-4 fw-bold  mb-3">513 kcal</p> 
+                       <p class="card-text fw-bold fs-4 text-gray">P34/F10/C73</p>
                       </div>
                     </div>
                   </div>
@@ -203,17 +208,17 @@
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOhSURBVHgB7ZrdcdNAEMd3JY+xHxJMB04FSRgIkydMB1BB3EGSCnAqADowFYQOCE8eAkOcClA68CQPFkp0y66whyT4PizJQgL9ZvSQ3NnW/3b3bu/2AGpqampqygvCCqGzTie8jl/6iJtKURcQt/jfndkzJ+CegYc4jonOIb4+ae+GAayI3AWLyOhG7RNRj7++BynglxoroHerEJ+b4N9C4QDuWjATCDRU8fVRXsJzEfzjy/rrvIXeBxEGD55eHkFGMgmejjpdz1fHBLAFxRBQHL3IYm0PUhJ9XdtDX50VKFbgAW6eyW9DSlIJFhdWCoewQhfWwQPckd+Wd4AULO3Ss3gdQAlIE9dLCRZXmlm2NHge9ZtPrt679ncWLBOUxCz8BTc2wQImKo62XScy5xhmsR8hg1gOgyOeYTcWPtwGKZGY5ons2LW/k4XziNsHjaiLj8OLRW0z7/kOGZBBaz+7HNj6WS0sL1OWScqEh7Av2Z61n7WDr1JN/0Ujrh1G6sDWzyg4sS5AHyqCi5XNFvbjHlQIFysbBSPiPlQMRHpuatcKFnfmISsyT84J7JncWm/hirnzbeSURdemFUyAFbTuL9Dw7g1dgwe06ZKXJFmSioa2frizOOkQ2ruTYDpqbYANr9nnDYN1mVQKuro2raLw9CFnPqT94BxTBpU3S2RkQWvncuEAGmZpu9iygoacP/WJR5mh/02wCZPgCfyDGARjlQUHugbtsoSoxkTYBQtR3OxPR2A9YrGdSPCy1AULXkPt8TLoAAW6Fq3gmPDCJcBlr4x+c2Dt9w0yHwC4iRXwXNei1YQxjaGiEOjfXSs4bPkfoKpwEU7XpBX8aHvCkxadQPUYm+YLY5jypPUJKgZJmdWAUXDY9N5C1dZjgzsLRsHi1jwzGkesTEgt2bb8WVeeKllZCue2PlbBVbFychDvUG5xri2Fp+tSV0p9CiKVPnUTLczIvEZzL+Nhv3b/+8d7gCNlLaYxE1pFMU2OYSimQygZvAwdLnMFYqn9cHv3apil0pc3SdzuXA2X+UyqSy3Tz+sDl8O0VeJaLbxP6ls809FaH318A8XH9CRx4yUtOyfztaVZobwLBZDc0IujV1muLeVyMa0AF09ygTQufJ/crh4mtShPifDUd6gWkAhtcbaHye4tO7lfLk2EQ9zj+JbKY8pEhU5kp5an0DkrvT58SzwLT0o3/PedeJ8kD/EJBeIFr/PjFh885C2ypqampqYq/AQeoapI0mv8wQAAAABJRU5ErkJggg==" alt="" class=" plus-circle">
           </div>
           <div class="col-10 d-flex justify-content-center  mb-3">
-            <div class="card card-kcal p-3 border-primary border-3 rounded-4 mb-3 " >
+            <div class="card card-kcal bg-light-yellow  p-3 border-0 border-4 rounded-3 mb-3 " data-aos="flip-down">
                 <div class="row g-0">
                   <div class="col-md-5">
-                    <img src="/daily-dietary-navigator/assets/takeOutMenu-8-dffc590a.png" alt="..." class="card-img rounded-4  ">
+                    <img src="/daily-dietary-navigator/assets/takeOutMenu-8-dffc590a.png" alt="..." class="card-img rounded-3  ">
                     
                   </div>
-                  <div class="col-md-7 d-flex  align-items-center">
-                    <div class="card-body  d-flex flex-column justify-content-center  align-items-center">
-                     <h2 class="card-title fw-bold">韓式辣味鍋貼*6+無糖豆漿+燙青菜</h2>
-                     <p class="fs-2 fw-bolder mb-3">598 kcal</p> 
-                     <p class="card-text">P29/F25/C52</p>
+                  <div class="col-md-7 d-flex  align-items-center ">
+                    <div class="card-body bg-white rounded-2 ms-3 d-flex flex-column justify-content-center  align-items-center">
+                     <h2 class="h3 card-title fw-bold">韓式辣味鍋貼*6+無糖豆漿+燙青菜</h2>
+                     <p class="display-4 fw-bold  mb-3">598 kcal</p> 
+                     <p class="card-text fw-bold fs-4 text-gray">P29/F25/C52</p>
                     </div>
                   </div>
                 </div>
@@ -222,22 +227,22 @@
         <!--測試-->
        
           <div class="col-10 d-flex flex-column align-items-center justify-content-center mb-3">
-            <p class="fs-1 fw-bold" >=
-              <span class="fs-1 fw-bolder">1542 kcal</span>
+            <p class="fs-1 fw-bold" data-aos="flip-down">=
+              <span class="display-4 fw-bold" data-aos="flip-down">1542 kcal</span>
             </p>
-            <p class="fs-2 fw-bold" id="totalPFC">P 94/F 56/C 154</p>
+            <p class="fs-4 text-gray fw-bold " id="totalPFC" data-aos="flip-down">P 94/F 56/C 154</p>
           </div>
           <div class="col-10 d-flex flex-column align-items-center justify-content-center mb-5">
-            <div class="card bg-light-yellow">
+            <div class="card bg-light-yellow" data-aos="flip-down">
               <p class="card-title fs-4 fw-bold px-4 pt-3">Tips：</p>
-              <p class="card-text fs-4 fw-bold text-gray p-4">
+              <p class="card-text fw-bold fs-4 text-gray fs-4 fw-bold text-gray p-4">
                   現代外食族的飲食結構經常會膳食纖維、蛋白質、維生素攝取不  足，加上外食鈉含量通常都會超過人體建議的一日所需。挑選完的菜單要記得注意整體的營養均衡，飲食選擇上盡量少油、少鹽、少糖，利用減少喝湯、減少醬汁、喝水取代含糖飲料的方式來避免不必要的負擔，並搭配多多攝取蔬果與蛋白質！
 
               </p>
             </div>
           </div>
           <div class="col-6  d-flex justify-content-center">
-            <a href="combo-meal.html" class="btn btn-secondary rounded-4 px-7 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
+            <a href="combo-meal.html" class="btn btn-secondary rounded-3 px-7 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
           </div>
          
         </div>
@@ -261,11 +266,11 @@
         <div
              class="contact-icons mt-4 d-flex flex-row justify-content-md-between justify-content-around align-items-center">
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/ig-icon-f1565903.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/ig-icon-f14409f9.svg"></img></a>
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/fb-icon-c4fe0d03.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/fb-icon-b0c969d4.svg"></img></a>
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/line-icon-473d788c.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/line-icon-d9ac5aa3.svg"></img></a>
         </div>
       </div>
     </div>
@@ -285,7 +290,33 @@
         });
       });
     </script>
-    
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+// Global settings:
+disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+initClassName: 'aos-init', // class applied after initialization
+animatedClassName: 'aos-animate', // class applied on animation
+useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+offset: 120, // offset (in px) from the original trigger point
+delay: 0, // values from 0 to 3000, with step 50ms
+duration: 800, // values from 0 to 3000, with step 50ms
+easing: 'ease', // default easing for AOS animations
+once: false, // whether animation should happen only once - while scrolling down
+mirror: false, // whether elements should animate out while scrolling past them
+anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
   </body>
 
 </html>

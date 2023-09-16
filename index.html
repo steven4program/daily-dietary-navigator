@@ -12,8 +12,8 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>Daily Nutrition Navigator</title>
-  <script type="module" crossorigin src="/daily-dietary-navigator/assets/main-617f5d51.js"></script>
-  <link rel="stylesheet" href="/daily-dietary-navigator/assets/main-db090d7f.css">
+  <script type="module" crossorigin src="/daily-dietary-navigator/assets/main-2f9e7971.js"></script>
+  <link rel="stylesheet" href="/daily-dietary-navigator/assets/main-84df39a4.css">
 </head>
 
 <body>
@@ -39,9 +39,9 @@
 
     <div class="container mx-auto ">
          <!--mobile nav position-absolute-->
-        <nav class="navbar d-lg-none d-flex flex-nowrap">
-            <a href="index.html" class="navbar-brand">
-                <img src="/daily-dietary-navigator/assets/Horizontal_container-1-16a00598.png" alt="" class="img-fluid">
+        <nav class="navbar d-lg-none d-flex flex-nowrap"  data-aos="fade-up">
+            <a href="index.html" class="navbar-brand" data-aos="fade-up">
+                <img src="/daily-dietary-navigator/assets/Horizontal_container-1-16a00598.png" alt="" class="img-fluid" >
             </a>
             <button class="d-lg-none  bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7daxDcAgDETRC8oAjAjKXBGMyAaJRBlMlcIg/Ve6uuZOlgAA+OMwryU+8pDbkCdoccsHPCf3LADdbAeLPOQ2lHPW4iQfQ8Btd7AKQGfv4B2TPFytfk92i4N8htpYDx5WAAB8vVGvDCG5B51GAAAAAElFTkSuQmCC" alt="">
@@ -56,7 +56,7 @@
                 <img src="/daily-dietary-navigator/assets/Horizontal_container-d480b9ed.png" alt="Horizontal_container" class="">
             </a>
             <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav  list-unstyled d-flex flex-row ">
+                <ul class="navbar-nav  list-unstyled d-flex flex-row " data-aos="fade-up">
                 <li class="nav-item">
                     <a class="nav-link hover-color-secondary" aria-current="page" href="index.html">首頁</a>
                 </li>
@@ -79,7 +79,7 @@
 
     </div>
     <div class="container mx-auto ">
-            <h1 class="display-2 text-white fw-bold text-center">
+            <h1 class="display-2 text-white fw-bold text-center" data-aos="fade-up">
             每日營養導航
             <br>
             您的健康飲食夥伴
@@ -92,7 +92,7 @@
          <div class=" d-none align-items-center  position-absolute hamburger-list " id="navbarToggle">
 
             <div class="container">
-                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center " data-aos="fade-up">
                 <li class="w-100 text-center p-4 border-bottom ">
                     <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="index.html">首頁</a>
                 </li>
@@ -152,6 +152,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
 </body>
 
 </html>
@@ -164,56 +169,151 @@
 
     <!--六大類食物 開始  -->
     <div class="container">
-      <div class="col-md-7 mx-auto d-flex align-items-center text-center mb-4 mb-md-6">
-        <img class=" me-32" src="/daily-dietary-navigator/assets/img_title_1-c9228843.png" alt="curious-girl-face">
-        <h1 class="">六大類食物，你吃對了嗎?</h1>
+      <div class="col-md-7 mx-auto d-md-flex align-items-center text-center mb-4 mb-md-6">
+        <img class="text-center me-32" src="/daily-dietary-navigator/assets/img_title_1-c9228843.png" alt="curious-girl-face">
+        <h1 class="ms-10 mt-3" data-aos="fade-up">六大類食物，你吃對了嗎?</h1>
       </div>
-      <div class="row align-items-center">
-        <div class="6-dietary-intro col-md-6">
-          <h4 class="text-start mb-4"><span class=" border-bottom border-4 border-primary">豆魚蛋肉類</span></h4>
-          <p class="fs-6 mb-3 lh-base">為富含蛋白質的食物，主要提供飲食中蛋白質的來源。包含:黃豆與豆製品、魚類與海鮮、蛋類、禽類、畜肉等。</p>
+      <div class="row align-items-center letter-spacing-112">
+        <div class="6-dietary-intro col-md-6" id="intro-1" data-aos="fade-up">
+          <h4 class="text-center text-md-start" data-aos="fade-up"><span class="">豆魚蛋肉類</span></h4>
+          <div class="line-width-80 border border-4 border-primary rounded mt-1 mb-4 mx-auto ms-md-0"></div>
+          <p class="fs-6 mb-3 lh-base" >為富含蛋白質的食物，主要提供飲食中蛋白質的來源。包含:黃豆與豆製品、魚類與海鮮、蛋類、禽類、畜肉等。</p>
           <p class="fs-6 mb-3 lh-base">為避免同時吃入不利健康的脂肪，尤其是飽和脂肪，選擇這類食物時,其優先順序為豆類、魚類與海鮮、蛋類、禽肉、畜肉。</p>
           <p class="fs-5 mb-4 lh-base">此外，應避免油炸和過度加工的食品，才不會攝取過多的油脂和鈉。</p>
         </div>
+        <div class="6-dietary-intro col-md-6 hidden" id="intro-2" data-aos="fade-up">
+          <h4 class="text-center text-md-start"><span class="">蔬菜類</span></h4>
+          <div class="line-width-80 border border-4 border-primary rounded mt-1 mb-4 mx-auto ms-md-0"></div>
+          <p class="fs-6 mb-3 lh-base">新鮮蔬菜的水分含量很高,約占90%以上,蛋白質和脂肪含量很少,但維生素、礦物質、膳食纖維,以及植化素含量卻很豐富。蔬菜的顏色越深綠或深黃,含有的維生素A、C及礦物質鐵、鈣也越多。</p>
+          <p class="fs-6 mb-3 lh-base">蔬菜的礦物質多為鹼性礦物質,例如鉀、鈣等,可用來中和主食和肉類在體內所產生的酸性,維持體內酸鹼平衡。膳食纖維可 增加飽足感、幫助排便,維持腸道的健康。</p>
+          <p class="fs-5 mb-4 lh-base">每天吃到足夠量的蔬菜與水果,對身體健康具有保護作用,千萬不可忽略。</p>
+        </div>
+        <div class="6-dietary-intro col-md-6 hidden" id="intro-3" data-aos="fade-up">
+          <h4 class="text-center text-md-start"><span class="">全穀雜糧類</span></h4>
+          <div class="line-width-80 border border-4 border-primary rounded mt-1 mb-4 mx-auto ms-md-0"></div>
+          <p class="fs-6 mb-3 lh-base">富含澱粉,所以主要功能為提供熱量。除了大家熟知的各種穀類外,還包括富含澱粉的雜糧類,如食用其根莖的薯類、食用其種子的豆類和食用其果實的富含澱粉食物。</p>
+          <p class="fs-6 mb-3 lh-base">未精製全穀雜糧類中含有各種維生素、礦物質和膳食纖維,然而這些有益於健康的營養素和成分常於精製加工過程大量流失。</p>
+          <p class="fs-5 mb-4 lh-base">建議三餐應以「維持原態」的全穀雜糧為主食,或至少應有 1/3 為未精製全穀雜糧。</p>
+        </div>
+        <div class="6-dietary-intro col-md-6 hidden" id="intro-4" data-aos="fade-up">
+          <h4 class="text-center text-md-start"><span class="">水果類</span></h4>
+          <div class="line-width-80 border border-4 border-primary rounded mt-1 mb-4 mx-auto ms-md-0"></div>
+          <p class="fs-6 mb-3 lh-base">主要提供維生素,尤其是維生素C，蛋白質和脂肪的含量很低,主要的熱量來源為醣類,通常是生食。深色水果(橙紅色或橙色、紅色)含有各種類胡蘿蔔素、花青素等有益健康的植化素。</p>
+          <p class="fs-6 mb-3 lh-base">水果類食物主要是植物的果實,於採收後於室溫貯存,逐漸發生「後熟」現象,質地逐漸軟化、並產生特殊的香味且甜度大增。</p>
+          <p class="fs-5 mb-4 lh-base">不希望吃入過多糖類者,可選擇食用「未後熟」或「後熟程度較低」的水果。最好選擇當季在地水果。</p>
+        </div>
+        <div class="6-dietary-intro col-md-6 hidden" id="intro-5" data-aos="fade-up">
+          <h4 class="text-center text-md-start"><span class="">油脂與堅果種子類</span></h4>
+          <div class="line-width-80 border border-4 border-primary rounded mt-1 mb-4 mx-auto ms-md-0"></div>
+          <p class="fs-6 mb-3 lh-base">含有豐富脂肪,除提供部分熱量和必需脂肪酸以外,有些還提供脂溶性維生素E。動物脂肪含有較多的飽和脂肪和膽固醇,較不利於心血管的健康。</p>
+          <p class="fs-6 mb-3 lh-base">故日常飲食應選擇富含不飽和脂肪酸的植物油為油脂來源。如:含單元不飽和脂肪酸較多的橄欖油、苦茶油、芥花油、油菜籽油、高油酸葵花油、花生油等。由於一般食用油皆經過精煉製成,微量營養素偏低。</p>
+          <p class="fs-5 mb-4 lh-base">而原態堅果種子類食物,不但富含脂肪,且含有豐富之各類營養素。</p>
+        </div>
+        <div class="6-dietary-intro col-md-6 hidden" id="intro-6" data-aos="fade-up">
+          <h4 class="text-center text-md-start"><span class="">乳品類</span></h4>
+          <div class="line-width-80 border border-4 border-primary rounded mt-1 mb-4 mx-auto ms-md-0"></div>
+          <p class="fs-6 mb-3 lh-base">主要提供鈣質,且含有優質蛋白質、乳糖、脂肪、多種維生素、礦物質等。國人飲食中鈣質攝取量大多不足,</p>
+          <p class="fs-6 mb-3 lh-base">而每日攝取1~2杯乳品是最容易滿足鈣質需求的方法,故將乳製品於六大類食物中單獨另列一類。</p>
+          <p class="fs-5 mb-4 lh-base">不吃乳品(如全素者)必需特別注意每天都要選擇其他高鈣食物,如高鈣豆製品、深色葉菜類、芝麻或鈣強化食品等,以得到充足的鈣質。</p>
+        </div>
         <div class="6-dietary-catagories col-md-6 px-4 px-md-3 py-12 py-md-4 row">
-          <a class="col-6 col-md-4 mb-4 text-center">
-            <img src="/daily-dietary-navigator/assets/img_chicken-bdea216c.png" alt="">
-            <h5 class="mt-3">豆魚蛋肉類</h5>
-          </a>
-          <a class="col-6 col-md-4 mb-4 text-center">
-            <img src="/daily-dietary-navigator/assets/img_vegetable-ea70b2e4.png" alt="">
-            <h5 class="mt-3">蔬菜類</h5>
-          </a>
-          <a class="col-6 col-md-4 mb-4 text-center">
-            <img src="/daily-dietary-navigator/assets/img_rice-38c07b15.png" alt="">
-            <h5 class="mt-3">全榖雜糧類</h5>
-          </a>
-          <a class="col-6 col-md-4 mb-4 text-center">
-            <img src="/daily-dietary-navigator/assets/img_fruit-d5b1dbe2.png" alt="">
-            <h5 class="mt-3">水果類</h5>
-          </a>
-          <a class="col-6 col-md-4 text-center">
-            <img src="/daily-dietary-navigator/assets/img_nuts-8651aac5.png" alt="">
-            <h5 class="mt-3">堅果種子類</h5>
-          </a>
-          <a class="col-6 col-md-4 text-center">
-            <img src="/daily-dietary-navigator/assets/img_milk-56bc7932.png" alt="">
-            <h5 class="mt-3">乳品類</h5>
-          </a>
+          <div class="col-6 col-md-4 mb-4 text-center 6-cata-img" id="img-1" data-aos="fade-up">
+            <a class="d-block position-relative cata-text-hover" >
+              <img class="img-fluid" src="/daily-dietary-navigator/assets/img_chicken-bdea216c.png" alt="protein">
+              <div class="hover-opacity position-absolute top-0 bottom-0 start-0 end-0">
+                <img class="img-fluid" src="/daily-dietary-navigator/assets/img_chicken_active-063c7bd1.png" alt="">
+              </div>
+              <h5 class="mt-3 ">豆魚蛋肉類</h5>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 mb-4 text-center 6-cata-img" id="img-2" data-aos="fade-up">
+            <a class="d-block position-relative cata-text-hover" >
+              <img class="img-fluid"  src="/daily-dietary-navigator/assets/img_vegetable-ea70b2e4.png" alt="protein">
+              <div class="hover-opacity position-absolute top-0 bottom-0 start-0 end-0">
+                <img class="img-fluid" src="/daily-dietary-navigator/assets/img_vegetable_active-89ade9f8.png" alt="">
+              </div>
+              <h5 class="mt-3 ">蔬菜類</h5>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 mb-4 text-center 6-cata-img" id="img-3" data-aos="fade-up">
+            <a class="d-block position-relative cata-text-hover">
+              <img class="img-fluid"  src="/daily-dietary-navigator/assets/img_rice-38c07b15.png" alt="protein">
+              <div class="hover-opacity position-absolute top-0 bottom-0 start-0 end-0">
+                <img class="img-fluid" src="/daily-dietary-navigator/assets/img_rice_active-2d2d086b.png" alt="">
+              </div>
+              <h5 class="mt-3 ">全榖雜糧類</h5>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 mb-4 text-center 6-cata-img" id="img-4" data-aos="fade-up">
+            <a class="d-block position-relative cata-text-hover">
+              <img class="img-fluid"  src="/daily-dietary-navigator/assets/img_fruit-d5b1dbe2.png" alt="protein">
+              <div class="hover-opacity position-absolute top-0 bottom-0 start-0 end-0">
+                <img class="img-fluid" src="/daily-dietary-navigator/assets/img_fruit_active-da31714a.png" alt="">
+              </div>
+              <h5 class="mt-3 ">水果類</h5>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 mb-4 text-center 6-cata-img" id="img-5" data-aos="fade-up">
+            <a class="d-block position-relative cata-text-hover">
+              <img class="img-fluid"  src="/daily-dietary-navigator/assets/img_nuts-8651aac5.png" alt="protein">
+              <div class="hover-opacity position-absolute top-0 bottom-0 start-0 end-0">
+                <img class="img-fluid" src="/daily-dietary-navigator/assets/img_nuts_active-0b5ef8ce.png" alt="">
+              </div>
+              <h5 class="mt-3 ">堅果種子類</h5>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 mb-4 text-center 6-cata-img" id="img-6" data-aos="fade-up">
+            <a class="d-block position-relative cata-text-hover ">
+              <img class="img-fluid"  src="/daily-dietary-navigator/assets/img_milk-56bc7932.png" alt="protein">
+              <div class="hover-opacity  position-absolute top-0 bottom-0 start-0 end-0">
+                <img class="img-fluid" src="/daily-dietary-navigator/assets/img_milk_active-2141e87a.png" alt="">
+              </div>
+              <h5 class=" mt-3 ">乳品類</h5>
+            </a>
+          </div>
+          <!-- <div class="col-6 col-md-4 mb-4 text-center ">
+            <div class="position-relative">
+              <img class="" src="../assets/img/img_milk.png" alt="protein">
+              <div class="hover-opacity position-absolute top-0 bottom-0 start-0 end-0">
+                <img src="../assets/img/img_milk_active.png" alt="">
+              </div>
+            </div>
+            <a class="cata-text-hover stretched-link" href="#">
+              <h5 class="mt-3 ">乳品類</h5>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 mb-4 text-center ">
+            <div class="position-relative cata-text-hover ">
+              <img class="" src="../assets/img/img_milk.png" alt="protein">
+              <div class="hover-opacity  position-absolute top-0 bottom-0 start-0 end-0">
+                <img src="../assets/img/img_milk_active.png" alt="">
+              </div>
+              <h5 class=" mt-3 ">乳品類</h5>
+              <a class="stretched-link" href="#"></a>
+            </div>
+          </div> -->
+
         </div>
       </div>
     </div>
+
+    <div class="bg-test" style="background-image: url(/daily-dietary-navigator/assets/bg_web_1-4b9de969.png);">
+
+    </div>
+
     <div class="bg-primary-300 bg-wave-6cata position-relative pb-8 pt-3 ">
       <div class="container ">
-        <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112">
-          <div class="d-lg-none text-center"><img src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png" alt="thinking-girl-face"></div>
-          <h4 class="text-center mt-4">看看哪個更健康?</h4>
-          <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-10 mx-auto"></div>
-          <div class="row align-items-center justify-content-between g-0">
-            <!--   Slides   -->
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <!-- <div class="swiper-slide">
+        <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
+        <div class="d-lg-none text-center"><img src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png" alt="thinking-girl-face"></div>
+        <h4 class="text-center mt-4">看看哪個更健康?</h4>
+        <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-10 mx-auto"></div>
+        <div class="row align-items-center justify-content-between g-0">
+          <!--   Slides   -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
                 <div class="row accordion" id="accordionExample">
                   <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
                     
@@ -247,237 +347,228 @@
                   </div>
                 </div>
               </div> -->
-                <div class="swiper-slide">
-                  <div class="row accordion" id="accordionExample">
-                    <div
-                         class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
-                      <div class="card rounded-3 border-0 bg-transparent mb-4">
-                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
-                             class="">
-                        <div
-                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">滷雞腿</a>
-                        </div>
-                      </div>
-
-                      <div class="col-md-2 mx-auto text-center d-none d-lg-block">
-                        <div class="text-center"><img class="img-fluid px-2" src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png"
-                               alt="thinking-girl-face"></div>
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
-                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                           aria-controls="collapseOne">
-                          <h6 class="see-answer-fs">看答案</h6>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
-
-                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
-                        href="6-catagories.html">點我看更多</button> -->
-                      </div>
-                      <div class="card rounded-3 border-0 bg-transparent">
-                        <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
-                        <div
-                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">炸雞腿</a>
-                        </div>
-                      </div>
-                      <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
-                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                           aria-controls="collapseOne">
-                          <h6 class="see-answer-fs">看答案</h6>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
-
-                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
-                        href="6-catagories.html">點我看更多</button> -->
+              <div class="swiper-slide">
+                <div class="row accordion" id="accordionExample">
+                  <div class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                    <div class="card rounded-3 border-0 bg-transparent mb-4">
+                      <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
+                        class="">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">滷雞腿</a>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="row accordion" id="accordionExample">
-                    <div
-                         class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
-                      <div class="card rounded-3 border-0 bg-transparent mb-4">
-                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
-                             class="">
-                        <div
-                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">滷雞腿</a>
-                        </div>
-                      </div>
 
-                      <div class="col-md-2 mx-auto text-center d-none d-lg-block">
-                        <div class="text-center"><img class="img-fluid px-2" src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png"
-                               alt="thinking-girl-face"></div>
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
-                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                           aria-controls="collapseOne">
-                          <h6 class="see-answer-fs">看答案</h6>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
+                    <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                      <div class="text-center"><img class="img-fluid px-2"
+                          src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png" alt="thinking-girl-face"></div>
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h6 class="see-answer-fs">看答案</h6>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
 
-                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
                         href="6-catagories.html">點我看更多</button> -->
-                      </div>
-                      <div class="card rounded-3 border-0 bg-transparent">
-                        <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
-                        <div
-                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">炸雞腿</a>
-                        </div>
-                      </div>
-                      <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
-                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                           aria-controls="collapseOne">
-                          <h6 class="see-answer-fs">看答案</h6>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
-
-                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
-                        href="6-catagories.html">點我看更多</button> -->
+                    </div>
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">炸雞腿</a>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="row accordion" id="accordionExample">
-                    <div
-                         class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
-                      <div class="card rounded-3 border-0 bg-transparent mb-4">
-                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
-                             class="">
-                        <div
-                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">滷雞腿</a>
-                        </div>
-                      </div>
+                    <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h6 class="see-answer-fs">看答案</h6>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
 
-                      <div class="col-md-2 mx-auto text-center d-none d-lg-block">
-                        <div class="text-center"><img class="img-fluid px-2" src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png"
-                               alt="thinking-girl-face"></div>
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
-                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                           aria-controls="collapseOne">
-                          <h6 class="see-answer-fs">看答案</h6>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
-
-                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
                         href="6-catagories.html">點我看更多</button> -->
-                      </div>
-                      <div class="card rounded-3 border-0 bg-transparent">
-                        <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
-                        <div
-                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">炸雞腿</a>
-                        </div>
-                      </div>
-                      <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
-                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
-                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                           aria-controls="collapseOne">
-                          <h6 class="see-answer-fs">看答案</h6>
-                          <span class="material-symbols-outlined">
-                            expand_more
-                          </span>
-                        </a>
-
-                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
-                        href="6-catagories.html">點我看更多</button> -->
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
+              <div class="swiper-slide">
+                <div class="row accordion" id="accordionExample">
+                  <div class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                    <div class="card rounded-3 border-0 bg-transparent mb-4">
+                      <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
+                        class="">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">滷雞腿</a>
+                      </div>
+                    </div>
 
+                    <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                      <div class="text-center"><img class="img-fluid px-2"
+                          src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png" alt="thinking-girl-face"></div>
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h6 class="see-answer-fs">看答案</h6>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
+
+                      <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                    </div>
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">炸雞腿</a>
+                      </div>
+                    </div>
+                    <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h6 class="see-answer-fs">看答案</h6>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
+
+                      <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row accordion" id="accordionExample">
+                  <div class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                    <div class="card rounded-3 border-0 bg-transparent mb-4">
+                      <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
+                        class="">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">滷雞腿</a>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                      <div class="text-center"><img class="img-fluid px-2"
+                          src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png" alt="thinking-girl-face"></div>
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h6 class="see-answer-fs">看答案</h6>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
+
+                      <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                    </div>
+                    <div class="card rounded-3 border-0 bg-transparent">
+                      <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
+                      <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                        <a class="stretched-link" href="">炸雞腿</a>
+                      </div>
+                    </div>
+                    <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                      <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <h6 class="see-answer-fs">看答案</h6>
+                        <span class="material-symbols-outlined">
+                          expand_more
+                        </span>
+                      </a>
+
+                      <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto" aria-labelledby="headingOne"
-               data-bs-parent="#accordionExample">
-            <div class="accordion-body mt-3">
-              <div class="d-flex justify-content-between">
-                <div class="">
-                  <div class=" signal mb-4">
-                    <h5 class="mb-2">燈號</h5>
-                    <img class="d-none d-md-block" src="data:image/png;base64,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" alt="">
-                    <img class="d-block d-md-none" src="data:image/png;base64,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" alt="">
-                  </div>
-                  <div class=" feature ">
-                    <h5 class="mb-2">特點</h5>
-                    <span
-                          class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
-                          class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
-                  </div>
+
+        </div>
+        <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body mt-3">
+            <div class="d-flex justify-content-between">
+              <div class="">
+                <div class=" signal mb-4">
+                  <h5 class="mb-2">燈號</h5>
+                  <img class="d-none d-md-block" src="data:image/png;base64,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" alt="">
+                  <img class="d-block d-md-none" src="data:image/png;base64,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" alt="">
                 </div>
-                <div>
-                  <div class="text-end signal mb-4">
-                    <h5 class="mb-2">燈號</h5>
-                    <img class="d-none d-md-block" src="data:image/png;base64,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" alt="">
-                    <img class="ms-auto d-block d-md-none" src="data:image/png;base64,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" alt="">
-                  </div>
-                  <div class="text-end feature ">
-                    <h5 class="mb-2">特點</h5>
-                    <span
-                          class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
-                          class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
-                  </div>
+                <div class=" feature ">
+                  <h5 class="mb-2">特點</h5>
+                  <span
+                    class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
+                    class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
                 </div>
               </div>
-              <table class="table mt-10">
-                <thead class="border-light-yellow">
-                  <tr>
-                    <th class="h5" scope="col">營養標示</th>
-                    <th scope="col"></th>
-                    <th class="h5 text-end" scope="col">營養標示</th>
-                  </tr>
-                </thead>
-                <tbody class="nutrition-label">
-                  <tr>
-
-                    <td>186kcal</td>
-                    <th scope="row">熱量(Kcal)</th>
-                    <td>288kcal</td>
-
-                  </tr>
-                  <tr>
-                    <td>0g</td>
-                    <th scope="row">碳水化合物</th>
-                    <td>12.1g</td>
-                  </tr>
-                  <tr>
-                    <td>11.8g</td>
-                    <th scope="row">脂肪</th>
-                    <td>18.7g</td>
-                  </tr>
-                  <tr>
-                    <td>2.9 g</td>
-                    <th scope="row">飽和脂肪</th>
-                    <td>4.3 g</td>
-                  </tr>
-                  <tr>
-                    <td>22.7g</td>
-                    <th scope="row">蛋白質</th>
-                    <td>17.7 g</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div>
+                <div class="text-end signal mb-4">
+                  <h5 class="mb-2">燈號</h5>
+                  <img class="d-none d-md-block" src="data:image/png;base64,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" alt="">
+                  <img class="ms-auto d-block d-md-none" src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="text-end feature ">
+                  <h5 class="mb-2">特點</h5>
+                  <span
+                    class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
+                    class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
+                </div>
+              </div>
             </div>
+            <table class="table mt-10">
+              <thead class="border-light-yellow">
+                <tr>
+                  <th class="h5" scope="col">營養標示</th>
+                  <th scope="col"></th>
+                  <th class="h5 text-end" scope="col">營養標示</th>
+                </tr>
+              </thead>
+              <tbody class="nutrition-label">
+                <tr>
+
+                  <td>186kcal</td>
+                  <th scope="row">熱量(Kcal)</th>
+                  <td>288kcal</td>
+
+                </tr>
+                <tr>
+                  <td>0g</td>
+                  <th scope="row">碳水化合物</th>
+                  <td>12.1g</td>
+                </tr>
+                <tr>
+                  <td>11.8g</td>
+                  <th scope="row">脂肪</th>
+                  <td>18.7g</td>
+                </tr>
+                <tr>
+                  <td>2.9 g</td>
+                  <th scope="row">飽和脂肪</th>
+                  <td>4.3 g</td>
+                </tr>
+                <tr>
+                  <td>22.7g</td>
+                  <th scope="row">蛋白質</th>
+                  <td>17.7 g</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+      </div>
       </div>
     </div>
     </div>
@@ -495,7 +586,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="openMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -540,7 +631,7 @@
                 </tr>
             </div>
             <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#openCollapsed" aria-expanded="false" aria-controls="collapseExample">
+              data-bs-target="#openCollapsed" aria-expanded="false" aria-controls="collapseExample">
               <span class="open">點我打開</span>
               <span class="close">點我關閉</span>
             </button>
@@ -562,27 +653,27 @@
     <!--餐點搭配 開始-->
 
 
-    <div class="bg-wave bg-light-yellow position-relative">
+    <div class="bg-wave bg-light-yellow position-relative" >
 
-      <div class="container">
-        <div class="border rounded-1 bg-white d-flex flex-column justify-content-around py-40 py-lg-6 px-4 px-lg-7">
+      <div class="container" >
+        <div class="border rounded-1 bg-white d-flex flex-column justify-content-around py-40 py-lg-6 px-4 px-lg-7" >
           <div
                class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start  text-center mt-lg-6 mb-lg-6">
             <img src="/daily-dietary-navigator/assets/img_title_3-017a68d3.png" alt="img_title_3"
-                 class="people-icon-size  me-lg-6 ms-lg-0 mx-auto mb-3">
+                 class="people-icon-size  me-lg-6 ms-lg-0 mx-auto mb-3" data-aos="fade-up">
             <div class="ms-lg-5">
-              <h2 class="display-5 fs-md-h1 fw-bold">說了這麼多，還是無法<span
-                      class="display-5 fs-md-h1 text-primary fw-bold">決定</span>吃什麼嗎?</h2>
-              <h2 class="display-5 fs-md-h1 fw-bold">沒關係我們幫你<span
-                      class="display-5 fs-md-h1 text-primary fw-bold">選擇</span>!</h2>
+              <h2 class="display-5 fs-md-h1 fw-bold" data-aos="fade-up">說了這麼多，還是無法<span
+                      class="display-5 fs-md-h1 text-primary fw-bold" data-aos="fade-up">決定</span>吃什麼嗎?</h2>
+              <h2 class="display-5 fs-md-h1 fw-bold" data-aos="fade-up">沒關係我們幫你<span
+                      class="display-5 fs-md-h1 text-primary fw-bold" data-aos="fade-up">選擇</span>!</h2>
             </div>
           </div>
           <div class="mb-5">
             <div class=" d-flex flex-column flex-lg-row justify-content-between flex-wrap flex-lg-nowrap">
               <div class="col-12 col-lg-6">
                 <div
-                     class="border-radius bg-light-yellow rounded-pill d-flex flex-column flex-lg-row px-4 py-4 align-items-center me-lg-5 mb-3">
-                  <a href="./combo-meal.html"
+                     class="border-radius bg-light-yellow rounded-pill d-flex flex-column flex-lg-row px-4 py-4 align-items-center me-lg-5 mb-3" data-aos="fade-up">
+                  <a href="allday-takeout.html"
                      class="btn btn-primary-400  rounded-4 px-6 py-3 py-lg-4 fs-4  me-lg-4 mb-2 text-white fw-bold ">你們幫我搭！</a>
                   <small class="color-text mt-1 fs-sm fw-bold">根據您的需求，<br> 無須動腦就搭出一日健康菜單</small>
                 </div>
@@ -590,7 +681,7 @@
               <div class="col-12 col-lg-6">
 
                 <div
-                     class=" border-radius bg-light-green rounded-pill d-flex flex-column flex-lg-row px-4 py-4 align-items-center ">
+                     class=" border-radius bg-light-green rounded-pill d-flex flex-column flex-lg-row px-4 py-4 align-items-center " data-aos="fade-up">
                   <a href="./combo-meal.html"
                      class="btn btn-secondary rounded-4 px-6 py-3 py-lg-4 fs-4  me-lg-4 mb-2 text-white fw-bold">點我來搭配！</a>
                   <small class="color-text mt-1 fs-sm fw-bold">提供您常見的日常外食選擇，
@@ -603,7 +694,7 @@
           <div class="d-flex flex-column  bg-light-yellow rounded-1 p-4 justify-content-between align-items-center">
             <div class="card-group d-flex flex-column flex-lg-row align-items-center justify-content-between">
 
-              <div class="card h-100">
+              <div class="card h-100" data-aos="fade-up">
                 <div class="position-relative" >
                   <span class="badge-meal translate-middle-x">早餐</span>
                   <img id="showFirst" src="/daily-dietary-navigator/assets/breakfast-9853bfc4.jpg" class="option-first card-img-top w-100"
@@ -641,7 +732,7 @@
               </div>
 
 
-              <div class="card h-100">
+              <div class="card h-100" data-aos="fade-up">
                 <div class="position-relative w-100 h-auto" >
                   <span class="badge-meal translate-middle-x">午餐</span>
                   <img id="showFirst-lunch" src="/daily-dietary-navigator/assets/lunch-cf94b8b6.jpg" class="option-first-lunch card-img-top w-100 "
@@ -693,7 +784,7 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOhSURBVHgB7ZrdcdNAEMd3JY+xHxJMB04FSRgIkydMB1BB3EGSCnAqADowFYQOCE8eAkOcClA68CQPFkp0y66whyT4PizJQgL9ZvSQ3NnW/3b3bu/2AGpqampqygvCCqGzTie8jl/6iJtKURcQt/jfndkzJ+CegYc4jonOIb4+ae+GAayI3AWLyOhG7RNRj7++BynglxoroHerEJ+b4N9C4QDuWjATCDRU8fVRXsJzEfzjy/rrvIXeBxEGD55eHkFGMgmejjpdz1fHBLAFxRBQHL3IYm0PUhJ9XdtDX50VKFbgAW6eyW9DSlIJFhdWCoewQhfWwQPckd+Wd4AULO3Ss3gdQAlIE9dLCRZXmlm2NHge9ZtPrt679ncWLBOUxCz8BTc2wQImKo62XScy5xhmsR8hg1gOgyOeYTcWPtwGKZGY5ons2LW/k4XziNsHjaiLj8OLRW0z7/kOGZBBaz+7HNj6WS0sL1OWScqEh7Av2Z61n7WDr1JN/0Ujrh1G6sDWzyg4sS5AHyqCi5XNFvbjHlQIFysbBSPiPlQMRHpuatcKFnfmISsyT84J7JncWm/hirnzbeSURdemFUyAFbTuL9Dw7g1dgwe06ZKXJFmSioa2frizOOkQ2ruTYDpqbYANr9nnDYN1mVQKuro2raLw9CFnPqT94BxTBpU3S2RkQWvncuEAGmZpu9iygoacP/WJR5mh/02wCZPgCfyDGARjlQUHugbtsoSoxkTYBQtR3OxPR2A9YrGdSPCy1AULXkPt8TLoAAW6Fq3gmPDCJcBlr4x+c2Dt9w0yHwC4iRXwXNei1YQxjaGiEOjfXSs4bPkfoKpwEU7XpBX8aHvCkxadQPUYm+YLY5jypPUJKgZJmdWAUXDY9N5C1dZjgzsLRsHi1jwzGkesTEgt2bb8WVeeKllZCue2PlbBVbFychDvUG5xri2Fp+tSV0p9CiKVPnUTLczIvEZzL+Nhv3b/+8d7gCNlLaYxE1pFMU2OYSimQygZvAwdLnMFYqn9cHv3apil0pc3SdzuXA2X+UyqSy3Tz+sDl8O0VeJaLbxP6ls809FaH318A8XH9CRx4yUtOyfztaVZobwLBZDc0IujV1muLeVyMa0AF09ygTQufJ/crh4mtShPifDUd6gWkAhtcbaHye4tO7lfLk2EQ9zj+JbKY8pEhU5kp5an0DkrvT58SzwLT0o3/PedeJ8kD/EJBeIFr/PjFh885C2ypqampqYq/AQeoapI0mv8wQAAAABJRU5ErkJggg==" alt="" class=" plus-circle">
               </div>
 
-              <div class="card h-100">
+              <div class="card h-100" data-aos="fade-up">
                 <div class="position-relative" >
                   <span class="badge-meal translate-middle-x">晚餐</span>
                   <img id="showFirst-dinner" src="/daily-dietary-navigator/assets/dinner-3c217918.jpg"
@@ -743,7 +834,7 @@
 
             </div>
             
-            <a href="./meal-kcal.html" class=" btn-third rounded-pill mt-4 ">幫我計算</a>
+            <a href="allday-takeout.html" class=" btn-third rounded-pill mt-4 " data-aos="fade-up">幫我計算</a>
 
           </div>
         </div>
@@ -756,10 +847,10 @@
 
     <!-- Calculator -->
     <section class="calculator bg-primary">
-      <div class="container position-relative h-lg-614 h-720 z-3 d-flex">
-        <img class="vector" src="/daily-dietary-navigator/assets/Vector-4397f529.png" alt="calculator">
+      <div class="container position-relative h-lg-614 h-720 z-3 d-flex" >
+        <img class="vector" src="/daily-dietary-navigator/assets/Vector-4397f529.png" alt="calculator"  data-aos="fade-up">
         <div
-             class="bg-white radius-60 col-12 col-lg-6 py-10 py-lg-8 px-11 px-lg-6 position-absolute end-0 mt-328 mt-lg-8">
+             class="bg-white radius-60 col-12 col-lg-6 py-10 py-lg-8 px-11 px-lg-6 position-absolute end-0 mt-328 mt-lg-8"  data-aos="fade-up">
           <h2 class=" mb-3">營養計算機</h2>
           <div class="yellow-line mb-10"></div>
           <p class="mb-10">探索您的健康之路! 想知道每天需要多少卡路里?或是您的身體質量指數(BMI)是多少?</p>
@@ -773,19 +864,18 @@
 
     <!-- Q&A -->
     <section>
-      <div class="background pt-9 pb-83 d-flex justify-content-between"
-           style="background-image:url('/daily-dietary-navigator/assets/bg_QA_web-e3048534.png')">
+      <div class="background pt-9 pb-83" style="background-image:url('/daily-dietary-navigator/assets/bg_QA_web-e3048534.png')">
         <div class="container">
           <div class="flex-lg-row">
-            <div class="card col-12 col-lg-8 rounded-lg py-8 px-7">
-              <div class="fs-2 fw-bold mb-10">Q&A.常見對健康飲食疑問
+            <div class="card col-12 col-lg-8 rounded-lg py-10 py-lg-8 px-4 px-lg-7"  data-aos="fade-up">
+              <div class="fs-2 fw-bold mb-10"  data-aos="fade-up">Q&A.常見對健康飲食疑問
                 <div class="w-120 border border-4 border-primary rounded mt-1"></div>
               </div>
               <div class="card rounded-top-0 rounded-bottom rounded-sm px-4 py-4">
-                <h3 class="mb-0 fw-bold">Q：三大營養素有何重要性</h3>
+                <h3 class="mb-0 fw-bold"  data-aos="fade-up">Q：三大營養素有何重要性</h3>
               </div>
               <div class="card rounded-bottom-0 rounded-top rounded-sm px-4 py-4">
-                <p class="mb-3">營養是我們身體正常運作所需的重要元素。三大營養素，包括蛋白質、碳水化合物和脂肪，
+                <p class="mb-3"  data-aos="fade-up">營養是我們身體正常運作所需的重要元素。三大營養素，包括蛋白質、碳水化合物和脂肪，
                   在日常飲食中扮演關鍵角色。這些營養素提供身體所需的能量和營養，對大眾的健康至關重要
                   。讓我們一同了解這些重要營養素的作用，實踐健康生活!
                 </p>
@@ -809,13 +899,13 @@
 
             <div class="col-12 col-lg-8 d-flex justify-content-center">
               <a class="btn btn-secondary w-30 rounded-pill vertical-center-50 text-white py-4 px-120 fs-6"
-                 href="Q&A.html">更多</a>
+                href="Q&A.html">更多</a>
             </div>
             <div class="col-lg-4"></div>
           </div>
         </div>
         <!-- <div class="img-fluid background w-100 h-100 send-back" style="background-image:url('../assets/img/bg_web_5.png')"></div> -->
-        <!-- <img class="w-100 send-back" src="../assets/img/bg_web_5.png" alt="wave-white"> -->
+        <img class="img-fluid send-back mt-7 mt-md-6 mt-lg-4" src="data:image/png;base64,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" alt="wave-white">
 
       </div>
 
@@ -839,11 +929,11 @@
         <div
              class="contact-icons mt-4 d-flex flex-row justify-content-md-between justify-content-around align-items-center">
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/ig-icon-f1565903.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/ig-icon-f14409f9.svg"></img></a>
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/fb-icon-c4fe0d03.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/fb-icon-b0c969d4.svg"></img></a>
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/line-icon-473d788c.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/line-icon-d9ac5aa3.svg"></img></a>
         </div>
       </div>
     </div>
@@ -892,6 +982,33 @@
             prevEl: ".swiper-button-prev",
           },
         });
+      </script>
+      <!--AOS-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
       </script>
 
 
