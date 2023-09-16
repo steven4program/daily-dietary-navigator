@@ -422,7 +422,7 @@
             <div class="card-group d-flex flex-column flex-lg-row align-items-center justify-content-between">
 
               <div class="card h-100">
-                <div class="position-relative">
+                <div class="position-relative" >
                   <span class="badge-meal translate-middle-x">早餐</span>
                   <img id="showFirst" src="../assets/img/breakfast.jpg" class="option-first card-img-top w-100" alt="早餐">
                   <img id="showOne" src="../assets/meal-img/convenienceStore-1.png" class="option-list card-img-top w-100" alt="convenienceStore-1">
@@ -431,8 +431,8 @@
                   <img id="showFour" src="../assets/meal-img/takeOutMenu-4.jpg" class="option-list card-img-top w-100" alt="takeOutMenu-4">
                   <img id="showFive" src="../assets/meal-img/takeOutMenu-5.jpg" class="option-list card-img-top w-100" alt="takeOutMenu-5">
                 </div>
-
-                <select class="form-select fs-5 fw-bold border-0 card-footer py-3 bg-white" id="myselection">
+                <div class="card-footer">
+                <select class="form-select fs-5 fw-bold border-0 py-3 bg-white" id="myselection">
                   <option selected value="First" class="menu-list text-gray">早餐選單</option>
                   <option value="One" class="menu-list">紐奧良鮮蔬烤雞三明治<br>+無糖5.1豆漿</option>
                   <option value="Two" class="menu-list ">雞肉飯飯糰+茶葉蛋<br>
@@ -446,6 +446,7 @@
                     </option>
                 </select>
               </div>
+              </div>
 
               <div class="py-4">
                 <img src="../assets/img/plus-circle.png" alt="" class=" plus-circle">
@@ -453,7 +454,7 @@
 
 
               <div class="card h-100">
-                <div class="position-relative w-100 h-100">
+                <div class="position-relative w-100 h-auto" >
                   <span class="badge-meal translate-middle-x">午餐</span>
                   <img id="showFirst-lunch" src="../assets/img/lunch.jpg" class="option-first-lunch card-img-top w-100 " alt="午餐">
                   <img id="showOne-lunch" src="../assets/meal-img/takeOutMenu-6.jpg" class="option-list-lunch card-img-top w-100" alt="takeOutMenu-6">
@@ -466,26 +467,28 @@
                   <img id="showEight-lunch" src="../assets/meal-img/takeOutMenu-2.jpg" class="option-list-lunch card-img-top w-100" alt="takeOutMenu-2">
                   <img id="showNine-lunch" src="../assets/meal-img/takeOutMenu-3.jpg" class="option-list-lunch card-img-top w-100" alt="takeOutMenu-3">
                 </div>
-                <select class="form-select fs-5 fw-bold border-0 card-footer py-3 bg-white "  id="myselection-lunch">
-                  <option selected value="First-lunch" class="menu-list text-gray">午餐選單</option>
-                  <option value="One-lunch" class="menu-list">鮪魚玉米磚壓+生椰美式</option>
-                  <option value="Two-lunch" class="menu-list ">嫩煎雞腿堡+小杯玉米濃湯
-                  </option>
-                    <option value="Three-lunch" class="menu-list ">韓式辣味鍋貼6<br>+無糖豆漿+燙青菜
+                <div class="card-footer">
+                  <select class="form-select fs-5 fw-bold border-0 py-3 bg-white "  id="myselection-lunch">
+                    <option selected value="First-lunch" class="menu-list text-gray">午餐選單</option>
+                    <option value="One-lunch" class="menu-list">鮪魚玉米磚壓+生椰美式</option>
+                    <option value="Two-lunch" class="menu-list ">嫩煎雞腿堡+小杯玉米濃湯
                     </option>
-                    <option value="Four-lunch" class="menu-list ">咖哩雞肉水餃8+燙青菜+皮蛋豆腐
-                    </option>
-                    <option value="Five-lunch" class="menu-list ">全家烤蛋白餐盒
-                    </option>
-                    <option value="Six-lunch" class="menu-list ">711香草烤雞腿時蔬餐+茶葉蛋*1
-                    </option>
-                    <option value="Seven-lunch" class="menu-list ">羅勒海鮮冷義大利麵+雞胸肉
-                    </option>
-                    <option value="Eight-lunch" class="menu-list ">Subway鮮嫩雞柳
-                    </option>
-                    <option value="Nine-lunch" class="menu-list ">Subway厚切嫩牛
-                    </option>
-                </select>
+                      <option value="Three-lunch" class="menu-list ">韓式辣味鍋貼6<br>+無糖豆漿+燙青菜
+                      </option>
+                      <option value="Four-lunch" class="menu-list ">咖哩雞肉水餃8+燙青菜+皮蛋豆腐
+                      </option>
+                      <option value="Five-lunch" class="menu-list ">全家烤蛋白餐盒
+                      </option>
+                      <option value="Six-lunch" class="menu-list ">711香草烤雞腿時蔬餐+茶葉蛋*1
+                      </option>
+                      <option value="Seven-lunch" class="menu-list ">羅勒海鮮冷義大利麵+雞胸肉
+                      </option>
+                      <option value="Eight-lunch" class="menu-list ">Subway鮮嫩雞柳
+                      </option>
+                      <option value="Nine-lunch" class="menu-list ">Subway厚切嫩牛
+                      </option>
+                  </select>
+                </div>
               </div>
 
               <div class="py-4">
@@ -493,7 +496,7 @@
               </div>
 
               <div class="card h-100">
-                <div class="position-relative">
+                <div class="position-relative" >
                   <span class="badge-meal translate-middle-x">晚餐</span>
                   <img id="showFirst-dinner" src="../assets/img/dinner.jpg" class="option-first-dinner card-img-top w-100" alt="晚餐">
                   <img id="showOne-dinner" src="../assets/meal-img/takeOutMenu-6.jpg" class="option-list-dinner card-img-top w-100" alt="takeOutMenu-6">
@@ -506,7 +509,7 @@
                   <img id="showEight-dinner" src="../assets/meal-img/takeOutMenu-2.jpg" class="option-list-dinner card-img-top w-100" alt="takeOutMenu-2">
                   <img id="showNine-dinner" src="../assets/meal-img/takeOutMenu-3.jpg" class="option-list-dinner card-img-top w-100" alt="takeOutMenu-3">
                 </div>
-             
+                <div class="card-footer">
                 <select class="form-select fs-5 fw-bold border-0 card-footer py-3 bg-white"  id="myselection-dinner">
                   <option selected value="First-dinner" class="menu-list text-gray">晚餐選單</option>
                   <option value="One-dinner" class="menu-list">鮪魚玉米磚壓+生椰美式</option>
@@ -527,9 +530,11 @@
                     <option value="Nine-dinner" class="menu-list ">Subway厚切嫩牛
                     </option>
                 </select>
+                </div>
               </div>
 
             </div>
+            
             <a href="./meal-kcal.html" class=" btn-third rounded-pill mt-4 ">幫我計算</a>
 
           </div>
@@ -619,6 +624,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
       </script>
+
 </body>
 
 </html>

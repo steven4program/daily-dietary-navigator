@@ -1,15 +1,15 @@
 <div class="bg-index d-flex flex-column align-items-center justify-content-center position-relative">
- 
-    
+
     <div class="container mx-auto ">
          <!--mobile nav position-absolute-->
         <nav class="navbar d-lg-none d-flex flex-nowrap">
             <a href="#" class="navbar-brand">
                 <img src="../assets/img/Horizontal_container-1.png" alt="" class="img-fluid">
             </a>
-            <a href="#mobileNavbar" class="navbar-toggler border-0" data-bs-toggle="offcanvas" >
-                <img src="../assets/img/menu_black_24dp 2.png" alt="menu-button" class="rounded">
-            </a>
+            <button class="d-lg-none  bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/img/menu_black_24dp 2.png" alt="">
+                
+              </button>
 
         </nav>
         <!--web nav -->
@@ -39,64 +39,79 @@
             </div>
             </nav> 
         </div>
-                <h1 class="display-2 text-white fw-bold text-center">
-                每日營養導航
-                <br>
-                您的健康飲食夥伴
-                </h1>
-        
+
     </div>
+    <div class="container mx-auto ">
+            <h1 class="display-2 text-white fw-bold text-center">
+            每日營養導航
+            <br>
+            您的健康飲食夥伴
+            </h1>
+    </div>
+        
+   
     
+         <!--手機版漢堡選單 -->
+         <div class=" d-none align-items-center  position-absolute hamburger-list " id="navbarToggle">
+
+            <div class="container">
+                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                <li class="w-100 text-center p-4 border-bottom ">
+                    <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="../pages/index.html">首頁</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom">
+                    <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom">
+                    <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="../pages/combo-meal.html">餐點搭配</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom ">
+                    <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom">
+                    <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
+                </li>
+                </ul>
+            </div>
+        
+        </div>
+        <!--modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-fullscreen">
+              <div class=" d-flex flex-column  justify-content-between hamburger-list ">
+                <div class="modal-header border-0 py-4 mb-5"> 
+                  <button type="button" class="btn-close btn-close-white border border-4 border-white rounded" data-bs-dismiss="modal" aria-label="Close" style="width: 70px;height: 70px;"></button>
+                </div>
+                <div class="modal-body bg-transparent">
+                    <div class="container">
+                        <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                        <li class="w-100 text-center p-4 border-bottom ">
+                            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="../pages/index.html">首頁</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom">
+                            <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom">
+                            <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="../pages/combo-meal.html">餐點搭配</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom ">
+                            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom">
+                            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
     
 </div>
 
-<!--手機版漢堡選單 -->
-<div class="d-none navbar-collapse w-100 h-100 bg-opacity-50 position-absolute" id="mobileNavba" style="background-image: url(../assets/img/bg_menu.png);">
-    <!--d-lg-none-->
-    <ul class="container list-unstyled d-flex flex-column justify-content-center align-items-center ">
-        <li class="nav-item bg-transparent border-bottom ">
-            <a class="nav-link p-3 text-white text-center" aria-current="page" href="#">首頁</a>
-        </li>
-        <li class="nav-item  bg-transparent  border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">飲食紅綠燈</a>
-        </li>
-        <li class="nav-item  bg-transparent border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">餐點搭配</a>
-        </li>
-        <li class="nav-item bg-transparent border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">營養計算機</a>
-        </li>
-        <li class="nav-item bg-transparent border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">Q&A</a>
-        </li>
-    </ul>
-
-</div>
 
 <!--offcanvs-->
 
 
-<div class="offcanvas offcanvas-top  navbar-mobile"  id="mobileNavbar" tabindex="-1" aria-labelledby="offcanvasTopLabel" >
-  
-  <div class="offcanvas-body d-flex flex-column ">
-    <button type="button" class="btn-close p-2 border rounded-4 mb-5" data-bs-dismiss="offcanvas" aria-label="Close">    
-    </button>
-    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
-        <li class="p-4 border-bottom ">
-            <a class="text-center text-white fw-bold" aria-current="page" href="#">首頁</a>
-        </li>
-        <li class="p-4 border-bottom">
-            <a class="text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
-        </li>
-        <li class="p-4 border-bottom">
-            <a class="text-center text-white fw-bold " aria-current="page" href="../pages/combo-meal.html">餐點搭配</a>
-        </li>
-        <li class="p-4 border-bottom ">
-            <a class="text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
-        </li>
-        <li class="p-4 border-bottom">
-            <a class="text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
-        </li>
-    </ul>
-  </div>
-</div>
+

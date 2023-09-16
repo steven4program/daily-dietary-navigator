@@ -26,4 +26,17 @@ $(document).ready(function(){
     });
 });
 
+//const kcalConvenienceStore = document.querySelector('#convenienceStore-1');
+
+//console.log(kcalConvenienceStore.value);
+//function decide(){
+    let kcal = 0;
+    kcal += document.querySelector('#convenienceStore-1').checked == true ? document.querySelector('#convenienceStore-1').value :0; 
+    kcal += document.querySelector('#convenienceStore-2').checked == true ? document.querySelector('#convenienceStore-2').value :0; 
+    document.querySelector('.kcalTotal').innerHTML= kcal;
+//}
+
+
+
+
 
