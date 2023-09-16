@@ -66,8 +66,8 @@ section{
     }
 }
 
-// .send-back{
-//     position: relative;
-//     z-index: 2;
-//     transform: translateY(100%);
-// }
+.send-back{
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
