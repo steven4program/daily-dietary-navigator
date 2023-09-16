@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>餐點搭配</title>
-  <script type="module" crossorigin src="/daily-dietary-navigator/assets/main-a2a2fe00.js"></script>
-  <link rel="stylesheet" href="/daily-dietary-navigator/assets/main-01d75f88.css">
+  <script type="module" crossorigin src="/daily-dietary-navigator/assets/main-d0125873.js"></script>
+  <link rel="stylesheet" href="/daily-dietary-navigator/assets/main-f39232fc.css">
 </head>
 <body>
   <div class="bg-index d-flex flex-column align-items-center justify-content-center position-relative">
- 
-    
+
     <div class="container mx-auto ">
          <!--mobile nav position-absolute-->
         <nav class="navbar d-lg-none d-flex flex-nowrap">
-            <a href="#" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="/daily-dietary-navigator/assets/Horizontal_container-1-16a00598.png" alt="" class="img-fluid">
             </a>
-            <a href="#mobileNavbar" class="navbar-toggler border-0" data-bs-toggle="offcanvas" >
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7daxDcAgDETRC8oAjAjKXBGMyAaJRBlMlcIg/Ve6uuZOlgAA+OMwryU+8pDbkCdoccsHPCf3LADdbAeLPOQ2lHPW4iQfQ8Btd7AKQGfv4B2TPFytfk92i4N8htpYDx5WAAB8vVGvDCG5B51GAAAAAElFTkSuQmCC" alt="menu-button" class="rounded">
-            </a>
+            <button class="d-lg-none  bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7daxDcAgDETRC8oAjAjKXBGMyAaJRBlMlcIg/Ve6uuZOlgAA+OMwryU+8pDbkCdoccsHPCf3LADdbAeLPOQ2lHPW4iQfQ8Btd7AKQGfv4B2TPFytfk92i4N8htpYDx5WAAB8vVGvDCG5B51GAAAAAElFTkSuQmCC" alt="">
+                
+              </button>
 
         </nav>
         <!--web nav -->
@@ -45,73 +45,88 @@
                     <a class="nav-link hover-color-secondary" aria-current="page" href="#">營養計算機</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link hover-color-secondary" aria-current="page" href="#">Q&A</a>
+                    <a class="nav-link hover-color-secondary" aria-current="page" href="../pages/Q&A.html">Q&A</a>
                 </li>
             </ul>
             </div>
             </nav> 
         </div>
-                <h1 class="display-2 text-white fw-bold text-center">
-                每日營養導航
-                <br>
-                您的健康飲食夥伴
-                </h1>
-        
+
     </div>
+    <div class="container mx-auto ">
+            <h1 class="display-2 text-white fw-bold text-center">
+            每日營養導航
+            <br>
+            您的健康飲食夥伴
+            </h1>
+    </div>
+        
+   
     
+         <!--手機版漢堡選單 -->
+         <div class=" d-none align-items-center  position-absolute hamburger-list " id="navbarToggle">
+
+            <div class="container">
+                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                <li class="w-100 text-center p-4 border-bottom ">
+                    <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="../pages/index.html">首頁</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom">
+                    <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom">
+                    <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="../pages/combo-meal.html">餐點搭配</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom ">
+                    <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
+                </li>
+                <li class="w-100 text-center p-4 border-bottom">
+                    <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
+                </li>
+                </ul>
+            </div>
+        
+        </div>
+        <!--modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-fullscreen">
+              <div class=" d-flex flex-column  justify-content-between hamburger-list ">
+                <div class="modal-header border-0 py-4 mb-5"> 
+                  <button type="button" class="btn-close btn-close-white border border-4 border-white rounded" data-bs-dismiss="modal" aria-label="Close" style="width: 70px;height: 70px;"></button>
+                </div>
+                <div class="modal-body bg-transparent">
+                    <div class="container">
+                        <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                        <li class="w-100 text-center p-4 border-bottom ">
+                            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="../pages/index.html">首頁</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom">
+                            <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom">
+                            <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="../pages/combo-meal.html">餐點搭配</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom ">
+                            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
+                        </li>
+                        <li class="w-100 text-center p-4 border-bottom">
+                            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
     
 </div>
 
-<!--手機版漢堡選單 -->
-<div class="d-none navbar-collapse w-100 h-100 bg-opacity-50 position-absolute" id="mobileNavba" style="background-image: url(/daily-dietary-navigator/assets/bg_menu-04b20c07.png);">
-    <!--d-lg-none-->
-    <ul class="container list-unstyled d-flex flex-column justify-content-center align-items-center ">
-        <li class="nav-item bg-transparent border-bottom ">
-            <a class="nav-link p-3 text-white text-center" aria-current="page" href="#">首頁</a>
-        </li>
-        <li class="nav-item  bg-transparent  border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">飲食紅綠燈</a>
-        </li>
-        <li class="nav-item  bg-transparent border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">餐點搭配</a>
-        </li>
-        <li class="nav-item bg-transparent border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">營養計算機</a>
-        </li>
-        <li class="nav-item bg-transparent border-bottom">
-            <a class="nav-link text-white text-center " aria-current="page" href="#">Q&A</a>
-        </li>
-    </ul>
-
-</div>
 
 <!--offcanvs-->
 
 
-<div class="offcanvas offcanvas-top  navbar-mobile"  id="mobileNavbar" tabindex="-1" aria-labelledby="offcanvasTopLabel" >
-  
-  <div class="offcanvas-body d-flex flex-column ">
-    <button type="button" class="btn-close p-2 border rounded-4 mb-5" data-bs-dismiss="offcanvas" aria-label="Close">    
-    </button>
-    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
-        <li class="p-4 border-bottom ">
-            <a class="text-center text-white fw-bold" aria-current="page" href="#">首頁</a>
-        </li>
-        <li class="p-4 border-bottom">
-            <a class="text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
-        </li>
-        <li class="p-4 border-bottom">
-            <a class="text-center text-white fw-bold " aria-current="page" href="../pages/combo-meal.html">餐點搭配</a>
-        </li>
-        <li class="p-4 border-bottom ">
-            <a class="text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
-        </li>
-        <li class="p-4 border-bottom">
-            <a class="text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
-        </li>
-    </ul>
-  </div>
-</div>
+
 <div class="container">
     <div class="d-flex flex-column ">
       <h1 class="fs-1 mb-5 fw-bold text-center">您可以選擇...</h1>
@@ -135,7 +150,7 @@
                   </a>
                 
                   <ul class="dropdown-menu" id="randomlyMatch" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">全日外食</a></li>
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="allday-takeout.html">全日外食</a></li>
                     <li><a class="dropdown-item py-2 fs-5 text-center" href="#">全日備餐</a></li>
                     <li><a class="dropdown-item py-2 fs-5 text-center" href="#">外食+備餐</a></li>
                   </ul>
@@ -148,7 +163,7 @@
                   </a>
                 
                   <ul class="dropdown-menu" id="randomlyMatch" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item py-2 fs-5 text-center" href="#">1500cal</a></li>
+                    <li><a class="dropdown-item py-2 fs-5 text-center" href="allday-takeout.html">1500cal</a></li>
                     <li><a class="dropdown-item py-2 fs-5 text-center" href="#">1700cal</a></li>
                     <li><a class="dropdown-item py-2 fs-5 text-center" href="#">1900cal</a></li>
                   </ul>
@@ -173,20 +188,20 @@
             </div>
             
             <div class="collapse show" id="convenienceStore" data-bs-parent="#menuList">
-              <div class="card-body " >
-                <div class="row mb-4">
+              <div class="card-body convenienceStore" >
+                <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                    <input type="checkbox" class="btn-check " id="btn-check" autocomplete="off">
                     <label class=" w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check">
                       <div class="card" >
                         <img src="/daily-dietary-navigator/assets/convenienceStore-1-5ca88875.png" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="513" id="convenienceStore-1">711紐奧良鮮蔬烤雞三明治<br>+無糖5.1豆漿</div>
+                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="431" id="convenienceStore-1">711紐奧良鮮蔬烤雞三明治<br>+無糖5.1豆漿</div>
                       </div>
                     </label>
                     
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                    <input type="checkbox" class="btn-check " id="btn-check2" autocomplete="off">
                     <label class=" w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check2">
                       <div class="card d-flex flex-column justify-content-between">
                         <img src="/daily-dietary-navigator/assets/convenienceStore-2-b2d440dc.png" alt="" class="card-img-top">
@@ -204,11 +219,11 @@
                     </label>
                   </div>
                 </div>
-                <div class="row mb-4">
+                <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">
                     <label class="w-100  btn btn-outline-primary p-3 card-check rounded-1" for="btn-check4">
-                      <div class="card" >
+                      <div class="card food-card" >
                         <img src="/daily-dietary-navigator/assets/convenienceStore-4-b7b5c52c.png" alt="" class="card-img-top">
                         <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="513" id="convenienceStore-4">雞肉飯飯糰+茶葉蛋<br>
                           +無糖高纖豆漿</div>
@@ -219,7 +234,7 @@
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check5">
-                      <div class="card d-flex flex-column justify-content-between">
+                      <div class="card food-card">
                         <img src="/daily-dietary-navigator/assets/convenienceStore-5-f0c14b7e.jpg" alt="" class="card-img-top">
                         <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="408" id="convenienceStore-5">全家烤蛋白餐盒</div>
                       </div>
@@ -227,8 +242,8 @@
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <input type="checkbox" class="btn-check" id="btn-check6" autocomplete="off">
-                    <label class="w-100   btn btn-outline-primary p-3 card-check rounded-1" for="btn-check6">
-                      <div class="card">
+                    <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check6">
+                      <div class="card food-card">
                         <img src="/daily-dietary-navigator/assets/convenienceStore-6-ad4af542.jpg" alt="" class="card-img-top">
                         <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="convenienceStore-6">全家 羅勒海鮮冷義大利麵<br>+雞胸肉</div>
                       </div>
@@ -246,7 +261,7 @@
             </div>
             <div class="collapse" id="takeOutMenu" data-bs-parent="#menuList">
               <div class="card-body">
-                <div class="row mb-4">
+                <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <input type="checkbox" class="btn-check" id="btn-check-takeOut1" autocomplete="off">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut1">
@@ -276,7 +291,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="row mb-4">
+                <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <input type="checkbox" class="btn-check" id="btn-check-takeOut4" autocomplete="off">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut4">
@@ -306,7 +321,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="row mb-4">
+                <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
                     <input type="checkbox" class="btn-check" id="btn-check-takeOut7" autocomplete="off">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut7">
@@ -381,7 +396,7 @@
                  <div class="row mt-5">
                   <div class="d-flex flex-column flex-md-row justify-content-around">
                     <a href="#" class="w-md-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
-                    <a href="meal-kcal.html" class="w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold ">決定好了!</a>
+                    <a href="meal-kcal.html" class="w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold" onclick="decide()">決定好了!</a>
                   </div>
                 </div>
               </div>
@@ -415,11 +430,11 @@
         <div
              class="contact-icons mt-4 d-flex flex-row justify-content-md-between justify-content-around align-items-center">
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/ig-icon-f1565903.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/ig-icon-f14409f9.svg"></img></a>
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/fb-icon-c4fe0d03.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/fb-icon-b0c969d4.svg"></img></a>
           <a class="d-flex justify-content-center align-items-center" href="#"><img
-                 src="/daily-dietary-navigator/assets/line-icon-473d788c.svg"></img></a>
+                 src="/daily-dietary-navigator/assets/line-icon-d9ac5aa3.svg"></img></a>
         </div>
       </div>
     </div>
