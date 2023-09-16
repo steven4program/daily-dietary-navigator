@@ -20,9 +20,9 @@
 
     <div class="container mx-auto ">
          <!--mobile nav position-absolute-->
-        <nav class="navbar d-lg-none d-flex flex-nowrap">
-            <a href="index.html" class="navbar-brand">
-                <img src="../assets/img/Horizontal_container-1.png" alt="" class="img-fluid">
+        <nav class="navbar d-lg-none d-flex flex-nowrap"  data-aos="fade-up">
+            <a href="index.html" class="navbar-brand" data-aos="fade-up">
+                <img src="../assets/img/Horizontal_container-1.png" alt="" class="img-fluid" >
             </a>
             <button class="d-lg-none  bg-transparent" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="../assets/img/menu_black_24dp 2.png" alt="">
@@ -37,7 +37,7 @@
                 <img src="../assets/img/Horizontal_container.png" alt="Horizontal_container" class="">
             </a>
             <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav  list-unstyled d-flex flex-row ">
+                <ul class="navbar-nav  list-unstyled d-flex flex-row " data-aos="fade-up">
                 <li class="nav-item">
                     <a class="nav-link hover-color-secondary" aria-current="page" href="index.html">首頁</a>
                 </li>
@@ -60,7 +60,7 @@
 
     </div>
     <div class="container mx-auto ">
-            <h1 class="display-2 text-white fw-bold text-center">
+            <h1 class="display-2 text-white fw-bold text-center" data-aos="fade-up">
             每日營養導航
             <br>
             您的健康飲食夥伴
@@ -73,7 +73,7 @@
          <div class=" d-none align-items-center  position-absolute hamburger-list " id="navbarToggle">
 
             <div class="container">
-                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center " data-aos="fade-up">
                 <li class="w-100 text-center p-4 border-bottom ">
                     <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="index.html">首頁</a>
                 </li>
@@ -133,6 +133,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script type="module" src="../main.js"></script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
 </body>
 
 </html>

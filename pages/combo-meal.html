@@ -11,13 +11,13 @@
   <%- include('./layout/header'); -%>
 <div class="container">
     <div class="d-flex flex-column ">
-      <h1 class="fs-1 mb-5 fw-bold text-center">您可以選擇...</h1>
+      <h1 class="fs-1 mb-5 fw-bold text-center"  data-aos="fade-up">您可以選擇...</h1>
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-around mb-5">
           <div class="d-flex ">
               <!--用摺疊選單-->
             <div class="accordion accordion-flush" id="accordionExample">
               <div class="accordion-item ">
-              <a href="#mealChoose" class="btn btn-primary-400 rounded-4 px-6 py-3 fs-4 mb-2 text-white fw-bold" data-bs-toggle="collapse" >
+              <a href="#mealChoose" class="btn btn-primary-400 rounded-4 px-6 py-3 fs-4 mb-2 text-white fw-bold" data-bs-toggle="collapse"  data-aos="fade-up">
                 自選搭配
               </a>
              
@@ -27,7 +27,7 @@
           </div>       
           <div class=" d-flex">
               <div class="dropdown ">
-                  <a class="btn btn-primary-400 rounded-4 px-6 py-3  fs-4   mb-2 text-white fw-bold  dropdown-toggle" href="#randomlyMatch" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="btn btn-primary-400 rounded-4 px-6 py-3  fs-4   mb-2 text-white fw-bold  dropdown-toggle" href="#randomlyMatch" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"  data-aos="fade-up">
                     隨機搭配
                   </a>
                 
@@ -40,7 +40,7 @@
           </div>
           <div class=" d-flex ">
               <div class="dropdown">
-                  <a class="btn btn-primary-400 rounded-4 px-6 py-3  fs-4   mb-2 text-white fw-bold  dropdown-toggle" href="#randomlyMatch" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="btn btn-primary-400 rounded-4 px-6 py-3  fs-4   mb-2 text-white fw-bold  dropdown-toggle" href="#randomlyMatch" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"  data-aos="fade-up">
                     精選搭配
                   </a>
                 
@@ -54,7 +54,7 @@
       </div>
       <div class="row">
         <div class="collapse accordion-collapse" id="mealChoose" >
-          <div class="card text-center card-flush"  id="menuList">
+          <div class="card text-center card-flush"  id="menuList"  data-aos="fade-up">
             <div class="card-header bg-secondary  ">
               <ul class="nav nav-pills d-flex flex-column flex-md-row card-header-tabs justify-content-around text-white fw-bold">
                 <li class="nav-item">
@@ -73,61 +73,61 @@
               <div class="card-body convenienceStore" >
                 <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check " id="btn-check" autocomplete="off">
-                    <label class=" w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check">
+                    <input type="checkbox" class="btn-check " id="btn-check1" autocomplete="off" value="431">
+                    <label class=" w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check1">
                       <div class="card" >
                         <img src="../assets/meal-img/convenienceStore-1.png" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="431" id="convenienceStore-1">711紐奧良鮮蔬烤雞三明治<br>+無糖5.1豆漿</div>
+                        <div class="card-footer fs-4 fw-bold py-3">711紐奧良鮮蔬烤雞三明治<br>+無糖5.1豆漿</div>
                       </div>
                     </label>
                     
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check " id="btn-check2" autocomplete="off">
+                    <input type="checkbox" class="btn-check " id="btn-check2" autocomplete="off" value="408" >
                     <label class=" w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check2">
                       <div class="card d-flex flex-column justify-content-between">
                         <img src="../assets/meal-img/convenienceStore-2.png" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="408" id="convenienceStore-2">711香草烤雞腿時蔬餐<br>+茶葉蛋*1</div>
+                        <div class="card-footer fs-4 fw-bold py-3">711香草烤雞腿時蔬餐<br>+茶葉蛋*1</div>
                       </div>
                     </label>
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off" value="496">
                     <label class="w-100   btn btn-outline-primary p-3 card-check rounded-1" for="btn-check3">
                       <div class="card">
                         <img src="../assets/meal-img/convenienceStore-3.png" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="convenienceStore-3">711黑胡椒烤雞握便當<br>+茶葉蛋*2</div>
+                        <div class="card-footer fs-4 fw-bold py-3">711黑胡椒烤雞握便當<br>+茶葉蛋*2</div>
                       </div>
                     </label>
                   </div>
                 </div>
                 <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off" value="466">
                     <label class="w-100  btn btn-outline-primary p-3 card-check rounded-1" for="btn-check4">
                       <div class="card food-card" >
                         <img src="../assets/meal-img/convenienceStore-4.png" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="513" id="convenienceStore-4">雞肉飯飯糰+茶葉蛋<br>
+                        <div class="card-footer fs-4 fw-bold py-3">雞肉飯飯糰+茶葉蛋<br>
                           +無糖高纖豆漿</div>
                       </div>
                     </label>
                     
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off" value="513">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check5">
                       <div class="card food-card">
                         <img src="../assets/meal-img/convenienceStore-5.jpg" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="408" id="convenienceStore-5">全家烤蛋白餐盒</div>
+                        <div class="card-footer fs-4 fw-bold py-3">全家烤蛋白餐盒</div>
                       </div>
                     </label>
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check6" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check6" autocomplete="off" value="427">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check6">
                       <div class="card food-card">
                         <img src="../assets/meal-img/convenienceStore-6.jpg" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="convenienceStore-6">全家 羅勒海鮮冷義大利麵<br>+雞胸肉</div>
+                        <div class="card-footer fs-4 fw-bold py-3">全家 羅勒海鮮冷義大利麵<br>+雞胸肉</div>
                       </div>
                     </label>
                   </div>
@@ -135,8 +135,8 @@
                 <!--轉換頁面按鈕-->
                 <div class="row mt-5">
                   <div class="d-flex flex-column flex-md-row justify-content-around">
-                    <a href="#" class="w-md-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
-                    <a href="meal-kcal.html" class="w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold " onclick="decide()">決定好了!</a>
+                    <a href="combo-meal.html" class="w-md-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
+                    <a href="#mealKcal" class="w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold " onclick="decide()">決定好了!</a>
                   </div>
                 </div>
               </div>
@@ -145,90 +145,90 @@
               <div class="card-body">
                 <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut1" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut1" autocomplete="off" value="342">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut1">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-1.jpg" alt="Starbucks烤雞生吐司三明治" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-1">Starbucks烤雞生吐司三明治</div>
+                        <div class="card-footer fs-4 fw-bold py-3">Starbucks烤雞生吐司三明治</div>
                       </div>
                     </label>
                     
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut2" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut2" autocomplete="off" value="324" >
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut2">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-2.jpg" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu">Subway鮮嫩雞柳</div>
+                        <div class="card-footer fs-4 fw-bold py-3">Subway鮮嫩雞柳</div>
                       </div>
                     </label>
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut3" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut3" autocomplete="off" value="366">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut3">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-3.jpg" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-3">Subway厚切嫩牛</div>
+                        <div class="card-footer fs-4 fw-bold py-3">Subway厚切嫩牛</div>
                       </div>
                     </label>
                   </div>
                 </div>
                 <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut4" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut4" autocomplete="off" value="400">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut4">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-4.jpg" alt="Louisa麥香燻雞三明治" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-4">Louisa麥香燻雞三明治<br>+中熱紅茶拿鐵</div>
+                        <div class="card-footer fs-4 fw-bold py-3">Louisa麥香燻雞三明治<br>+中熱紅茶拿鐵</div>
                       </div>
                     </label>
                     
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut5" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut5" autocomplete="off" value="392">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut5">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-5.jpg" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-5">Louisa蔬菜歐姆蛋<br>+中冰拿鐵</div>
+                        <div class="card-footer fs-4 fw-bold py-3">Louisa蔬菜歐姆蛋<br>+中冰拿鐵</div>
                       </div>
                     </label>
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut6" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut6" autocomplete="off" value="450">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut6">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-6.jpg" alt="" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-6">Louisa鮪魚玉米磚壓<br>+生椰美式</div>
+                        <div class="card-footer fs-4 fw-bold py-3">Louisa鮪魚玉米磚壓<br>+生椰美式</div>
                       </div>
                     </label>
                   </div>
                 </div>
                 <div class="row mb-4 align-items-stretch">
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut7" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut7" autocomplete="off" value="479">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut7">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-7.jpg" alt="嫩煎雞腿堡" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-7">嫩煎雞腿堡<br>+小杯玉米濃湯</div>
+                        <div class="card-footer fs-4 fw-bold py-3">嫩煎雞腿堡<br>+小杯玉米濃湯</div>
                       </div>
                     </label>
                     
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut8" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut8" autocomplete="off"  value="400">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut8">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-8.png" alt="韓式辣味鍋貼" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-8">韓式辣味鍋貼*6<br>+無糖豆漿+燙青菜</div>
+                        <div class="card-footer fs-4 fw-bold py-3">韓式辣味鍋貼*6<br>+無糖豆漿+燙青菜</div>
                       </div>
                     </label>
                   </div>
                   <div class="col-12 col-md-4 mb-3 mb-md-0">
-                    <input type="checkbox" class="btn-check" id="btn-check-takeOut9" autocomplete="off">
+                    <input type="checkbox" class="btn-check" id="btn-check-takeOut9" autocomplete="off" value="600">
                     <label class="w-100 btn btn-outline-primary p-3 card-check rounded-1" for="btn-check-takeOut9">
                       <div class="card">
                         <img src="../assets/meal-img/takeOutMenu-9.png" alt="咖哩雞肉水餃" class="card-img-top">
-                        <div class="card-footer fs-4 fw-bold py-3"><input type="checkbox" class="btn-check" value="496" id="takeOutMenu-9">咖哩雞肉水餃*8<br>+燙青菜+皮蛋豆腐</div>
+                        <div class="card-footer fs-4 fw-bold py-3">咖哩雞肉水餃*8<br>+燙青菜+皮蛋豆腐</div>
                       </div>
                     </label>
                   </div>
@@ -236,9 +236,11 @@
                  <!--轉換頁面按鈕-->
                  <div class="row mt-5">
                   <div class="d-flex flex-column flex-md-row justify-content-around">
-                    <a href="#" class="w-md-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
-                    <a href="meal-kcal.html" class="w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold ">決定好了!</a>
+                    <a href="combo-meal.html" class="w-md-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
+                    <a href="#mealKcal" class="w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold " onclick="decide()" >決定好了!</a>
+
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -277,9 +279,14 @@
                  <!--轉換頁面按鈕-->
                  <div class="row mt-5">
                   <div class="d-flex flex-column flex-md-row justify-content-around">
-                    <a href="#" class="w-md-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
-                    <a href="meal-kcal.html" class="w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold" onclick="decide()">決定好了!</a>
+                    <a href="combo-meal.html" class="w-md-25 btn btn-secondary rounded-4 px-6 py-3 fs-4 me-lg-4 mb-2 text-white fw-bold ">重新搭配</a>
+                    
+                    <a href="meal-kcal.html" class="decide w-md-25 btn btn-primary-400 rounded-4 px-6 py-3  fs-4  me-lg-4 mb-2 text-white fw-bold" onclick="decide()">決定好了!</a>
+                    
                   </div>
+                  
+                    
+                 
                 </div>
               </div>
             </div>
@@ -287,6 +294,24 @@
           </div>
         </div>
         
+      </div>
+      <div class="row justify-content-center mt-5" id="mealKcal">
+        <div class="col-10 d-flex flex-column align-items-center justify-content-center mb-3">
+          <p class="fs-1 fw-bold" data-aos="flip-down" > 
+            <span class="fs-1 fw-bold " id="kcalTotal">總熱量</span>
+          </p>
+          <p class="d-none fs-2 fw-bold" id="totalPFC" data-aos="flip-down">P /F /C </p>
+        </div>
+        <div class="col-10 d-flex flex-column align-items-center justify-content-center mb-5">
+          <div class="card bg-light-yellow" data-aos="flip-down" >
+            <p class="card-title fs-4 fw-bold px-4 pt-3">Tips：</p>
+            <p class="card-text fs-4 fw-bold text-gray p-4">
+                現代外食族的飲食結構經常會膳食纖維、蛋白質、維生素攝取不  足，加上外食鈉含量通常都會超過人體建議的一日所需。挑選完的菜單要記得注意整體的營養均衡，飲食選擇上盡量少油、少鹽、少糖，利用減少喝湯、減少醬汁、喝水取代含糖飲料的方式來避免不必要的負擔，並搭配多多攝取蔬果與蛋白質！
+
+            </p>
+          </div>
+        </div>
+       
       </div>
       
 
@@ -298,6 +323,58 @@
 <%- include('./layout/footer'); -%>
 
 <script type="module" src="../main.js"></script>
+<!--AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+// Global settings:
+disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+initClassName: 'aos-init', // class applied after initialization
+animatedClassName: 'aos-animate', // class applied on animation
+useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+offset: 120, // offset (in px) from the original trigger point
+delay: 0, // values from 0 to 3000, with step 50ms
+duration: 800, // values from 0 to 3000, with step 50ms
+easing: 'ease', // default easing for AOS animations
+once: false, // whether animation should happen only once - while scrolling down
+mirror: false, // whether elements should animate out while scrolling past them
+anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+<script>
+  
+  function decide(){
+    let kcal =0;
+    kcal += document.querySelector('#btn-check1').checked == true ? parseInt(document.querySelector('#btn-check1').value) : 0; 
+    kcal += document.querySelector('#btn-check2').checked == true ? parseInt(document.querySelector('#btn-check2').value) : 0; 
+    kcal += document.querySelector('#btn-check3').checked == true ? parseInt(document.querySelector('#btn-check3').value) : 0; 
+    kcal += document.querySelector('#btn-check4').checked == true ? parseInt(document.querySelector('#btn-check4').value) : 0;
+    kcal += document.querySelector('#btn-check5').checked == true ? parseInt(document.querySelector('#btn-check5').value) : 0; 
+    kcal += document.querySelector('#btn-check6').checked == true ? parseInt(document.querySelector('#btn-check6').value) : 0;  
+    kcal += document.querySelector('#btn-check-takeOut1').checked == true ? parseInt(document.querySelector('#btn-check-takeOut1').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut2').checked == true ? parseInt(document.querySelector('#btn-check-takeOut2').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut3').checked == true ? parseInt(document.querySelector('#btn-check-takeOut3').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut6').checked == true ? parseInt(document.querySelector('#btn-check-takeOut4').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut5').checked == true ? parseInt(document.querySelector('#btn-check-takeOut5').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut6').checked == true ? parseInt(document.querySelector('#btn-check-takeOut6').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut7').checked == true ? parseInt(document.querySelector('#btn-check-takeOut7').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut8').checked == true ? parseInt(document.querySelector('#btn-check-takeOut8').value) : 0; 
+    kcal += document.querySelector('#btn-check-takeOut9').checked == true ? parseInt(document.querySelector('#btn-check-takeOut9').value) : 0; 
+    
+    console.log(kcal);
+    document.querySelector('#kcalTotal').innerHTML=`<p>總熱量 = ${kcal} kcal `;
+    
+}
+</script>
 </body>
 </html>
 
