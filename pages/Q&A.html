@@ -12,7 +12,10 @@
   <%- include('./layout/header'); -%>
 
   <section>
+    <img class="img-fluid send-top mb-7 mb-md-6 mb-lg-4" src="../assets/img/bg_web_5.png" alt="wave-white">
+
     <div class="background pt-9 pb-83" style="background-image:url('../assets/img/bg_QA_web.png')">
+
       <div class="container">
         <div class="flex-lg-row">
           <div class="card col-12 col-lg-8 rounded-lg py-10 py-md-8 px-4 px-md-7">
@@ -169,13 +172,18 @@
           <div class="col-lg-4"></div>
         </div>
       </div>
+
+      <img class="img-fluid send-back mt-7 mt-md-6 mt-lg-4" src="../assets/img/bg_web_5.png" alt="wave-white">
     </div>
   </section>
 
   <%- include('./layout/footer'); -%>
 
-  <script type="module" src="../main.js"></script>
+  <script type="module" src="../main.js"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init();
+
     window.onload = function () {
       document.querySelector('section').scrollIntoView({ behavior: 'smooth' });
     };

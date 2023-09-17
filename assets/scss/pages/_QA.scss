@@ -75,3 +75,10 @@ section{
     background-repeat: no-repeat;
     z-index: 2;
 }
+
+.send-top{
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transform: rotate(180deg);
+}
