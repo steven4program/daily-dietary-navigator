@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Daily Nutrition Navigator</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="bg-primary-300 bg-wave-6cata position-relative pb-8 pt-8 ">
+            <div class="container ">
+                <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
+                    <div class="d-lg-none text-center"><img src="../assets/img/img_title_2.png"
+                            alt="thinking-girl-face"></div>
+                    <h4 class="text-center mt-4">看看哪個更健康?</h4>
+                    <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-2 mx-auto"></div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <h3
+                            class="fs-6 fw-normal mx-auto text-center mt-3 mb-3 border border-2 border-secondary rounded-3 p-2 text-secondary">
+                            豆魚蛋肉類</h3>
+                    </div>
+                    <div class="row align-items-center justify-content-between g-0">
+                        <!--   Slides   -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">
+              <div class="row accordion" id="accordionExample">
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                    <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                    <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                      <a class="stretched-link" href="">滷雞腿</a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mx-auto text-center">
+                  <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                      alt="thinking-girl-face"></div>
+                  <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <h5>看答案</h5>
+                    <span class="material-symbols-outlined">
+                      expand_more
+                    </span>
+                  </a>
+
+                  <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                    href="6-catagories.html">點我看更多</button>
+                </div>
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                  <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                  <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                    <a class="stretched-link" href="">滷雞腿</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                                <!-- 豆魚蛋肉類 範例 -->
+
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/Switch.png" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">滷雞腿</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/Switch-1.png" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">炸雞腿</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 蔬菜類類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/veg_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">燙花椰菜</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/veg_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">泡菜</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 全穀雜糧類 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/rice_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">糙米飯</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/rice_yellow.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">白米飯</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 水果類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/fruit_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">新鮮鳳梨</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/fruit_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鳳梨罐頭</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 油脂與堅果種子類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/oil_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">橄欖油</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/oil_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">豬油</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 乳品類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/milk_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鮮奶</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/milk_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">草莓調味</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                    <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body mt-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <div class=" signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png"
+                                            alt="">
+                                        <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png"
+                                            alt="">
+                                    </div>
+                                    <div class=" feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-end signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png"
+                                            alt="">
+                                        <img class="ms-auto d-block d-md-none"
+                                            src="../assets/img/img_traffic_red_mobile.png" alt="">
+                                    </div>
+                                    <div class="text-end feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table mt-10">
+                                <thead class="border-light-yellow">
+                                    <tr>
+                                        <th class="h5" scope="col">營養標示</th>
+                                        <th scope="col"></th>
+                                        <th class="h5 text-end" scope="col">營養標示</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nutrition-label">
+                                    <tr>
+
+                                        <td>186kcal</td>
+                                        <th scope="row">熱量(Kcal)</th>
+                                        <td>288kcal</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>0g</td>
+                                        <th scope="row">碳水化合物</th>
+                                        <td>12.1g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.8g</td>
+                                        <th scope="row">脂肪</th>
+                                        <td>18.7g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.9 g</td>
+                                        <th scope="row">飽和脂肪</th>
+                                        <td>4.3 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.7g</td>
+                                        <th scope="row">蛋白質</th>
+                                        <td>17.7 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary-200 bg-wave-6cata position-relative pb-8 pt-8 ">
+            <div class="container ">
+                <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
+                    <div class="d-lg-none text-center"><img src="../assets/img/img_title_2.png"
+                            alt="thinking-girl-face"></div>
+                    <h4 class="text-center mt-4">看看哪個更健康?</h4>
+                    <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-2 mx-auto"></div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <h3
+                            class="fs-6 fw-normal mx-auto text-center mt-3 mb-3 border border-2 border-secondary rounded-3 p-2 text-secondary">
+                            蔬菜類</h3>
+                    </div>
+                    <div class="row align-items-center justify-content-between g-0">
+                        <!--   Slides   -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">
+              <div class="row accordion" id="accordionExample">
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                    <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                    <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                      <a class="stretched-link" href="">滷雞腿</a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mx-auto text-center">
+                  <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                      alt="thinking-girl-face"></div>
+                  <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <h5>看答案</h5>
+                    <span class="material-symbols-outlined">
+                      expand_more
+                    </span>
+                  </a>
+
+                  <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                    href="6-catagories.html">點我看更多</button>
+                </div>
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                  <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                  <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                    <a class="stretched-link" href="">滷雞腿</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                                <!-- 蔬菜類類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/veg_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">燙花椰菜</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/veg_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">泡菜</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 全穀雜糧類 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/rice_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">糙米飯</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/rice_yellow.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">白米飯</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 水果類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/fruit_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">新鮮鳳梨</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/fruit_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鳳梨罐頭</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 油脂與堅果種子類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/oil_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">橄欖油</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/oil_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">豬油</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 乳品類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/milk_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鮮奶</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/milk_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">草莓調味</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                    <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body mt-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <div class=" signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png"
+                                            alt="">
+                                        <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png"
+                                            alt="">
+                                    </div>
+                                    <div class=" feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-end signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png"
+                                            alt="">
+                                        <img class="ms-auto d-block d-md-none"
+                                            src="../assets/img/img_traffic_red_mobile.png" alt="">
+                                    </div>
+                                    <div class="text-end feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table mt-10">
+                                <thead class="border-light-yellow">
+                                    <tr>
+                                        <th class="h5" scope="col">營養標示</th>
+                                        <th scope="col"></th>
+                                        <th class="h5 text-end" scope="col">營養標示</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nutrition-label">
+                                    <tr>
+
+                                        <td>186kcal</td>
+                                        <th scope="row">熱量(Kcal)</th>
+                                        <td>288kcal</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>0g</td>
+                                        <th scope="row">碳水化合物</th>
+                                        <td>12.1g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.8g</td>
+                                        <th scope="row">脂肪</th>
+                                        <td>18.7g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.9 g</td>
+                                        <th scope="row">飽和脂肪</th>
+                                        <td>4.3 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.7g</td>
+                                        <th scope="row">蛋白質</th>
+                                        <td>17.7 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary-300 bg-wave-6cata position-relative pb-8 pt-8 ">
+            <div class="container ">
+                <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
+                    <div class="d-lg-none text-center"><img src="../assets/img/img_title_2.png"
+                            alt="thinking-girl-face"></div>
+                    <h4 class="text-center mt-4">看看哪個更健康?</h4>
+                    <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-2 mx-auto"></div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <h3
+                            class="fs-6 fw-normal mx-auto text-center mt-3 mb-3 border border-2 border-secondary rounded-3 p-2 text-secondary">
+                            全穀雜糧類</h3>
+                    </div>
+                    <div class="row align-items-center justify-content-between g-0">
+                        <!--   Slides   -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">
+              <div class="row accordion" id="accordionExample">
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                    <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                    <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                      <a class="stretched-link" href="">滷雞腿</a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mx-auto text-center">
+                  <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                      alt="thinking-girl-face"></div>
+                  <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <h5>看答案</h5>
+                    <span class="material-symbols-outlined">
+                      expand_more
+                    </span>
+                  </a>
+
+                  <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                    href="6-catagories.html">點我看更多</button>
+                </div>
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                  <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                  <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                    <a class="stretched-link" href="">滷雞腿</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                                <!-- 全穀雜糧類 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/rice_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">糙米飯</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/rice_yellow.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">白米飯</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 水果類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/fruit_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">新鮮鳳梨</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/fruit_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鳳梨罐頭</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 油脂與堅果種子類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/oil_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">橄欖油</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/oil_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">豬油</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 乳品類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/milk_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鮮奶</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/milk_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">草莓調味</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                    <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body mt-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <div class=" signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png"
+                                            alt="">
+                                        <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png"
+                                            alt="">
+                                    </div>
+                                    <div class=" feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-end signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png"
+                                            alt="">
+                                        <img class="ms-auto d-block d-md-none"
+                                            src="../assets/img/img_traffic_red_mobile.png" alt="">
+                                    </div>
+                                    <div class="text-end feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table mt-10">
+                                <thead class="border-light-yellow">
+                                    <tr>
+                                        <th class="h5" scope="col">營養標示</th>
+                                        <th scope="col"></th>
+                                        <th class="h5 text-end" scope="col">營養標示</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nutrition-label">
+                                    <tr>
+
+                                        <td>186kcal</td>
+                                        <th scope="row">熱量(Kcal)</th>
+                                        <td>288kcal</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>0g</td>
+                                        <th scope="row">碳水化合物</th>
+                                        <td>12.1g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.8g</td>
+                                        <th scope="row">脂肪</th>
+                                        <td>18.7g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.9 g</td>
+                                        <th scope="row">飽和脂肪</th>
+                                        <td>4.3 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.7g</td>
+                                        <th scope="row">蛋白質</th>
+                                        <td>17.7 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary-200 bg-wave-6cata position-relative pb-8 pt-8 ">
+            <div class="container ">
+                <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
+                    <div class="d-lg-none text-center"><img src="../assets/img/img_title_2.png"
+                            alt="thinking-girl-face"></div>
+                    <h4 class="text-center mt-4">看看哪個更健康?</h4>
+                    <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-2 mx-auto"></div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <h3
+                            class="fs-6 fw-normal mx-auto text-center mt-3 mb-3 border border-2 border-secondary rounded-3 p-2 text-secondary">
+                            水果類</h3>
+                    </div>
+                    <div class="row align-items-center justify-content-between g-0">
+                        <!--   Slides   -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                 <!-- 水果類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/fruit_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">新鮮鳳梨</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/fruit_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鳳梨罐頭</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 油脂與堅果種子類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/oil_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">橄欖油</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/oil_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">豬油</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 乳品類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/milk_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鮮奶</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/milk_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">草莓調味</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                    <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body mt-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <div class=" signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png"
+                                            alt="">
+                                        <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png"
+                                            alt="">
+                                    </div>
+                                    <div class=" feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-end signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png"
+                                            alt="">
+                                        <img class="ms-auto d-block d-md-none"
+                                            src="../assets/img/img_traffic_red_mobile.png" alt="">
+                                    </div>
+                                    <div class="text-end feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table mt-10">
+                                <thead class="border-light-yellow">
+                                    <tr>
+                                        <th class="h5" scope="col">營養標示</th>
+                                        <th scope="col"></th>
+                                        <th class="h5 text-end" scope="col">營養標示</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nutrition-label">
+                                    <tr>
+
+                                        <td>186kcal</td>
+                                        <th scope="row">熱量(Kcal)</th>
+                                        <td>288kcal</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>0g</td>
+                                        <th scope="row">碳水化合物</th>
+                                        <td>12.1g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.8g</td>
+                                        <th scope="row">脂肪</th>
+                                        <td>18.7g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.9 g</td>
+                                        <th scope="row">飽和脂肪</th>
+                                        <td>4.3 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.7g</td>
+                                        <th scope="row">蛋白質</th>
+                                        <td>17.7 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary-300 bg-wave-6cata position-relative pb-8 pt-8 ">
+            <div class="container ">
+                <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
+                    <div class="d-lg-none text-center"><img src="../assets/img/img_title_2.png"
+                            alt="thinking-girl-face"></div>
+                    <h4 class="text-center mt-4">看看哪個更健康?</h4>
+                    <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-2 mx-auto"></div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <h3
+                            class="fs-6 fw-normal mx-auto text-center mt-3 mb-3 border border-2 border-secondary rounded-3 p-2 text-secondary">
+                            油脂與堅果種子類</h3>
+                    </div>
+                    <div class="row align-items-center justify-content-between g-0">
+                        <!--   Slides   -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">
+              <div class="row accordion" id="accordionExample">
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                    <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                    <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                      <a class="stretched-link" href="">滷雞腿</a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mx-auto text-center">
+                  <div class="d-none d-md-block text-center"><img src="../assets/img/img_title_2.png"
+                      alt="thinking-girl-face"></div>
+                  <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-3 pt-5"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <h5>看答案</h5>
+                    <span class="material-symbols-outlined">
+                      expand_more
+                    </span>
+                  </a>
+
+                  <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                    href="6-catagories.html">點我看更多</button>
+                </div>
+                <div class="col-md-3 mx-auto accordion-item bg-transparent border-0 card rounded-3">
+                  
+                  <img class="bg-white rounded-top-3" src="../assets/img/Switch.png" alt="" class="card-img-top">
+                  <div class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                    <a class="stretched-link" href="">滷雞腿</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                                         <!-- 油脂與堅果種子類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/oil_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">橄欖油</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/oil_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">豬油</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 豆魚蛋肉類 範例 -->
+
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/Switch.png" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">滷雞腿</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/Switch-1.png" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">炸雞腿</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 蔬菜類類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/veg_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">燙花椰菜</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/veg_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">泡菜</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 全穀雜糧類 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/rice_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">糙米飯</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/rice_yellow.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">白米飯</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 水果類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/fruit_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">新鮮鳳梨</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/fruit_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鳳梨罐頭</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+   
+                                <!-- 乳品類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/milk_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鮮奶</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/milk_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">草莓調味</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                    <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body mt-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <div class=" signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png"
+                                            alt="">
+                                        <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png"
+                                            alt="">
+                                    </div>
+                                    <div class=" feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-end signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png"
+                                            alt="">
+                                        <img class="ms-auto d-block d-md-none"
+                                            src="../assets/img/img_traffic_red_mobile.png" alt="">
+                                    </div>
+                                    <div class="text-end feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table mt-10">
+                                <thead class="border-light-yellow">
+                                    <tr>
+                                        <th class="h5" scope="col">營養標示</th>
+                                        <th scope="col"></th>
+                                        <th class="h5 text-end" scope="col">營養標示</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nutrition-label">
+                                    <tr>
+
+                                        <td>186kcal</td>
+                                        <th scope="row">熱量(Kcal)</th>
+                                        <td>288kcal</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>0g</td>
+                                        <th scope="row">碳水化合物</th>
+                                        <td>12.1g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.8g</td>
+                                        <th scope="row">脂肪</th>
+                                        <td>18.7g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.9 g</td>
+                                        <th scope="row">飽和脂肪</th>
+                                        <td>4.3 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.7g</td>
+                                        <th scope="row">蛋白質</th>
+                                        <td>17.7 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary-200 bg-wave-6cata position-relative pb-8 pt-8 ">
+            <div class="container ">
+                <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
+                    <div class="d-lg-none text-center"><img src="../assets/img/img_title_2.png"
+                            alt="thinking-girl-face"></div>
+                    <h4 class="text-center mt-4">看看哪個更健康?</h4>
+                    <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-2 mx-auto"></div>
+                    <div class="mt-2 d-flex justify-content-center">
+                        <h3
+                            class="fs-6 fw-normal mx-auto text-center mt-3 mb-3 border border-2 border-secondary rounded-3 p-2 text-secondary">
+                            乳品類</h3>
+                    </div>
+                    <div class="row align-items-center justify-content-between g-0">
+                        <!--   Slides   -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+      
+                                <!-- 乳品類 範例 -->
+                                <div class="swiper-slide">
+                                    <div class="row accordion" id="accordionExample">
+                                        <div
+                                            class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                                            <div class="card rounded-3 border-0 bg-transparent mb-4">
+                                                <img class="img-fluid card-img-top bg-white rounded-top-3"
+                                                    src="../assets/img/milk_green.jpg" alt="" class="">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">鮮奶</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                                                <div class="text-center"><img class="img-fluid px-2"
+                                                        src="../assets/img/img_title_2.png" alt="thinking-girl-face">
+                                                </div>
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                            <div class="card rounded-3 border-0 bg-transparent">
+                                                <img src="../assets/img/milk_red.jpg" alt=""
+                                                    class="img_fluid card-img-top bg-white">
+                                                <div
+                                                    class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                                                    <a class="stretched-link" href="">草莓調味</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                                                <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="see-answer-fs">看答案</h6>
+                                                    <span class="material-symbols-outlined">
+                                                        expand_more
+                                                    </span>
+                                                </a>
+
+                                                <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                      href="6-catagories.html">點我看更多</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                    <div id="collapseOne" class="col-md-10 accordion-collapse collapse mx-auto"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body mt-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <div class=" signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_green_web.png"
+                                            alt="">
+                                        <img class="d-block d-md-none" src="../assets/img/img_traffic_green_mobile.png"
+                                            alt="">
+                                    </div>
+                                    <div class=" feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">原型食物</span><span
+                                            class="tag d-inline-block bg-badge-bg-green text-badge-text-green px-4 py-2 rounded me-3 mb-2">優質蛋白質</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-end signal mb-4">
+                                        <h5 class="mb-2">燈號</h5>
+                                        <img class="d-none d-md-block" src="../assets/img/img_traffic_red_web.png"
+                                            alt="">
+                                        <img class="ms-auto d-block d-md-none"
+                                            src="../assets/img/img_traffic_red_mobile.png" alt="">
+                                    </div>
+                                    <div class="text-end feature ">
+                                        <h5 class="mb-2">特點</h5>
+                                        <span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">油炸</span><span
+                                            class="tag d-inline-block bg-badge-bg-red text-badge-text-red px-4 py-2 rounded ms-3 mb-2">高油</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table mt-10">
+                                <thead class="border-light-yellow">
+                                    <tr>
+                                        <th class="h5" scope="col">營養標示</th>
+                                        <th scope="col"></th>
+                                        <th class="h5 text-end" scope="col">營養標示</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="nutrition-label">
+                                    <tr>
+
+                                        <td>186kcal</td>
+                                        <th scope="row">熱量(Kcal)</th>
+                                        <td>288kcal</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>0g</td>
+                                        <th scope="row">碳水化合物</th>
+                                        <td>12.1g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.8g</td>
+                                        <th scope="row">脂肪</th>
+                                        <td>18.7g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.9 g</td>
+                                        <th scope="row">飽和脂肪</th>
+                                        <td>4.3 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.7g</td>
+                                        <th scope="row">蛋白質</th>
+                                        <td>17.7 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script type="module" src="../main.js"></script>cript s
+            <script>
+                //六大類食物 看看哪個更健康
+                var swiper = new Swiper(".mySwiper", {
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
