@@ -18,7 +18,7 @@
 
 .calculator::after {
   content: "";
-  background-image: url(/daily-dietary-navigator/assets/img/bg_mobile_4.png);
+  background-image: url('../../assets/img/bg_mobile_4.png');
   background-repeat: no-repeat;
   position: absolute;
   background-size: contain;
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: 992px) {
-    background-image: url(/daily-dietary-navigator/assets/img/bg_web_4.png);
+    background-image: url('../../assets/img/bg_web_4.png');
     height: 100%;
     width: 100%;
   }

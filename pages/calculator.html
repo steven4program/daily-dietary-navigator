@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <section class="calculator-section">
+      <div class="container">
+        <div class="calculator-top col-12 col-lg-8 my-5 mx-auto bg-paper-gray">
+          <h1 class="text-center mb-5">計算您的每日能量需求和身體質量指數</h1>
+          <p>
+            歡迎來到您的個人健康指南!透過本頁面,您可以輕鬆計算自己的每日總能量消耗(TDEE)和身體質量指數(BMI),並了解自己的體型類型。這些數據不僅有助於您更深入了解自己的身體狀況,還能為您提供個人化的運動和飲食建議。
+            我們的目標是協助您找到最適合的健康生活方式。所有資料都以隱私保護並僅用於個人分析。開始今天,邁向更健康的自己!</p>
+        </div>
+
+        <!-- Steps -->
+        <div class="d-flex flex-column flex-lg-row justify-content-center">
+          <div class="steps col-12 col-lg-4 me-lg-5">
+            <p>操作步驟如下：</p>
+            <ol>
+              <li>輸入資料：在右方表單中填入您的年齡、身高、體重、性別和活動強度。</li>
+              <li>點擊計算：找到"計算"按鍵並點擊，系統將根據您的資料計算出TEDD及BMI數值</li>
+              <li>查看分析與建議：根據計算結果，您可以在下方找到對您體型的分析及相應的運動和飲食建議</li>
+              <li>探索更多：滑動至頁面底部，您可以查看各種體型的通用運動和飲食指南</li>
+            </ol>
+          </div>
+
+          <!-- Input data -->
+          <form action="submit" class="col-12 col-lg-4 p-4">
+            <div class="mb-3">
+              <label for="age" class="form-label">年齡</label>
+              <input type=" number" class="form-control" id="age" placeholder="請輸入您的年齡" aria-describedby="age">
+            </div>
+            <d class="d-flex mb-3">
+              <p>性別：</p>
+              <div class="form-check me-2">
+                <input class="form-check-input" type="radio" value="male" name="gender" id="male" checked>
+                <label class="form-check-label" for="male">
+                  生理男性
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="female" name="gender" id="female">
+                <label class="form-check-label" for="female">
+                  生理女性
+                </label>
+              </div>
+            </d>
+            <div class="mb-3">
+              <label for="height" class="form-label">身高：</label>
+              <d class="d-flex">
+                <input type="number" class="form-control" id="height" placeholder="請輸入您的身高">
+                <div id="heightHelp" class="form-text">公分</div>
+              </d>
+            </div>
+            <div class="mb-3">
+              <label for="weight" class="form-label">體重：</label>
+              <div class="d-flex">
+                <input type="number" class="form-control" id="weight" placeholder="請輸入您的體重">
+                <div id="weightHelp" class="form-text ms-2">公斤</div>
+              </div>
+            </div>
+            <p>活動強度</p>
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>請選擇日常活動強度</option>
+              <option value="static">靜態活動者(極少的運動時數)</option>
+              <option value="casual">休閒活動者(每週運動1~3小時)</option>
+              <option value="medium">適度活動者(每週運動4~6小時)</option>
+              <option value="heavy">重度活動者(每週運動7~9小時)</option>
+              <option value="athlete">運動員(每週運動9+小時)</option>
+            </select>
+            <div class="d-flex justify-content-around">
+              <button class="btn btn-secondary px-4" type="submit">計算</button>
+              <button class="btn btn-danger clear-btn px-4">清空</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Calculate result -->
+        <div class="d-flex justify-content-around mb-6">
+          <div class="input-data col-3">
+            <p class="fw-bold">輸入數據</p>
+            <p>年齡：</p>
+            <p>性別：</p>
+            <p>身高：</p>
+            <p>體重：</p>
+            <p>活動強度：</p>
+          </div>
+          <div class="result col-3">
+            <p>BMI指數：</p>
+            <p>基礎代謝率：</p>
+            <p>TDEE：</p>
+          </div>
+          <div class="note col-3">
+            <p>18歲以上成人的BMI範圍：</p>
+            <p>BMI &lt; 18.5 過輕</p>
+            <p>18.5 &le; BMI &lt; 24 正常</p>
+            <p>24 &le; BMI &lt; 27 過重</p>
+            <p>BMI &ge; 27 肥胖</p>
+            <p>註：</p>
+            <p>BMI為針對一般大眾的的簡易計算數值，若為運動員或有重量訓練經驗者， 可以照體脂率及腰圍來判定，男性正常體脂率應落在15%~25%，腰圍 &lt; 90 公分，女性正常體脂率應落在20%~30%，腰圍 &lt;
+              80公分</p>
+          </div>
+        </div>
+
+        <!-- Buttons to change suggestion -->
+        <div class="d-flex justify-content-around mb-6 action">
+          <div class="btn btn-secondary px-4" onclick="handleWeightGoal('lose')">我想減重</div>
+          <div class="btn btn-secondary px-4" onclick="handleWeightGoal('maintain')">維持體重</div>
+          <div class="btn btn-secondary px-4" onclick="handleWeightGoal('gain')">我想增重</div>
+        </div>
+
+        <!-- Suggestion -->
+        <div class="d-flex flex-column flex-lg-row justify-content-around">
+          <div class="col-12 col-lg-3 weightSuggestion">
+          </div>
+          <div class="col-12 col-lg-3 dietSuggestion">
+          </div>
+          <div class="col-12 col-lg-3 exerciseSuggestion">
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- General intro -->
+        <div class="intro p-6 bg-paper">
+          <div class="mb-4">
+            <p class="fw-bold">何為重量訓練？</p>
+            <p>重量訓練，簡稱為重訓，是一種強化肌肉的運動方式。包括使用自由重量、器械或自身體重，通過一系列不同的動作來促進肌肉的力量、耐力及圍度的增加。重訓不僅有助於塑造體型，還能提高新陳代謝、增強骨骼和改善整體健康</p>
+          </div>
+          <div class="mb-4">
+            <p class="fw-bold">如何開始重量訓練？</p>
+            <ol>
+              <li>
+                <p>確定目標：您的重訓目標是什麼？是增肌、減脂還是增加力量？清楚的目標有助於設計合適的計畫</p>
+              </li>
+              <li>
+                <p>選擇適合的設備：您可以在健身房使用各種器械，或者在家中利用一些簡單的工具如啞鈴、彈力帶等</p>
+              </li>
+              <li>
+                <p>學習正確的技巧：考慮請教練指導或觀看可靠的教學影片，以確保正確的動作，避免受傷</p>
+              </li>
+              <li>
+                <p>制定合理的計畫：重訓的頻率、強度和時長應根據個人的情況和目標進行調整</p>
+              </li>
+            </ol>
+          </div>
+          <div class="mb-4">
+            <p class="fw-bold">重訓計畫安排：</p>
+            <ol>
+              <li>
+                <p>新手階段：可以從每週2-3次的全身訓練開始，針對主要肌肉群。</p>
+              </li>
+              <li>
+                <p>進階階段：隨著經驗的累積，您可以嘗試分割訓練，每次訓練專注於特定肌肉群，每週次數提高至4-5次</p>
+              </li>
+              <li>
+                <p>休息和恢復：不要忽略休息的重要性，肌肉需要時間恢復來適應更高的強度</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="intro p-6 bg-paper">
+          <div class="mb-4">
+            <p class="fw-bold">有氧訓練探索：</p>
+            <p>有氧訓練，也稱作心肺耐力訓練。是一種增強心臟和肺部功能、提高身體對氧氣利用能力的運動形式。有氧運動通常以中等強度進行，可持續一段時間，如跑步、游泳、騎自行車等。</p>
+          </div>
+          <div class="mb-4">
+            <p class="fw-bold">有氧訓練的好處：</p>
+            <ol>
+              <li>
+                <p>改善心肺功能：有氧訓練有助於增強心臟和肺部，使之更有效地運送氧氣到全身。</p>
+              </li>
+              <li>
+                <p>促進減重：通過消耗熱量，有氧運動是減少體脂的有效方法之一。</p>
+              </li>
+              <li>
+                <p>提高精力和心情：有氧運動可以提高整體精力水平，並有助於減輕壓力和焦慮。</p>
+              </li>
+              <li>
+                <p>增強免疫系統：有氧運動可以提高免疫功能，使身體更能抵抗疾病。</p>
+              </li>
+            </ol>
+          </div>
+          <div class="mb-4">
+            <p class="fw-bold mb-4">有氧訓練的種類：</p>
+            <ol>
+              <li>
+                <p>跑步和步行：這是最常見的有氧運動，無需特殊設備，可以在室外或跑步機上進行。</p>
+              </li>
+              <li>
+                <p>游泳：這是一種全身運動，適合想減輕關節壓力的人。</p>
+              </li>
+              <li>
+                <p>自行車騎行：可以在戶外或健身房的自行車上進行，是一個很好的下半身運動。</p>
+              </li>
+              <li>
+                <p>有氧課程：許多健身房提供各種有氧課程，如瑜伽、舞蹈、健身操等。</p>
+              </li>
+            </ol>
+
+            <p>結合有氧訓練和重訓，您可以創建一個全面的健身計畫，以達到您的健康和健身目標。了解您的TDEE和BMI可以更有效地安排您的運動和飲食計劃。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+      <script>
+
+        document.querySelector('form').addEventListener('submit', function (e) {
+          // Getting all the necessary inputs
+          const age = document.querySelector('#age');
+          const height = document.querySelector('#height');
+          const weight = document.querySelector('#weight');
+          const activityIntensity = document.querySelector('.form-select');
+
+          // Validating inputs to ensure they are not empty
+          if (!age.value.trim()) {
+            alert('Please enter your age');
+            e.preventDefault();
+            return;
+          }
+
+          if (!height.value.trim()) {
+            alert('Please enter your height');
+            e.preventDefault();
+            return;
+          }
+
+          if (!weight.value.trim()) {
+            alert('Please enter your weight');
+            e.preventDefault();
+            return;
+          }
+
+          if (activityIntensity.value === '請選擇日常活動強度') {
+            alert('Please select your daily activity intensity');
+            e.preventDefault();
+            return;
+          }
+        });
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+          document.querySelector('form').addEventListener('submit', handleFormSubmit);
+        });
+
+        document.querySelector('.clear-btn').addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // Get the form element
+          const form = document.querySelector('form');
+
+          // Reset all form fields to their initial values
+          form.reset();
+        });
+
+        function handleFormSubmit(event) {
+          event.preventDefault();
+
+          const age = parseInt(document.querySelector('#age').value);
+          const genderRadio = document.querySelector('input[name="gender"]:checked').value;
+          const gender = genderRadio ? genderRadio.value : null;
+          const height = parseInt(document.querySelector('#height').value);
+          const weight = parseInt(document.querySelector('#weight').value);
+          const activityLevel = document.querySelector('.form-select').value;
+
+          if (!age || !genderRadio || !height || !weight || activityLevel === "請選擇日常活動強度") {
+            return;
+          }
+
+          // Display the input data
+          document.querySelector('.input-data').innerHTML = `
+            <p class="fw-bold">輸入數據</p>
+            <p>年齡：${age}</p>
+            <p>性別：${gender === 'male' ? '生理男性' : '生理女性'}</p>
+            <p>身高：${height} 公分</p>
+            <p>體重：${weight} 公斤</p>
+            <p>活動強度：${getActivityLevelText(activityLevel)}</p>
+          `;
+
+          const heightInMeters = height / 100;
+
+          const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
+
+          let bmr;
+          if (gender === 'male') {
+            bmr = Math.floor(88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age));
+          } else {
+            bmr = Math.floor(447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age));
+          }
+
+          let multiplier;
+          switch (activityLevel) {
+            case 'static':
+              multiplier = 1.2;
+              break;
+            case 'casual':
+              multiplier = 1.375;
+              break;
+            case 'medium':
+              multiplier = 1.55;
+              break;
+            case 'heavy':
+              multiplier = 1.725;
+              break;
+            case 'athlete':
+              multiplier = 1.9;
+              break;
+            default:
+              multiplier = 1;
+          }
+
+          const tdee = Math.floor(bmr * multiplier);
+
+          localStorage.setItem('TDEE', tdee);
+
+          // Display the results in your HTML
+          document.querySelector('.result').innerHTML = `
+            <p>BMI指數：${bmi}</p>
+            <p>基礎代謝率：${Math.floor(bmr)}</p>
+            <p>TDEE：${tdee}</p>
+          `;
+
+          localStorage.setItem('BMR', bmr);
+        }
+
+        function getActivityLevelText(value) {
+          switch (value) {
+            case 'static': return '靜態活動者(極少的運動時數)';
+            case 'casual': return '休閒活動者(每週運動1~3小時)';
+            case 'medium': return '適度活動者(每週運動4~6小時)';
+            case 'heavy': return '重度活動者(每週運動7~9小時)';
+            case 'athlete': return '運動員(每週運動9+小時)';
+            default: return '請選擇日常活動強度';
+          }
+        }
+
+        function handleWeightGoal(goal) {
+          const tdee = parseFloat(localStorage.getItem('TDEE'));
+          const bmr = parseFloat(localStorage.getItem('BMR'));
+
+          let weightSuggestion;
+          let dietSuggestion;
+          let exerciseSuggestion;
+
+          switch (goal) {
+            case 'lose':
+              weightSuggestion = `
+                <h4 class="mb-4">熱量建議</h4>
+                <p>每日建議攝取 ${(tdee - 300)} kcal</p>
+                <p class="mb-4">為TDEE - 300 kcal</p>
+                <p>想加速減重可改為每日攝取熱量 ${(tdee - 500)} kcal</p>
+                <p class="mb-4">為TDEE - 500 kcal</p>
+                <p>每日攝取熱量最少不可低於基礎代謝率 kcal</p>
+                `
+              dietSuggestion = `
+                <h4 class="mb-4">飲食策略</h4>
+                <p>減少熱量攝取：</p>
+                <p class="mb-4">控制食量，避免高熱量食物</p>
+                <p>選擇低熱量密度食物：</p>
+                <p class="mb-4">如蔬菜、水果、全穀類食物</p>
+                <p>減少攝取精緻糖和飽和脂肪：</p>
+                <p>如含糖飲料、油炸食物等</p>
+                `;
+
+              exerciseSuggestion = `
+                <h4 class="mb-4">運動策略</h4>
+                <p>有氧運動：</p>
+                <ul>
+                  <li>頻率：4~6次/每週</li>
+                  <li>時間：每次45~60分鐘</li>
+                </ul>
+                <p>重量訓練：</p>
+                <ul>
+                  <li>頻率：2~3次/每週</li>
+                  <li>時間：每次30~40分鐘</li>
+                </ul>
+              `;
+
+              break;
+            case 'maintain':
+              weightSuggestion = `
+                <h4 class="mb-4">熱量建議</h4>
+                <p>要維持現有的體重，您只需維持目前的飲食和運動習慣，確保您的每日熱量攝取量與您的TDEE相符。</p>
+                <p>您的TDEE是：${tdee}卡路里。</p>
+                `
+              dietSuggestion = `
+                <h4 class="mb-4">飲食策略</h4>
+                <p>保持熱量平衡：</p>
+                <p class="mb-4">攝取與消耗相匹配的熱量來維持您當前的體重</p>
+                <p>吃多元化的食物：</p>
+                <p class="mb-4">確保您的飲食包括各種營養素來支持您的整體健康</p>
+                <p>適量的運動：</p>
+                <p class="mb-4">定期運動可以幫助您維持體重和提高健康水平</p>
+                <p>避免過度飲食：</p>
+                <p>學會分辨飢餓和飽足的感覺，避免因為無聊或壓力而吃東西</p>
+                `;
+              exerciseSuggestion = `
+                <h4 class="mb-4">運動策略</h4>
+                <p>有氧運動：</p>
+                <ul>
+                  <li>頻率：3~5次/每週</li>
+                  <li>時間：每次30~45分鐘</li>
+                </ul>
+                <p>重量訓練：</p>
+                <ul>
+                  <li>頻率：2~3次/每週</li>
+                  <li>時間：每次30~40分鐘</li>
+                </ul>
+                <p>核心訓練：</p>
+                <ul>
+                  <li>頻率：2~3次/每週</li>
+                  <li>時間：每次15~20分鐘</li>
+                </ul>
+              `;
+              break;
+            case 'gain':
+              weightSuggestion = `
+                <h4 class="mb-4">熱量建議</h4>
+                <p>每日建議攝取 ${(tdee + 300)} kcal</p>
+                <p class="mb-4">為TDEE + 300 kcal</p>
+                <p>想加速增重可改為每日攝取熱量 ${(tdee + 500)} kcal</p>
+                <p class="mb-4">為TDEE + 500 kcal</p>
+                `;
+
+              dietSuggestion = `
+                <h4 class="mb-4">飲食策略</h4>
+                <p>增加熱量攝取：</p>
+                <p class="mb-4">透過增加每餐的份量或增加小吃的次數來增加您的熱量攝取</p>
+                <p>選擇營養密度高的食物：</p>
+                <p class="mb-4">優先選擇含有豐富營養和較高熱量的食物，如堅果、種子、全脂奶製品等</p>
+                <p>強化肌肉而非脂肪：</p>
+                <p class="mb-4">透過重量訓練和攝取足夠的蛋白質來增加肌肉質量而非脂肪</p>
+                <p>注意熱量來源：</p>
+                <p>雖然增加熱量攝取是必要的，但應該避免過多攝取高糖和高脂肪的食物，以保持心血管健康</p>
+                `;
+
+              exerciseSuggestion = `
+                <h4 class="mb-4">運動策略</h4>
+                <p>有氧運動：</p>
+                <ul>
+                  <li>頻率：2~3次/每週</li>
+                  <li>時間：每次20~30分鐘</li>
+                </ul>
+                <p>重量訓練：</p>
+                <ul>
+                  <li>頻率：3~4次/每週</li>
+                  <li>時間：每次40~60分鐘</li>
+                </ul>
+                <p>核心訓練：</p>
+                <ul>
+                  <li>頻率：3~4次/每週</li>
+                  <li>時間：每次15~20分鐘</li>
+                </ul>
+                `;
+              break;
+          }
+
+          document.querySelector('.weightSuggestion').innerHTML = weightSuggestion;
+          document.querySelector('.dietSuggestion').innerHTML = dietSuggestion;
+          document.querySelector('.exerciseSuggestion').innerHTML = exerciseSuggestion;
+        }
+      </script>
+
+</body>
+
+</html>
