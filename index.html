@@ -47,8 +47,6 @@
                 aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVHgB7daxDcAgDETRC8oAjAjKXBGMyAaJRBlMlcIg/Ve6uuZOlgAA+OMwryU+8pDbkCdoccsHPCf3LADdbAeLPOQ2lHPW4iQfQ8Btd7AKQGfv4B2TPFytfk92i4N8htpYDx5WAAB8vVGvDCG5B51GAAAAAElFTkSuQmCC" alt="">
 
-        </button>
-
       </nav>
       <!--web nav -->
       <div class="d-none d-lg-block">
@@ -57,12 +55,12 @@
             <img src="/daily-dietary-navigator/assets/Horizontal_container-d480b9ed.png" alt="Horizontal_container" class="">
           </a>
           <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav  list-unstyled d-flex flex-row ">
+            <ul class="navbar-nav  list-unstyled d-flex flex-row " data-aos="fade-up">
               <li class="nav-item">
                 <a class="nav-link hover-color-secondary" aria-current="page" href="index.html">首頁</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link hover-color-secondary" aria-current="page" href="#">飲食紅綠燈</a>
+                <a class="nav-link hover-color-secondary" aria-current="page" href="6-catagories.html">飲食紅綠燈</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link hover-color-secondary" aria-current="page" href="combo-meal.html">餐點搭配</a>
@@ -98,13 +96,13 @@
             <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="index.html">首頁</a>
           </li>
           <li class="w-100 text-center p-4 border-bottom">
-            <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
+            <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="6-catagories.html">飲食紅綠燈</a>
           </li>
           <li class="w-100 text-center p-4 border-bottom">
             <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="combo-meal.html">餐點搭配</a>
           </li>
           <li class="w-100 text-center p-4 border-bottom ">
-            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">營養計算機</a>
+            <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="calculator.html">營養計算機</a>
           </li>
           <li class="w-100 text-center p-4 border-bottom">
             <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="Q&A.html">Q&A</a>
@@ -128,7 +126,7 @@
                   <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="../pages/index.html">首頁</a>
                 </li>
                 <li class="w-100 text-center p-4 border-bottom">
-                  <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="#">飲食紅綠燈</a>
+                  <a class="fs-4 text-center text-white fw-bold " aria-current="page" href="6-catagories.html">飲食紅綠燈</a>
                 </li>
                 <li class="w-100 text-center p-4 border-bottom">
                   <a class="fs-4 text-center text-white fw-bold " aria-current="page"
@@ -141,6 +139,45 @@
                   <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="#">Q&A</a>
                 </li>
               </ul>
+            </div>
+
+          </div>
+          <!--modal-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+            <div class="modal-dialog  modal-fullscreen">
+              <div class=" d-flex flex-column  justify-content-between hamburger-list ">
+                <div class="modal-header border-0 py-4 mb-5">
+                  <button type="button" class="btn-close btn-close-white border border-4 border-white rounded"
+                          data-bs-dismiss="modal" aria-label="Close" style="width: 70px;height: 70px;"></button>
+                </div>
+                <div class="modal-body bg-transparent">
+                  <div class="container">
+                    <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center ">
+                      <li class="w-100 text-center p-4 border-bottom ">
+                        <a class="fs-4 text-center text-white fw-bold" aria-current="page"
+                           href="../pages/index.html">首頁</a>
+                      </li>
+                      <li class="w-100 text-center p-4 border-bottom">
+                        <a class="fs-4 text-center text-white fw-bold " aria-current="page"
+                           href="../pages/6-catagories.html">飲食紅綠燈</a>
+                      </li>
+                      <li class="w-100 text-center p-4 border-bottom">
+                        <a class="fs-4 text-center text-white fw-bold " aria-current="page"
+                           href="../pages/combo-meal.html">餐點搭配</a>
+                      </li>
+                      <li class="w-100 text-center p-4 border-bottom ">
+                        <a class="fs-4 text-center text-white fw-bold" aria-current="page"
+                           href="calculator.html">營養計算機</a>
+                      </li>
+                      <li class="w-100 text-center p-4 border-bottom">
+                        <a class="fs-4 text-center text-white fw-bold" aria-current="page" href="Q&A.html">Q&A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
 
@@ -296,7 +333,7 @@
 
     <div class="bg-primary-300 bg-wave-6cata position-relative pb-8 pt-3 ">
       <div class="container ">
-        <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112">
+        <div class="bg-light-yellow py-6 py-xl-7 px-10 px-xl-8 rounded-3 letter-spacing-112" data-aos="fade-up">
           <div class="d-lg-none text-center"><img src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png" alt="thinking-girl-face"></div>
           <h4 class="text-center mt-4">看看哪個更健康?</h4>
           <div class="line-width-80 border border-4 border-secondary rounded mt-1 mb-10 mx-auto"></div>
@@ -338,6 +375,7 @@
                   </div>
                 </div>
               </div> -->
+                <!-- 豆魚蛋肉類 範例 -->
                 <div class="swiper-slide">
                   <div class="row accordion" id="accordionExample">
                     <div
@@ -389,16 +427,17 @@
                     </div>
                   </div>
                 </div>
+                <!-- 蔬菜類類 範例 -->
                 <div class="swiper-slide">
                   <div class="row accordion" id="accordionExample">
                     <div
                          class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
                       <div class="card rounded-3 border-0 bg-transparent mb-4">
-                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
-                             class="">
+                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/veg_green-5a6d2676.jpg"
+                             alt="" class="">
                         <div
                              class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">滷雞腿</a>
+                          <a class="stretched-link" href="">燙花椰菜</a>
                         </div>
                       </div>
 
@@ -418,10 +457,10 @@
                         href="6-catagories.html">點我看更多</button> -->
                       </div>
                       <div class="card rounded-3 border-0 bg-transparent">
-                        <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
+                        <img src="/daily-dietary-navigator/assets/veg_red-73aa9685.jpg" alt="" class="img_fluid card-img-top bg-white">
                         <div
                              class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">炸雞腿</a>
+                          <a class="stretched-link" href="">泡菜</a>
                         </div>
                       </div>
                       <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
@@ -440,16 +479,17 @@
                     </div>
                   </div>
                 </div>
+                <!-- 全穀雜糧類 -->
                 <div class="swiper-slide">
                   <div class="row accordion" id="accordionExample">
                     <div
                          class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
                       <div class="card rounded-3 border-0 bg-transparent mb-4">
-                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/Switch-53322f60.png" alt=""
-                             class="">
+                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/rice_green-b2f7e6f8.jpg"
+                             alt="" class="">
                         <div
                              class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">滷雞腿</a>
+                          <a class="stretched-link" href="">糙米飯</a>
                         </div>
                       </div>
 
@@ -469,10 +509,166 @@
                         href="6-catagories.html">點我看更多</button> -->
                       </div>
                       <div class="card rounded-3 border-0 bg-transparent">
-                        <img src="/daily-dietary-navigator/assets/Switch-1-f319240a.png" alt="" class="img_fluid card-img-top bg-white">
+                        <img src="/daily-dietary-navigator/assets/rice_yellow-da6cccf4.jpg" alt="" class="img_fluid card-img-top bg-white">
                         <div
                              class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
-                          <a class="stretched-link" href="">炸雞腿</a>
+                          <a class="stretched-link" href="">白米飯</a>
+                        </div>
+                      </div>
+                      <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">
+                          <h6 class="see-answer-fs">看答案</h6>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </a>
+
+                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 水果類 範例 -->
+                <div class="swiper-slide">
+                  <div class="row accordion" id="accordionExample">
+                    <div
+                         class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                      <div class="card rounded-3 border-0 bg-transparent mb-4">
+                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/fruit_green-0c5d250a.jpg"
+                             alt="" class="">
+                        <div
+                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                          <a class="stretched-link" href="">新鮮鳳梨</a>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                        <div class="text-center"><img class="img-fluid px-2" src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png"
+                               alt="thinking-girl-face"></div>
+                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">
+                          <h6 class="see-answer-fs">看答案</h6>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </a>
+
+                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                      </div>
+                      <div class="card rounded-3 border-0 bg-transparent">
+                        <img src="/daily-dietary-navigator/assets/fruit_red-2bb0fc77.jpg" alt="" class="img_fluid card-img-top bg-white">
+                        <div
+                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                          <a class="stretched-link" href="">鳳梨罐頭</a>
+                        </div>
+                      </div>
+                      <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">
+                          <h6 class="see-answer-fs">看答案</h6>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </a>
+
+                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 油脂與堅果種子類 範例 -->
+                <div class="swiper-slide">
+                  <div class="row accordion" id="accordionExample">
+                    <div
+                         class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                      <div class="card rounded-3 border-0 bg-transparent mb-4">
+                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/oil_green-6b380a69.jpg"
+                             alt="" class="">
+                        <div
+                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                          <a class="stretched-link" href="">橄欖油</a>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                        <div class="text-center"><img class="img-fluid px-2" src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png"
+                               alt="thinking-girl-face"></div>
+                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">
+                          <h6 class="see-answer-fs">看答案</h6>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </a>
+
+                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                      </div>
+                      <div class="card rounded-3 border-0 bg-transparent">
+                        <img src="/daily-dietary-navigator/assets/oil_red-254b762e.jpg" alt="" class="img_fluid card-img-top bg-white">
+                        <div
+                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                          <a class="stretched-link" href="">豬油</a>
+                        </div>
+                      </div>
+                      <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
+                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-xxl-5"
+                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">
+                          <h6 class="see-answer-fs">看答案</h6>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </a>
+
+                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 乳品類 範例 -->
+                <div class="swiper-slide">
+                  <div class="row accordion" id="accordionExample">
+                    <div
+                         class="col-8 col-sm-8 col-md-8 col-lg-10 d-lg-flex mx-auto accordion-item bg-transparent border-0">
+                      <div class="card rounded-3 border-0 bg-transparent mb-4">
+                        <img class="img-fluid card-img-top bg-white rounded-top-3" src="/daily-dietary-navigator/assets/milk_green-ee03a1c0.jpg"
+                             alt="" class="">
+                        <div
+                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                          <a class="stretched-link" href="">鮮奶</a>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2 mx-auto text-center d-none d-lg-block">
+                        <div class="text-center"><img class="img-fluid px-2" src="/daily-dietary-navigator/assets/img_title_2-47c2e636.png"
+                               alt="thinking-girl-face"></div>
+                        <a class="accordion-button collapsed d-block answer bg-secondary-200 btn text-white text-center mx-auto my-lg-3 pt-5 pt-lg-4 pt-xxl-5"
+                           type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">
+                          <h6 class="see-answer-fs">看答案</h6>
+                          <span class="material-symbols-outlined">
+                            expand_more
+                          </span>
+                        </a>
+
+                        <!-- <button class="btn btn-outline-secondary rounded-1 bg-transparent fs-5"
+                        href="6-catagories.html">點我看更多</button> -->
+                      </div>
+                      <div class="card rounded-3 border-0 bg-transparent">
+                        <img src="/daily-dietary-navigator/assets/milk_red-2600c4ea.jpg" alt="" class="img_fluid card-img-top bg-white">
+                        <div
+                             class="card-footer fs-4 fw-bold bg-secondary-200 py-3 rounded-bottom-3 text-center border-0">
+                          <a class="stretched-link" href="">草莓調味</a>
                         </div>
                       </div>
                       <div class="col-md-2 mx-auto text-center d-lg-none mt-4">
@@ -568,17 +764,13 @@
               </table>
             </div>
           </div>
-        </div>
-        <div class="d-flex justify-content-center mt-4">
-          <a class="text-center text-secondary rounded-1 bg-transparent fs-6" href="6-catagories.html">點我看更多...</a>
+          <div class="d-flex justify-content-center mt-4">
+            <a class="text-center text-secondary rounded-1 bg-transparent fs-6" href="6-catagories.html">點我看更多...</a>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+
 
 
 
